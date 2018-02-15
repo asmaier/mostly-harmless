@@ -1,5 +1,63 @@
 \chapter{Mathematics}
 
+\section{Numbers}
+
+\subsection{Triangle inequality}
+
+\subsubsection{Number inequality}
+
+We start with the obvious inequality that the absolute value of a number
+$\left|a\right|$ is always greater or equal the number $a$ itself 
+\begin{align}
+|a| \geq a
+\end{align} 
+Using this we can prove that for numbers $a$ and $b$ we have 
+\begin{align}
+|a| + |b|  \geq |a+b|
+\end{align} 
+because 
+\begin{align}
+(|a| + |b|)^2  &\geq (|a+b|)^2 \\
+|a|^2  + 2|a||b| + |b|^2 &\geq |a^2 + 2ab + b^2| \\
+2|a||b| &\geq 2|ab|
+\end{align} 
+The last line is always true if $|a| \geq a$, which completes our
+prove. 
+
+\subsection{Cauchy-Schwarz inequality} 
+Because
+$\sin^2(\phi) + \cos^2(\phi) = 1$ we have 
+\begin{align}
+|a|^2|b|^2 = |a|^2|b|^2 (\sin^2(\phi) + \cos^2(\phi))
+\end{align} 
+With the definition of the scalar product
+$|a\cdot b| = |a||b|\cos(\phi)$ and the cross product
+$|a\times b| = |a||b|\sin(\phi)$ of vectors $a$ and $b$ we can
+write this expression as 
+\begin{align}
+|a|^2|b|^2 = |a\times b|^2 + |a\cdot b|^2
+\end{align} 
+This is called \href{https://en.wikipedia.org/wiki/Lagrange\%27s_identity}{Lagrange's identity}. Since all terms are squared and
+therefor positive we immediatelly can derive the inequalities 
+\begin{align}
+|a|^2|b|^2 &\geq |a\cdot b|^2 \\
+|a|^2|b|^2 &\geq |a\times b|^2
+\end{align} 
+The first of these equations is the Cauchy-Schwarz inequality. The
+second equations doesn't seem to have a name in the literature.
+
+The Cauchy-Schwarz inequality comes in many different forms. For example
+for $n$-dimensional vectors it can be written in cartesian coordinates
+like 
+\begin{align}
+\sum (a_i)^2 \sum (b_i)^2 \geq \left(\sum a_i b_i \right)^2
+\end{align} 
+This can even be generalized to uncountable infinite dimensional
+vectors (also called continuous square integrable functions) like 
+\begin{align}
+\left(\int \left|a(x)\right|^2 dx\right) \cdot \left(\int \left|b(x)\right|^2 dx\right) \geq \left|\int a(x) \cdot b(x)dx\right|^2
+\end{align}
+
 \section{Matrices}
 
 In the following we want to restrict our discussion to matrices with
@@ -90,14 +148,14 @@ If we compute the matrix product on the left hand side we get
 \end{align} 
 Further simplifying we get two equations 
 \begin{align}
-a^2+bc = -1 && ac + cd = 0
+a^2+bc = -1 &\ & ac + cd = 0
 \end{align} 
 To solve this equation one might attempt to set $c=0$. But in this
 case we would end up where we started because the equation left would be
 $a^2=-1$. So we have to assume $c \neq 0$ to find a sensible
 solution. So we get 
 \begin{align}
-c = -\frac{a^2+1}{b} && a = -d
+c = -\frac{a^2+1}{b} &\ & a = -d
 \end{align} 
 From these equation we see that we also have to assume $b \neq 0$.
 But without loss of generality we can set $a=0$,$d=0$ and are left
@@ -108,7 +166,7 @@ bc = -1
 If we restrict ourself to integer numbers, we finally have two
 solutions for our transformation 
 \begin{align}
-B = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}  && B^* = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
+B = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}  &\ & B^* = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
 \end{align} 
 So what seemed impossible to solve in 1D with simple numbers turned
 out to have quite simple solutions in 2D in the form of 2x2 matrices.
@@ -171,21 +229,175 @@ But complex numbers are also no vectors (in the geometrical sense). The multipli
 
 Instead the modern view is that complex numbers are 2D matrices. They represent the group of (antisymmetric) 2D rotation matrices (\url{https://en.wikipedia.org/wiki/Complex_number#Matrix_representation_of_complex_numbers}). All the features of complex numbers follow naturally from this representation, e.g. multiplying two matrices yields another matrix. Unfortunately most textbooks don’t even mention the matrix representation of complex numbers, although this really makes clear what complex “numbers” are, how they can be extended (e.g. quaternions are 3D rotation matrices) and how they fit into the bigger picture which is \url{https://en.wikipedia.org/wiki/Group_theory}.
 
-\section{Linear algebra}
+
+\section{Basic probability theory}
+
+
+\subsection{Definition of probability}
+
+An experiment can measure if an event $A$ happend or not. If we repeat
+an experiment $n$ times and we measure that the event $A$ happened
+$m$ times we define the probability that the event $A$ happens as
+\begin{align}
+P(A) = \lim\limits_{n \to \infty} \frac{m}{n}
+\end{align}
+
+If event $C$ means that event $A$ \emph{or} event $B$ can happen
+we write $C = A \cup B$. If event $D$ means that event $A$
+\emph{and} event $B$ happen, we write $D = A \cap B$. Classical
+probability theory is then based on the following three axioms (called
+the Kolmogorov axioms):
+
+\begin{enumerate}
+\item
+  Every event $A$ has a real non-negative probability $P(A) \ge 0$.
+\item
+  The probability that any event from the event space will happen is
+  one: 
+  
+  $P(A \cup A^c) = 1$ (where $A^c$ is the complement event to
+  $A$ in the event space)
+\item
+  The probabilities of mutually exclusive events ( $P(A \cap B) = 0$ )
+  add: 
+  
+  $P(A \cup B) = P(A) + P(B)$
+\end{enumerate}
+
+From the last axiom it also follows that in general
+\begin{align}
+P(A \cup B) = P(A) + P(B) - P(A \cap B)
+\end{align}
+Although these axioms seem unavoidable it should be mentioned that
+quantum probability theory violates axiom 1 and axiom 3. Axiom 3 is
+violated, because measurement of events in quantum mechanics (QM) are
+not commutative, meaning the measurement of event A often must influence
+the measurement of event B. Axiom 1 is violated since QM must describe
+interference effects between events and does this by introducing
+\href{https://en.wikipedia.org/wiki/Negative_probability}{negative
+probabilities} (To be more precise, the probability wave function of QM
+is complex, because in the theory one must basically take the square
+root of the negative probabilities). But as Dirac put it: ``Negative
+probabilities should not be considered nonsense. They are well defined
+concepts mathematically, like a negative sum of money. Negative
+probabilities should be considered simply as things which do not appear
+in experimental results.''
+
+So it is possible to work with things like negative or complex
+probabilities. But to be able to derive the central limit theorem it is
+necessary that the three axioms of Kolmogorov for classical probability
+hold.
+
+\subsection{Random variables}
+Examples for random variables are e.g.~the number on a thrown dice, the
+lifetime of a instable radioactive nucleus, the amplitude of
+athmospheric noise recorded by normal radio. In general a random
+variable $X$ takes finite real values $x$ where the probability that
+$X$ takes the value $x$ in a given intervall from $a$ to $b$
+depends on the event described by $X$. We write 
+\begin{align}
+P(a < X < b) = \int_a^b f_X(x) dx 
+\end{align} 
+where $f_X(x)$ is the so called probability density function
+characteristic for the event. We have to be careful to distinguish the
+random variable $X$ from its value $x$ it takes after the
+measurement. If $a < x < b$ then the probability $P(a < x < b)$ is
+always one, because $x$ is just a number between $a$ and $b$. But
+the value of $P(a < X < b)$ depends on the form of the probability
+density function (Note however that $P(-\infty < x < \infty)$ =
+$P(-\infty < X < \infty)$ according to the second axiom). So a random
+variable is - despite its name - actually not a number or value, it is
+\href{https://www.mathsisfun.com/data/random-variables.html}{a set of
+possible values from a random experiment}, where each value has a
+probability associated with it. To describe a experiment of throwing a
+dice one could write 
+\begin{align}
+X = \{(1,1/6),(2,1/6),(3,1/6),(4,1/6),(5,1/6),(6,1/6)\}
+\end{align} 
+where the first value of each tuple is the possible outcome $x_i$
+(called \href{https://en.wikipedia.org/wiki/Random_variate}{Random
+Variate}), the second is the corresponding probability $p_i$. The
+probability is 
+\begin{align}
+P(a < X < b) = \sum_{a < x_i < b} p_i  
+\end{align}
+
+or in case that the possible outcomes are a continous set $x(t)$ with
+the corresponding
+\href{https://en.wikipedia.org/wiki/Probability_density_function}{probability
+density function} $p(t)$ 
+\begin{align}
+P(a < X < b) = \int_a^b p(t) dt  
+\end{align}
+
+In the special case $a=-\infty$ the probability $P$ only depends on
+the upper limit $b$ 
+\begin{align}
+P(-\infty < X < b) = P(X < b) = \int_{-\infty}^b p(t) dt = F(b)  
+\end{align} 
+and we call $F(b)$ the
+\href{https://en.wikipedia.org/wiki/Cumulative_distribution_function}{cumulative
+distribution function}.
+
+It should be noted that a possible outcome or random variate $x_i$ is
+in principle a functional $x[p(t)]$ over the space of probability
+density functions. This can be seen in the way how pseudo random numbers
+are generated on a computer. One usually has a
+\href{https://en.wikipedia.org/wiki/Pseudorandom_number_generator}{random
+number generator} (often also called deterministic random number
+generator, because starting from the same seed, it will generate the
+same series of random numbers) generating uniformly distributed numbers
+between 0 and 1. These uniformly distributed numbers are then
+transformed to non-uniform random numbers by methods like
+\href{https://en.wikipedia.org/wiki/Inverse_transform_sampling}{inverse
+transform sampling} or
+\href{https://en.wikipedia.org/wiki/Rejection_sampling}{rejection
+sampling}, which basically make use of the probability density function
+$p(t)$. So the scalar real value taken by a random variable generated
+by a computer depends on the form of a function, making $x[p(t)]$ a
+functional and the random variable $X$ a set of functionals.
+
+\subsection{Multiple random variables}
+
+Assume you throw one red and one blue dice in an experiment. The number
+on the red dice would be random variable $X$, the number of the blue
+dice random variable $Y$. Under normal circumstances the number on
+each dice would be independent of each other. We say, the random
+variables $X$ and $Y$ are uncorrelated. However, assume that the
+dice are magnetic. In that case the number shown on each dice might not
+be independent anymore.
+
+To describe such an experiment where we measure a pair of random
+variables we use a joint probability and a joint distribution function:
+\begin{align}
+P(a < X < b, c < Y < d) = \int_a^b\int_c^d f_{XY}(x,y) dx dy 
+\end{align} 
+In analogy we can also describe experiments with $n$ random
+variables by using a $n$-dimensional joint distribution function (In
+the limit that $n$ would approach an uncountable infinity the
+probability would be expressed by an infinite dimensional integral, see
+also
+\href{https://en.wikipedia.org/wiki/Functional_integration}{Functional
+integration})
+
+Quantum mechanics = asymmetric covariance matrix??
+
+\section{More topics}
+\subsection{Linear algebra}
 
 \begin{itemize}
 \item \url{https://physics.stackexchange.com/questions/35562/is-a-1d-vector-also-a-scalar}
 \item \url{https://math.stackexchange.com/questions/219434/is-a-one-by-one-matrix-just-a-number-scalar}
 \item \url{https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Eigenvalues_of_geometric_transformations}
 \end{itemize}
-\subsection{Functions of matrices}
+\subsubsection{Functions of matrices}
 \begin{itemize}
 \item \url{https://en.wikipedia.org/wiki/Matrix_function}
 \item \url{https://en.wikipedia.org/wiki/Matrix_exponential}
 \item \url{https://en.wikipedia.org/wiki/Logarithm_of_a_matrix}
 \item \url{https://math.stackexchange.com/questions/1149598/how-to-solve-a-non-linear-matrix-equation-over-integer-numbers}
 \end{itemize}
-\section{Transformations and groups}
+\subsection{Transformations and groups}
 
 \begin{itemize}
 \item Prove of eulers formula as a solution to 2d wave equation: \url{http://math.stackexchange.com/a/3512/27609}
@@ -197,7 +409,7 @@ Instead the modern view is that complex numbers are 2D matrices. They represent 
 \item \url{https://en.wikipedia.org/wiki/Quaternion} (\url{https://math.stackexchange.com/questions/147166/does-my-definition-of-double-complex-noncommutative-numbers-make-any-sense})
 \item \url{https://math.stackexchange.com/questions/2083950/relationship-between-levi-civita-symbol-and-complex-quaternionic-numbers}
 \end{itemize}
-\section{Series}
+\subsection{Series}
 
 \begin{itemize}
 \item \url{http://blog.wolfram.com/2014/08/06/the-abcd-of-divergent-series}
@@ -207,87 +419,87 @@ Instead the modern view is that complex numbers are 2D matrices. They represent 
 \end{itemize}
 \end{itemize}
 
-\section{Calculus}
+\subsection{Calculus}
 
-\subsection{Euler-MacLaurin}
+\subsubsection{Euler-MacLaurin}
 \begin{itemize}
 \item \url{https://people.csail.mit.edu/kuat/courses/euler-maclaurin.pdf}
 \item \url{http://www.hep.caltech.edu/~phys199/lectures/lect5_6_ems.pdf}
 \item \url{https://terrytao.wordpress.com/2010/04/10/the-euler-maclaurin-formula-bernoulli-numbers-the-zeta-function-and-real-variable-analytic-continuation}
 \end{itemize}
 
-\subsection{Watsons Triple Integrals}
+\subsubsection{Watsons Triple Integrals}
 \begin{itemize}
 \item \url{http://mathworld.wolfram.com/WatsonsTripleIntegrals.html}
 \item \url{http://www.inp.nsk.su/~silagadz/Watson_Integral.pdf}
 \end{itemize}
 
-\subsection{Generalized Calculus}
+\subsubsection{Generalized Calculus}
 \begin{itemize}
 \item \url{https://en.wikipedia.org/wiki/Product_integral}
 \item \url{http://math2.org/math/paper/preface.htm}
 \item \url{http://www.gauge-institute.org/calculus/PowerMeansCalculus.pdf}
 \end{itemize}
 
-\subsection{Finite calculus}
+\subsubsection{Finite calculus}
 \begin{itemize}
 \item \url{https://www.cs.purdue.edu/homes/dgleich/publications/Gleich\%202005\%20-\%20finite\%20calculus.pdf}
 \item \url{https://en.wikipedia.org/wiki/Concrete_Mathematics}
 \end{itemize}
 
-\subsection{Iterative roots and fractional iteration}
+\subsubsection{Iterative roots and fractional iteration}
 \begin{itemize}
 \item \url{http://reglos.de/lars/ffx.html}
 \item \url{https://mathoverflow.net/questions/17605/how-to-solve-ffx-cosx}
 \end{itemize}
 
-\section{Geometry}
+\subsection{Geometry}
 \begin{itemize}
 \item \href{https://www.friedrich-verlag.de/fileadmin/redaktion/sekundarstufe/Mathematik/Der_Mathematikunterricht/Leseproben/Der_Mathematikunterricht_3_13_Leseprobe_2.pdf}{Cutting a cube along the diagonal}
 \item \url{https://en.wikipedia.org/wiki/Visual_calculus}
 \end{itemize}
 
-\section{Weird constants and functions}
+\subsection{Weird constants and functions}
 
-\subsection{Euler-Mascheroni constant}
+\subsubsection{Euler-Mascheroni constant}
 \begin{itemize}
 \item \url{https://en.wikipedia.org/wiki/Euler\%E2\%80\%93Mascheroni_constant#Generalizations}
 \end{itemize}
 
-\subsection{Universal Parabolic constant}
+\subsubsection{Universal Parabolic constant}
 \begin{itemize}
 \item \url{https://en.wikipedia.org/wiki/Universal_parabolic_constant}
 \item \url{http://mathworld.wolfram.com/UniversalParabolicConstant.html}
 \item \url{https://mathoverflow.net/questions/37871/is-it-a-coincidence-that-the-universal-parabolic-constant-shows-up-in-the-soluti}
 \end{itemize}
 
-\subsection{Apery's constant}
+\subsubsection{Apery's constant}
 \begin{itemize}
 \item \url{https://en.wikipedia.org/wiki/Ap%C3%A9ry%27s_constant}
 \item \url{https://math.stackexchange.com/questions/12815/riemann-zeta-function-at-odd-positive-integers/12819#12819}
 \end{itemize}
 
-\subsection{Gauss's constant}
+\subsubsection{Gauss's constant}
 \begin{itemize}
 \item \url{https://en.wikipedia.org/wiki/Gauss\%27s_constant}
 \item \url{https://en.wikipedia.org/wiki/Lemniscatic_elliptic_function}
 \item \url{https://en.wikipedia.org/wiki/Particular_values_of_the_Gamma_function}
 \end{itemize}
 
-\subsection{Riemann Zeta function}
+\subsubsection{Riemann Zeta function}
 \begin{itemize}
 \item \url{https://math.stackexchange.com/questions/1792755/connection-between-the-area-of-a-n-sphere-and-the-riemann-zeta-function}
 \item \url{https://suryatejag.wordpress.com/2011/11/24/riemann-functional-equation-and-hamburgers-theorem}
 \end{itemize}
 
 
-\section{Probability}
+\subsection{Probability}
 \begin{itemize}
 \item \url{https://en.wikipedia.org/wiki/Secretary_problem}
 \item \url{https://en.wikipedia.org/wiki/Kelly_criterion}
 \end{itemize}
 
-\subsection{Sample size}
+\subsubsection{Sample size}
 \begin{itemize}
 \item \url{https://stats.stackexchange.com/questions/192199/derivation-of-formula-for-sample-size-of-finite-population/192601#192601}
 \item \url{https://math.stackexchange.com/questions/926478/how-does-accuracy-of-a-survey-depend-on-sample-size-and-population-size/1357604#1357604}
