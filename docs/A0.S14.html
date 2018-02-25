@@ -1,0 +1,150 @@
+<!DOCTYPE html><html>
+<head>
+<title>.14 Properties of second order tensors‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes</title>
+<!--Generated on Sun Feb 25 23:29:45 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on February 25, 2018.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML" type="text/javascript"></script>
+<link rel="up" href="Ch2.html" title="Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="up up" href="Pt3.html" title="Part III Physics ‣ Mostly harmless notes">
+<link rel="up up up" href="." title="Mostly harmless notes">
+<link rel="start" href="." title="Mostly harmless notes">
+<link rel="prev" href="A0.S13.html" title=".13 Jacobian determinant ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="next" href="A0.S15.html" title=".15 Rate of strain tensor, rotation tensor ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="Ch2.S1.html" title="2.1 Introduction ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="Ch2.S2.html" title="2.2 General compressible fluid ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="Ch2.S3.html" title="2.3 Newtonian compressible fluid ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="Ch2.S4.html" title="2.4 General incompressible fluid ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="Ch2.S5.html" title="2.5 Newtonian incompressible fluid ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="Ch2.S6.html" title="2.6 Fluid dynamics in comoving coordinates ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S7.html" title=".7 Equations of State ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S8.html" title=".8 The speed of sound ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S9.html" title=".9 Dimensional analysis ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S10.html" title=".10 Color fields ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S11.html" title=".11 Fluid dynamics in one dimension ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S12.html" title=".12 Levi-Civita-Symbol ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S13.html" title=".13 Jacobian determinant ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S15.html" title=".15 Rate of strain tensor, rotation tensor ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S16.html" title=".16 Derivation of the stress tensor for a newtonian fluid ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S17.html" title=".17 Stress tensor in cartesian coordinates for 1d, 2d and 3d ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S18.html" title=".18 Stress tensor in comoving coordinates ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S19.html" title=".19 Vector identities ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S20.html" title=".20 A contradiction when computing the dissipation ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S21.html" title=".21 Fourier transform and structure functions ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S22.html" title=".22 Longitudinal and transversal projection of vectors ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="section" href="A0.S23.html" title=".23 Some speculations about … ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Classical mechanics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes">
+<link rel="part" href="Pt1.html" title="Part I Introduction ‣ Mostly harmless notes">
+<link rel="part" href="Pt2.html" title="Part II Mathematics ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S1.html" title="0.1 Numbers ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S2.html" title="0.2 Matrices ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S3.html" title="0.3 Complex Numbers ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S4.html" title="0.4 Basic probability theory ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S5.html" title="0.5 More topics ‣ Mostly harmless notes">
+<link rel="part" href="Pt3.html" title="Part III Physics ‣ Mostly harmless notes">
+<link rel="bibliography" href="bib.html" title="References ‣ Mostly harmless notes">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch2.html" title="Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Fluid dynamics</span></a><a href="A0.S13.html" title=".13 Jacobian determinant ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">.13 </span>Jacobian determinant</span></a><a href="A0.S15.html" title=".15 Rate of strain tensor, rotation tensor ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">.15 </span>Rate of strain tensor, rotation tensor</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">.14 </span>Properties of second order tensors</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">A second order tensor can be decomposed into a symmetric and an antisymmetric
+part in the following way<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">29</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">29</sup>How does this look like in general
+curvilinear coordinates?</span></span></span></p>
+<table id="A0.S23.EGx200" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="A0.E206"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="A0.E206.m1" class="ltx_Math" alttext="\displaystyle T_{ij}=\underbrace{\frac{1}{2}{\left(T_{ij}+T_{ji}\right)}}_{%
+\text{symmetric}}+\underbrace{\frac{1}{2}{\left(T_{ij}-T_{ji}\right)}}_{\text{%
+antisymmetric}}" display="inline"><mrow><msub><mi>T</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><munder><munder accentunder="true"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false">(</mo><mrow><msub><mi>T</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">+</mo><msub><mi>T</mi><mrow><mi>j</mi><mo movablelimits="false">⁢</mo><mi>i</mi></mrow></msub></mrow><mo movablelimits="false">)</mo></mrow></mrow><mo movablelimits="false">⏟</mo></munder><mtext>symmetric</mtext></munder><mo>+</mo><munder><munder accentunder="true"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false">(</mo><mrow><msub><mi>T</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">-</mo><msub><mi>T</mi><mrow><mi>j</mi><mo movablelimits="false">⁢</mo><mi>i</mi></mrow></msub></mrow><mo movablelimits="false">)</mo></mrow></mrow><mo movablelimits="false">⏟</mo></munder><mtext>antisymmetric</mtext></munder></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(206)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">It can also be decomposed into an isotropic and deviatoric part by subtracting
+and adding the trace of the tensor like</p>
+<table id="A0.S23.EGx201" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="A0.E207"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="A0.E207.m1" class="ltx_Math" alttext="\displaystyle T_{ij}=\underbrace{\frac{1}{n}\delta_{ij}T_{kk}}_{\text{%
+isotropic}}+\underbrace{T_{ij}-\frac{1}{n}\delta_{ij}T_{kk}}_{\text{deviatoric%
+,
+tracefree}}" display="inline"><mrow><msub><mi>T</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><munder><munder accentunder="true"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>n</mi></mfrac></mstyle><mo movablelimits="false">⁢</mo><msub><mi>δ</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">⁢</mo><msub><mi>T</mi><mrow><mi>k</mi><mo movablelimits="false">⁢</mo><mi>k</mi></mrow></msub></mrow><mo movablelimits="false">⏟</mo></munder><mtext>isotropic</mtext></munder><mo>+</mo><munder><munder accentunder="true"><mrow><msub><mi>T</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>n</mi></mfrac></mstyle><mo movablelimits="false">⁢</mo><msub><mi>δ</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">⁢</mo><msub><mi>T</mi><mrow><mi>k</mi><mo movablelimits="false">⁢</mo><mi>k</mi></mrow></msub></mrow></mrow><mo movablelimits="false">⏟</mo></munder><mtext>deviatoric,
+tracefree</mtext></munder></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(207)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Combining these two relations yields the general decomposition</p>
+<table id="A0.S23.EGx202" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="A0.E208"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="A0.E208.m1" class="ltx_Math" alttext="\displaystyle\begin{split}\displaystyle T_{ij}=&amp;\displaystyle\overbrace{\frac{%
+1}{n}\delta_{ij}T_{kk}}^{\text{isotropic}}+\overbrace{\underbrace{\frac{1}{2}{%
+\left(T_{ij}+T_{ji}-\frac{2}{n}\delta_{ij}T_{kk}\right)}}_{\text{symmetric, %
+tracefree}}+\frac{1}{2}{\left(T_{ij}-T_{ji}\right)}}^{\text{deviatoric, %
+tracefree}}\\
+&amp;\displaystyle\underbrace{\hphantom{\frac{1}{n}\delta_{ij}T_{kk}+\frac{1}{2}{%
+\left(T_{ij}+T_{ji}-\frac{2}{n}\delta_{ij}T_{kk}\right)}}}_{\text{symmetric}}%
+\hphantom{+}\underbrace{\hphantom{\frac{1}{2}{\left(T_{ij}-T_{ji}\right)}}}_{%
+\text{
+antisymmetric}}\end{split}" display="inline"><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><msub><mi>T</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>=</mo><mi></mi></mrow></mtd><mtd columnalign="left"><mrow><mover><mover accent="true"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>n</mi></mfrac></mstyle><mo movablelimits="false">⁢</mo><msub><mi>δ</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">⁢</mo><msub><mi>T</mi><mrow><mi>k</mi><mo movablelimits="false">⁢</mo><mi>k</mi></mrow></msub></mrow><mo movablelimits="false">⏞</mo></mover><mtext>isotropic</mtext></mover><mo>+</mo><mover><mover accent="true"><mrow><munder><munder accentunder="true"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false">(</mo><mrow><mrow><msub><mi>T</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">+</mo><msub><mi>T</mi><mrow><mi>j</mi><mo movablelimits="false">⁢</mo><mi>i</mi></mrow></msub></mrow><mo movablelimits="false">-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>2</mn><mi>n</mi></mfrac></mstyle><mo movablelimits="false">⁢</mo><msub><mi>δ</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">⁢</mo><msub><mi>T</mi><mrow><mi>k</mi><mo movablelimits="false">⁢</mo><mi>k</mi></mrow></msub></mrow></mrow><mo movablelimits="false">)</mo></mrow></mrow><mo movablelimits="false">⏟</mo></munder><mtext>symmetric, tracefree</mtext></munder><mo movablelimits="false">+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false">(</mo><mrow><msub><mi>T</mi><mrow><mi>i</mi><mo movablelimits="false">⁢</mo><mi>j</mi></mrow></msub><mo movablelimits="false">-</mo><msub><mi>T</mi><mrow><mi>j</mi><mo movablelimits="false">⁢</mo><mi>i</mi></mrow></msub></mrow><mo movablelimits="false">)</mo></mrow></mrow></mrow><mo movablelimits="false">⏞</mo></mover><mtext>deviatoric, tracefree</mtext></mover></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mpadded width="+7.5pt"><munder><munder accentunder="true"><mi></mi><mo movablelimits="false">⏟</mo></munder><mtext>symmetric</mtext></munder></mpadded><mo>⁢</mo><munder><munder accentunder="true"><mi></mi><mo movablelimits="false">⏟</mo></munder><mtext> antisymmetric</mtext></munder></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(208)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">An interesting relation can be found when computing the contraction of a
+unsymmetric tensor <math id="p2.m1" class="ltx_Math" alttext="U_{ij}\neq U_{ji}" display="inline"><mrow><msub><mi>U</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>≠</mo><msub><mi>U</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow></math> with a symmetric tensor
+<math id="p2.m2" class="ltx_Math" alttext="V_{ij}=V_{ji}" display="inline"><mrow><msub><mi>V</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow></math></p>
+<table id="A0.S23.EGx203" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="A0.E209"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="A0.E209.m1" class="ltx_Math" alttext="\displaystyle U_{ij}V_{ij}=\frac{1}{2}U_{ij}V_{ij}+\frac{1}{2}U_{ji}V_{ji}=%
+\frac{1}{2}U_{ij}V_{ij}+\frac{1}{2}U_{ji}V_{ij}=\frac{1}{2}{\left(U_{ij}+U_{ji%
+}\right)}V_{ij}" display="inline"><mrow><mrow><msub><mi>U</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>⁢</mo><msub><mi>V</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msub><mi>U</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>⁢</mo><msub><mi>V</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msub><mi>U</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub><mo>⁢</mo><msub><mi>V</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msub><mi>U</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>⁢</mo><msub><mi>V</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msub><mi>U</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub><mo>⁢</mo><msub><mi>V</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>U</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>U</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi>V</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(209)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">In analogy one finds for the contraction of an unsymmetric tensor <math id="p2.m3" class="ltx_Math" alttext="U_{ij}" display="inline"><msub><mi>U</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></math> with an
+antisymmetric tensor <math id="p2.m4" class="ltx_Math" alttext="W_{ij}=-W_{ji}" display="inline"><mrow><msub><mi>W</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><mo>-</mo><msub><mi>W</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow></mrow></math></p>
+<table id="A0.S23.EGx204" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="A0.E210"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="A0.E210.m1" class="ltx_Math" alttext="\displaystyle U_{ij}W_{ij}=\frac{1}{2}{\left(U_{ij}-U_{ji}\right)}W_{ij}" display="inline"><mrow><mrow><msub><mi>U</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>⁢</mo><msub><mi>W</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>U</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>-</mo><msub><mi>U</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi>W</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(210)</span></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="A0.S13.html" title=".13 Jacobian determinant ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">.13 </span>Jacobian determinant</span></a><a href="bib.html" title="References ‣ Mostly harmless notes" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">References</span></a><a href="A0.S15.html" title=".15 Rate of strain tensor, rotation tensor ‣ Chapter 2 Fluid dynamics ‣ Part III Physics ‣ Mostly harmless notes" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">.15 </span>Rate of strain tensor, rotation tensor</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Sun Feb 25 23:29:45 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html><html>
+<head>
+<title>0.2 Matrices‣ Mostly harmless notes</title>
+<!--Generated on Sun Feb 25 23:29:45 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on February 25, 2018.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML" type="text/javascript"></script>
+<link rel="up" href="." title="Mostly harmless notes">
+<link rel="start" href="." title="Mostly harmless notes">
+<link rel="prev" href="Ch0.S1.html" title="0.1 Numbers ‣ Mostly harmless notes">
+<link rel="next" href="Ch0.S3.html" title="0.3 Complex Numbers ‣ Mostly harmless notes">
+<link rel="part" href="Pt1.html" title="Part I Introduction ‣ Mostly harmless notes">
+<link rel="part" href="Pt2.html" title="Part II Mathematics ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S1.html" title="0.1 Numbers ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S3.html" title="0.3 Complex Numbers ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S4.html" title="0.4 Basic probability theory ‣ Mostly harmless notes">
+<link rel="section" href="Ch0.S5.html" title="0.5 More topics ‣ Mostly harmless notes">
+<link rel="part" href="Pt3.html" title="Part III Physics ‣ Mostly harmless notes">
+<link rel="bibliography" href="bib.html" title="References ‣ Mostly harmless notes">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="." title="Mostly harmless notes" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Mostly harmless notes</span></a><a href="Ch0.S1.html" title="0.1 Numbers ‣ Mostly harmless notes" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">0.1 </span>Numbers</span></a><a href="Ch0.S3.html" title="0.3 Complex Numbers ‣ Mostly harmless notes" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">0.3 </span>Complex Numbers</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">0.2 </span>Matrices</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">In the following we want to restrict our discussion to matrices with
+real entries.</p>
+</div>
+<section id="SS1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.2.1 </span>Square matrices</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Every square matrix can be split into a symmetric and an antisymmetric
+(skew-symmetric) part</p>
+<table id="A0.S23.EGx9" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E12.m1" class="ltx_Math" alttext="\displaystyle A=\underbrace{\frac{1}{2}{\left(A+A^{T}\right)}}_{\text{%
+symmetric}}+\underbrace{\frac{1}{2}{\left(A-A^{T}\right)}}_{\text{%
+antisymmetric}}" display="inline"><mrow><mi>A</mi><mo>=</mo><mrow><munder><munder accentunder="true"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false">(</mo><mrow><mi>A</mi><mo movablelimits="false">+</mo><msup><mi>A</mi><mi>T</mi></msup></mrow><mo movablelimits="false">)</mo></mrow></mrow><mo movablelimits="false">⏟</mo></munder><mtext>symmetric</mtext></munder><mo>+</mo><munder><munder accentunder="true"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false">(</mo><mrow><mi>A</mi><mo movablelimits="false">-</mo><msup><mi>A</mi><mi>T</mi></msup></mrow><mo movablelimits="false">)</mo></mrow></mrow><mo movablelimits="false">⏟</mo></munder><mtext>antisymmetric</mtext></munder></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12)</span></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.2.2 </span>Symmetric matrices</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">A symmetric matrix is a square matrix, that is equal to it’s transpose.</p>
+<table id="A0.S23.EGx10" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E13.m1" class="ltx_Math" alttext="\displaystyle A=A^{T}" display="inline"><mrow><mi>A</mi><mo>=</mo><msup><mi>A</mi><mi>T</mi></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(13)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The sum of two symmetric matrices is again a symmetric matrix, but
+the product of two matrices is in general not symmetric. The product of
+two symmetric matrices <math id="SS2.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="SS2.p1.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> is symmetric only, if the two
+matrices commute:</p>
+<table id="A0.S23.EGx11" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E14.m1" class="ltx_Math" alttext="\displaystyle AB=(AB)^{T}\ \text{if}\ AB=BA" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mpadded width="+5pt"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup></mpadded><mo>⁢</mo><mpadded width="+5pt"><mtext>if</mtext></mpadded><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(14)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Symmetric matrices with real entries have only real eigenvalues. That
+is why in principle, every symmetric matrix is equivalent to a diagonal
+matrix with its eigenvalues being the entries on the diagonal.</p>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.2.3 </span>Applications of Matrices</h2>
+
+<section id="SS3.SSSx1" class="ltx_subsubsection">
+<h3 class="ltx_title ltx_title_subsubsection">Solving unsolvable equations</h3>
+
+<div id="SS3.SSSx1.p1" class="ltx_para">
+<p class="ltx_p">We start with a simple equation:</p>
+<table id="A0.S23.EGx12" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E15.m1" class="ltx_Math" alttext="\displaystyle A^{2}*1=1" display="inline"><mrow><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>*</mo><mn>1</mn></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(15)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">What is the transformation A, when applied twice, which turns 1 into
+1 ? The answer is simple: <math id="SS3.SSSx1.p1.m1" class="ltx_Math" alttext="A=1" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>1</mn></mrow></math> or <math id="SS3.SSSx1.p1.m2" class="ltx_Math" alttext="A=-1" display="inline"><mrow><mi>A</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math>. But what is the
+transformation <math id="SS3.SSSx1.p1.m3" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>, when applied twice, which turns 1 into -1 ?</p>
+<table id="A0.S23.EGx13" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E16.m1" class="ltx_Math" alttext="\displaystyle B^{2}*1=-1" display="inline"><mrow><mrow><msup><mi>B</mi><mn>2</mn></msup><mo>*</mo><mn>1</mn></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(16)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The answer it turns out, is not so simple. Based on the common rules
+of multiplication for real numbers, there seems to be no way to solve
+this equation for <math id="SS3.SSSx1.p1.m4" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>.</p>
+</div>
+<div id="SS3.SSSx1.p2" class="ltx_para">
+<p class="ltx_p">However there is a way out of the dilemma. The reader might have
+noticed, that we didn’t call <math id="SS3.SSSx1.p2.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> or <math id="SS3.SSSx1.p2.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> a number or a variable, but
+a transformation. We could have also called it also an operator. This
+should be a hint, that maybe simple numbers are not enough to solve such
+an equation.</p>
+</div>
+<div id="SS3.SSSx1.p3" class="ltx_para">
+<p class="ltx_p">So let’s think a bit. Can this equation maybe interpreted in a
+geometrical way? Let’s imagine the line of numbers. What we want is a
+way, to move or transform the point 1 to the point -1, but doing it with
+two steps (One step would be simple, this could be reflection at the
+zero point). If we draw the line on a sheet of paper and look from far
+away the solution might be become more obvious: The line is embedded on
+the two dimensional surface of the paper! So we might interpret our
+source point 1 in fact as a vector (1,0) and our target point -1 as
+vector (-1,0). Maybe this helps. Let’s rewrite our equation in two
+dimensions</p>
+<table id="A0.S23.EGx14" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E17.m1" class="ltx_Math" alttext="\displaystyle B^{2}*\begin{pmatrix}1\\
+0\end{pmatrix}=\begin{pmatrix}-1\\
+0\end{pmatrix}" display="inline"><mrow><mrow><msup><mi>B</mi><mn>2</mn></msup><mo>*</mo><mrow><mo>(</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(17)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">So what we want is a transformation <math id="SS3.SSSx1.p3.m1" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>, which when used twice on
+the vector (1,0) will turn the vector into the vector (-1,0). Vector
+(-1,0) is pointing into the opposite direction of vector (1,0), so it is
+basically rotated by 180 degrees. So we are searching for a
+transformation which rotates a vector in two steps by 180 degrees. Now
+it should be obvious that the solution for <math id="SS3.SSSx1.p3.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> must be a
+transformation, which rotates a vector by 90 degrees, in short
+<math id="SS3.SSSx1.p3.m3" class="ltx_Math" alttext="B=R(90^{\circ})" display="inline"><mrow><mi>B</mi><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>90</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></math> (or a rotation in the other direction by -90
+degrees).</p>
+</div>
+<div id="SS3.SSSx1.p4" class="ltx_para">
+<p class="ltx_p">So we found a solution by geometrical intuition, let’s try to make it
+precise. From linear algebra we know, that a transformation which turns
+a 2D vector into another 2D vector must be a 2x2 matrix. So let’s
+rewrite the equation as a matrix equation</p>
+<table id="A0.S23.EGx15" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E18.m1" class="ltx_Math" alttext="\displaystyle\begin{pmatrix}a&amp;b\\
+c&amp;d\end{pmatrix}*\begin{pmatrix}a&amp;b\\
+c&amp;d\end{pmatrix}*\begin{pmatrix}1\\
+0\end{pmatrix}=\begin{pmatrix}-1\\
+0\end{pmatrix}" display="inline"><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>a</mi></mtd><mtd columnalign="center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>c</mi></mtd><mtd columnalign="center"><mi>d</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>*</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>a</mi></mtd><mtd columnalign="center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>c</mi></mtd><mtd columnalign="center"><mi>d</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>*</mo><mrow><mo>(</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(18)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">If we compute the matrix product on the left hand side we get</p>
+<table id="A0.S23.EGx16" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E19.m1" class="ltx_Math" alttext="\displaystyle\begin{pmatrix}a^{2}+bc&amp;b(a+d)\\
+c(a+d)&amp;d^{2}+bc\end{pmatrix}\begin{pmatrix}1\\
+0\end{pmatrix}=\begin{pmatrix}-1\\
+0\end{pmatrix}" display="inline"><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>b</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>d</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>d</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(19)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Further simplifying we get two equations</p>
+<table id="A0.S23.EGx17" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E20.m1" class="ltx_Math" alttext="\displaystyle a^{2}+bc=-1" display="inline"><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E20.m3" class="ltx_Math" alttext="\displaystyle ac+cd=0" display="inline"><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>d</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(20)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">To solve this equation one might attempt to set <math id="SS3.SSSx1.p4.m1" class="ltx_Math" alttext="c=0" display="inline"><mrow><mi>c</mi><mo>=</mo><mn>0</mn></mrow></math>. But in this
+case we would end up where we started because the equation left would be
+<math id="SS3.SSSx1.p4.m2" class="ltx_Math" alttext="a^{2}=-1" display="inline"><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math>. So we have to assume <math id="SS3.SSSx1.p4.m3" class="ltx_Math" alttext="c\neq 0" display="inline"><mrow><mi>c</mi><mo>≠</mo><mn>0</mn></mrow></math> to find a sensible
+solution. So we get</p>
+<table id="A0.S23.EGx18" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E21.m1" class="ltx_Math" alttext="\displaystyle c=-\frac{a^{2}+1}{b}" display="inline"><mrow><mi>c</mi><mo>=</mo><mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mi>b</mi></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E21.m3" class="ltx_Math" alttext="\displaystyle a=-d" display="inline"><mrow><mi>a</mi><mo>=</mo><mrow><mo>-</mo><mi>d</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(21)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">From these equation we see that we also have to assume <math id="SS3.SSSx1.p4.m4" class="ltx_Math" alttext="b\neq 0" display="inline"><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></math>.
+But without loss of generality we can set <math id="SS3.SSSx1.p4.m5" class="ltx_Math" alttext="a=0" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow></math>,<math id="SS3.SSSx1.p4.m6" class="ltx_Math" alttext="d=0" display="inline"><mrow><mi>d</mi><mo>=</mo><mn>0</mn></mrow></math> and are left
+with</p>
+<table id="A0.S23.EGx19" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E22.m1" class="ltx_Math" alttext="\displaystyle bc=-1" display="inline"><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(22)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">If we restrict ourself to integer numbers, we finally have two
+solutions for our transformation</p>
+<table id="A0.S23.EGx20" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E23.m1" class="ltx_Math" alttext="\displaystyle B=\begin{pmatrix}0&amp;-1\\
+1&amp;0\end{pmatrix}" display="inline"><mrow><mi>B</mi><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E23.m3" class="ltx_Math" alttext="\displaystyle B^{*}=\begin{pmatrix}0&amp;1\\
+-1&amp;0\end{pmatrix}" display="inline"><mrow><msup><mi>B</mi><mo>*</mo></msup><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(23)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">So what seemed impossible to solve in 1D with simple numbers turned
+out to have quite simple solutions in 2D in the form of 2x2 matrices.</p>
+</div>
+</section>
+<section id="SS3.SSSx2" class="ltx_subsubsection">
+<h3 class="ltx_title ltx_title_subsubsection">Solving polynomial equations</h3>
+
+<div id="SS3.SSSx2.p1" class="ltx_para">
+<p class="ltx_p">A polynomial equation of order <math id="SS3.SSSx2.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is an equation that look like
+</p>
+<table id="A0.S23.EGx21" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E24.m1" class="ltx_Math" alttext="\displaystyle a_{n}x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}=0" display="inline"><mrow><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(24)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Solving these kind of equations has been a hobby of mathematicans
+since the invention of math. But whereas quadratic equations (<math id="SS3.SSSx2.p1.m2" class="ltx_Math" alttext="n=2" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow></math>)
+could be solved since ancient times, finding a general solution for
+cubic (<math id="SS3.SSSx2.p1.m3" class="ltx_Math" alttext="n=3" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></math>) and quartic (<math id="SS3.SSSx2.p1.m4" class="ltx_Math" alttext="n=4" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>) equations turned out to be much
+harder. Rafael Bombelli made a crucial step in 1572 when - in a
+desparate move - he invented complex numbers to solve cubic equations,
+which had been unsolvable up to that time. Had he known matrices and
+linear algebra, the invention of “complex numbers” would have been
+unnecessary.</p>
+</div>
+<div id="SS3.SSSx2.p2" class="ltx_para">
+<p class="ltx_p">This is so, because there is a deep connection between polynominal
+equations and matrices. Actually it turns out that <span class="ltx_text ltx_font_bold">any
+polynomial with degree <math id="SS3.SSSx2.p2.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is the characteristic polynomial of some
+<a href="https://en.wikipedia.org/wiki/Companion_matrix" title="" class="ltx_ref ltx_href">companion matrix</a>
+of order <math id="SS3.SSSx2.p2.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math></span>. So the problem of solving a polynominal equation is
+equivalent to solving the characteristic equation of the companion
+matrix. But solving the characteristic equation of a matrix means
+computing the eigenvalues of that matrix. And computing eigenvalues has
+a simple geometric meaning: They give the factor by which an eigenvector
+(a vector which direction is left unchanged by the matrix
+transformation) is stretched by the matrix transformation. The
+eigenvalues are the scale factors of the linear transformation
+represented by the matrix. This means that solving a polynomial equation
+is equivalent to computing the scale factors of a corresponding linear
+transformation.</p>
+</div>
+<div id="SS3.SSSx2.p3" class="ltx_para">
+<p class="ltx_p">Knowning this we can nowadays understand, why some polynominal equations
+have no solutions. These are the equations, which correspond to
+matrices, which don’t have eigenvalues, meaning the transformation
+doesn’t leave any vector unchanged. From linear algebra we know, that
+these transformations describe rotations. And this is the connection to
+the 2d rotation matrix we found in the previous chapter. The polynominal
+equation</p>
+<table id="A0.S23.EGx22" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch0.E25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch0.E25.m1" class="ltx_Math" alttext="\displaystyle x^{2}=-1" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(25)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">has no solution, because it corresponds to a matrix describing a 90
+degree rotation.</p>
+</div>
+<div id="SS3.SSSx2.p4" class="ltx_para">
+<p class="ltx_p">On the other side the
+<a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra" title="" class="ltx_ref ltx_href">fundamental
+theorem of algebra</a> is easy to understand, when thinking of polynomials
+as being represented by matrices. The number of solutions to a
+polynomial of degree <math id="SS3.SSSx2.p4.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is the same as the number of eigenvalues of
+the corresponding companion matrix.</p>
+</div>
+</section>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch0.S1.html" title="0.1 Numbers ‣ Mostly harmless notes" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">0.1 </span>Numbers</span></a><a href="bib.html" title="References ‣ Mostly harmless notes" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">References</span></a><a href="Ch0.S3.html" title="0.3 Complex Numbers ‣ Mostly harmless notes" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">0.3 </span>Complex Numbers</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Sun Feb 25 23:29:45 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
