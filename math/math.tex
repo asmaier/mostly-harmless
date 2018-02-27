@@ -34,7 +34,8 @@ $|a\cdot b| = |a||b|\cos(\phi)$ and the cross product
 $|a\times b| = |a||b|\sin(\phi)$ of vectors $a$ and $b$ we can
 write this expression as 
 \begin{align}
-|a|^2|b|^2 = |a\times b|^2 + |a\cdot b|^2
+|a|^2|b|^2 = |a\times b|^2 + |a\cdot b|^2 
+\label{eq:lagrident}
 \end{align} 
 This is called \href{https://en.wikipedia.org/wiki/Lagrange\%27s_identity}{Lagrange's identity}. Since all terms are squared and
 therefor positive we immediatelly can derive the inequalities 
@@ -228,9 +229,469 @@ But complex numbers are also no vectors (in the geometrical sense). The multipli
 
 Instead the modern view is that complex numbers are 2D matrices. They represent the group of (antisymmetric) 2D rotation matrices (\url{https://en.wikipedia.org/wiki/Complex_number#Matrix_representation_of_complex_numbers}). All the features of complex numbers follow naturally from this representation, e.g. multiplying two matrices yields another matrix. Unfortunately most textbooks don’t even mention the matrix representation of complex numbers, although this really makes clear what complex “numbers” are, how they can be extended (e.g. quaternions are 3D rotation matrices) and how they fit into the bigger picture which is \url{https://en.wikipedia.org/wiki/Group_theory}.
 
+\section{Tensor calculus}
+
+\subsection{Levi-Civita-Symbol}
+The symbol $\epsilon_{ijkl\ldots}$ is called Levi-Civita symbol and defined as
+follows:
+\begin{align}
+\epsilon_{ijkl\ldots}=
+\begin{cases} 	 1 & \text{if $i,j,k,l\ldots$ is an even permutation}, \\
+					-1 & \text{if $i,j,k,l\ldots$ is an odd permutation}, \\
+					 0 & \text{otherwise (two or more labels are the same)}.
+\end{cases}				  
+\end{align}
+Therefore the Levi-Civita-Symbol will change its sign, if two labels are
+exchanged
+\begin{align*}
+\epsilon_{ijkl\ldots u \ldots v} = -\epsilon_{ijkl\ldots v \ldots u}.
+\end{align*}
+The Levi-Civita-Symbol is not a tensor, but a pseudotensor, because it
+transforms like a tensor under rotation, but not under reflection
+\citep{Pope2000}.\footnote{Is it possible to fix up the Levi-Civita-Symbol so
+it becomes a real tensor?}
+
+\subsubsection{Levi-Civita-Symbol in 3D}
+In 3D only 6 of the 27 components of the Levi-Civita-Symbolare are unequal zero
+\begin{align*}
+\epsilon_{123}=\epsilon_{312}=\epsilon_{231}&=1 \\
+\epsilon_{321}=\epsilon_{132}=\epsilon_{213}&=-1
+\end{align*}
+The Levi-Civita-Symbol in 3D is most often used to express components
+of a cross product of vectors in cartesian tensor notation
+\begin{align*}
+\lrb{\vec{u} \times \vec{v}}_i = \epsilon_{ijk} u_j v_k
+=&\ \epsilon_{i11} u_1 v_1 + \epsilon_{i12} u_1 v_2 +\epsilon_{i13} u_1 v_3\\
+&+\epsilon_{i21} u_2 v_1 + \epsilon_{i22} u_2 v_2 + \epsilon_{i23} u_2 v_3\\
+&+\epsilon_{i31} u_3 v_1 + \epsilon_{i32} u_3 v_2 + \epsilon_{i32} u_3 v_3\\
+=&\ \delta_{i3} u_1 v_2 -\delta_{i2} u_1 v_3 -\delta_{i3} u_2 v_1\\
+&+\delta_{i1} u_2 v_3 + \delta_{i2} u_3 v_1 - \delta_{i1} u_3 v_2\\
+=&\ \delta_{i1}\lra{u_2 v_3-u_3 v_2}\\
+&+\delta_{i2}\lra{u_3 v_1-u_1 v_3}\\
+&+\delta_{i3}\lra{u_1 v_2-u_2 v_1}
+\end{align*}
+or the components of the curl of a vector field
+\begin{align*}
+\lrb{\nabla \times \vec{v}}_i = \epsilon_{ijk} \pd{r_j} v_k
+\end{align*}
+To express double cross product other more complicated expressions we need
+the following important relation between the Kronecker Delta and the
+Levi-Civita-Symbol 
+\begin{align}
+\begin{split}
+\epsilon_{ijk}\epsilon_{lmn}=&
+\begin{vmatrix}
+  \delta_{il} & \delta_{im} & \delta_{in} \\
+  \delta_{jl} & \delta_{jm} & \delta_{jn} \\
+  \delta_{kl} & \delta_{km} & \delta_{kn}
+\end{vmatrix}
+\\
+=&\ \delta_{il}\delta_{jm}\delta_{kn}
++\delta_{im}\delta_{jn}\delta_{kl}
++\delta_{in}\delta_{jl}\delta_{km}\\
+&-\delta_{in}\delta_{jm}\delta_{kl}
+-\delta_{il}\delta_{jn}\delta_{km}
+-\delta_{im}\delta_{jl}\delta_{kn}
+\end{split}
+\end{align}
+From this relation we can derive the following
+\begin{align}
+\begin{split}
+\epsilon_{ijk}\epsilon_{imn}
+=&\ \delta_{ii}\delta_{jm}\delta_{kn}
++\delta_{im}\delta_{jn}\delta_{ki}
++\delta_{in}\delta_{ji}\delta_{km}\\
+&-\delta_{in}\delta_{jm}\delta_{ki}
+-\delta_{ii}\delta_{jn}\delta_{km}
+-\delta_{im}\delta_{ji}\delta_{kn}\\
+=&\ 3\delta_{jm}\delta_{kn}
++\delta_{km}\delta_{jn}
++\delta_{jn}\delta_{km}\\
+&-\delta_{kn}\delta_{jm}
+-3\delta_{jn}\delta_{km}
+-\delta_{jm}\delta_{kn}\\
+=&\ \delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km}
+\end{split}
+\\
+\begin{split}
+\epsilon_{ijk}\epsilon_{ijn}
+=&\ \delta_{jj}\delta_{kn}-\delta_{jn}\delta_{kj}\\
+=&\ 3\delta_{kn}-\delta_{kn}\\
+=&\ 2\delta_{kn}
+\end{split}
+\\
+\begin{split}
+\epsilon_{ijk}\epsilon_{ijk}
+=&\ 2\delta_{kk}\\
+=&\ 6
+\end{split}
+\end{align}
+
+\subsection{Properties of second order tensors}
+A second order tensor can be decomposed into a symmetric and an antisymmetric
+part in the following way\footnote{How does this look like in general
+curvilinear coordinates?}
+\begin{align}
+T_{ij}=\underbrace{\frac{1}{2}\lra{T_{ij}+T_{ji}}}_{\text{symmetric}}
++\underbrace{\frac{1}{2}\lra{T_{ij}-T_{ji}}}_{\text{antisymmetric}}
+\end{align}
+It can also be decomposed into an isotropic and deviatoric part by subtracting
+and adding the trace of the tensor like
+\begin{align}
+T_{ij}=\underbrace{\frac{1}{n}\delta_{ij} T_{kk}}_{\text{isotropic}}
++\underbrace{T_{ij}-\frac{1}{n}\delta_{ij} T_{kk}}_{\text{deviatoric, 
+tracefree}}
+\end{align}
+Combining these two relations yields the general decomposition
+\begin{align}
+\begin{split}
+T_{ij}=&
+\overbrace{\frac{1}{n}\delta_{ij} T_{kk}}^{\text{isotropic}}
++
+\overbrace{
+\underbrace{\frac{1}{2}\lra{T_{ij}+T_{ji}-\frac{2}{n}\delta_{ij}
+T_{kk}}}_{\text{symmetric, tracefree}}
++\frac{1}{2}\lra{T_{ij}-T_{ji}}}^{\text{deviatoric, tracefree}}\\[-1em]
+&\underbrace{\hphantom{\frac{1}{n}\delta_{ij}
+T_{kk}+\frac{1}{2}\lra{T_{ij}+T_{ji}-\frac{2}{n}\delta_{ij}
+T_{kk}}}}_{\text{symmetric}}
+\hphantom{+}
+\underbrace{\hphantom{\frac{1}{2}\lra{T_{ij}-T_{ji}}}}_{\text{
+antisymmetric}}
+\end{split}
+\end{align}
+
+An interesting relation can be found when computing the contraction of a
+unsymmetric tensor $U_{ij} \neq U_{ji}$ with a  symmetric tensor
+$V_{ij}=V_{ji}$
+\begin{align}
+U_{ij}V_{ij}
+= \frac{1}{2} U_{ij}V_{ij} + \frac{1}{2} U_{ji}V_{ji} 
+= \frac{1}{2} U_{ij}V_{ij} + \frac{1}{2} U_{ji}V_{ij}
+= \frac{1}{2} \lra{U_{ij}+U_{ji}} V_{ij}
+\label{eq:uscontr}
+\end{align}
+In analogy one finds for the contraction of an unsymmetric tensor $U_{ij}$ with an
+antisymmetric tensor $W_{ij}=-W_{ji}$
+\begin{align}
+U_{ij}W_{ij} = \frac{1}{2} \lra{U_{ij}-U_{ji}} W_{ij}
+\label{eq:uascontr}
+\end{align}
+
+\section{Vector calculus}
+
+\subsection{Longitudinal and transversal projection of vectors}
+
+%\begin{figure}[htp]
+%\centering
+%\resizebox{0.4\textwidth}{!}{
+%\input{projection.pstex_t}}
+%\caption{Projection of a vector $\vec{a}$ on a vector $\vec{b}$.}
+%\label{fig:projection}
+%\end{figure}
+
+A vector $\vec{a}$ can be split into two parts: the longitudinal part $\vec{a}_{\parallel}$, 
+which is parallel to another vector $\vec{b}$ and the transversal part $\vec{a}_{\perp}$, 
+which is perpendicular to $\vec{b}$. The length of the longitudinal part $a_{\parallel}$ 
+and the transversal part $a_{\perp}$ can be computed from geometry (see figure \ref{fig:projection})
+\begin{align}
+\frac{a_{\parallel}}{a}=\cos \alpha & \Rightarrow
+a_{\parallel}= a \cos\alpha = \frac{a b \cos \alpha}{b} = \frac{\vec{a}\cdot\vec{b}}{b},\\
+\frac{a_{\perp}}{a}=\sin \alpha & \Rightarrow 
+a_{\perp}= a \sin\alpha = \frac{a b \sin \alpha}{b} = \frac{\abs{\vec{a}\times\vec{b}}}{b}. \label{eq:protrans}
+\end{align}
+But from the Pythagorean theorem we can get another expression for the length of the transversal
+part
+\begin{align}
+a^2=a_{\parallel}^2+a_{\perp}^2 & \Rightarrow
+a_{\perp}^2 = a^2-a_{\parallel}^2= a^2-\frac{(\vec{a}\cdot\vec{b})^2}{b^2}.\label{eq:protrans2}
+\end{align}
+Substituting equation \eqref{eq:protrans} in equation \eqref{eq:protrans2} we get
+\begin{align*}
+\frac{(\abs{\vec{a}\times\vec{b}})^2}{b^2}=a^2-\frac{(\vec{a}\cdot\vec{b})^2}{b^2},
+\end{align*}
+which leads us to the following expression for the square of the norm of the cross product
+\begin{align}
+\abs{\vec{a}\times\vec{b}}^2 = (a b)^2 - (\vec{a}\cdot\vec{b})^2.
+\end{align}
+This is again Lagrange's identity (see \eqref{eq:lagrident}). 
+
+\subsection{Vector identities}
+In this chapter we show the derivation of some vector quantities in cartesian
+tensor notation.
+\subsubsection{$(\vec{u}\cdot\nabla) \vec{v}$} \label{vecid01}
+For some arbitraty vectors $u_i, v_i$ we can write
+\begin{align*}
+u_j \pd{r_j} v_i &= \overbrace{u_j \pd{r_i} v_j - u_j \pd{r_i} v_j}^0 
++ u_j\pd{r_j} v_i \\
+&= u_j \pd{r_i} v_j - \delta_{ik}\delta_{jl} u_j \pd{r_k} v_l 
++\delta_{il}\delta_{jk} u_j \pd{r_k} v_l \\
+&= u_j \pd{r_i} v_j 
+- (\delta_{ik}\delta_{jl}-\delta_{il}\delta_{jk})u_j \pd{r_k} v_l \\
+&= u_j \pd{r_i} v_j - \epsilon_{mij} \epsilon_{mkl} u_j \pd{r_k} v_l \\
+&= u_j \pd{r_i} v_j - \epsilon_{ijm} u_j \epsilon_{mkl} \pd{r_k} v_l.
+\end{align*}
+In vector notation this can be expressed like
+\begin{align}
+(\vec{u}\cdot\nabla) \vec{v} = 
+\vec{u}\cdot (\nabla \vec{v})-\vec{u} \times (\nabla \times \vec{v})
+\label{eq:vecid01}
+\end{align}
+\subsubsection{$(\vec{v}\cdot\nabla) \vec{v}$}
+Inserting $u_j=v_j$ into equation \eqref{eq:vecid01} yields
+\begin{align*}
+v_j \pd{r_j} v_i = v_j \pd{r_i} v_j 
+- \epsilon_{ijm} v_j \epsilon_{mkl} \pd{r_k} v_l
+\end{align*}
+For $v_j \pd{r_i} v_j$ we can write
+\begin{align*}
+v_j \pd{r_i} v_j &= \pd{r_i} (v_j v_j) - v_j \pd{r_i} v_j
+\end{align*}
+and therefore
+\begin{align*}
+v_j \pd{r_i} v_j = \pd{r_i} \lra{\frac{1}{2} v_j v_j}.
+\end{align*}
+Using this we get for
+\begin{align*}
+v_j \pd{r_j} v_i = \pd{r_i} \lra{\frac{1}{2} v_j v_j}
+- \epsilon_{ijm} v_j \epsilon_{mkl} \pd{r_k} v_l
+\end{align*}
+or in vector notation
+\begin{align}
+(\vec{v}\cdot\nabla) \vec{v} = 
+\frac{1}{2} \nabla \vec{v}^2-\vec{v} \times (\nabla \times \vec{v})
+\label{eq:vecid02}
+\end{align}
+\subsubsection{$\nabla \times \lra{\vec{u} \times \vec{v}}$}
+The $i$-th component of the rotation of a cross product of two vectors is
+\begin{align*}
+\lrb{\nabla \times \lra{\vec{u} \times \vec{v}}}_i 
+&= \epsilon_{ijk} \pd{r_j} \epsilon_{klm} u_l v_m \\
+&= \epsilon_{kij} \epsilon_{klm} \pd{r_j} (u_l v_m) \\
+&= (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \pd{r_j} (u_l v_m) \\
+&= \pd{r_j} (u_i v_j) - \pd{r_j} (u_j v_i) \\
+&= u_i \pd{r_j} v_j + v_j \pd{r_j} u_i - u_j \pd{r_j} v_i - v_i \pd{r_j} u_j
+\end{align*}
+It can be written in vector notation like
+\begin{align}
+\nabla \times \lra{\vec{u} \times \vec{v}} 
+= \vec{u} (\nabla \cdot \vec{v}) - \vec{v} (\nabla \cdot \vec{u})
++ (\vec{v} \cdot \nabla) \vec{u} - (\vec{u} \cdot \nabla) \vec{v}
+\end{align}
+
+\subsection{Jacobian determinant}
+\subsubsection{Definition}\label{jacobi}
+If the cartesian coordinates are given as functions of general curvilinear
+coordinates $a_1, a_2, a_3$, i.e.
+\begin{align}
+ x=x(a_1, a_2, a_3),&&  y=y(a_1, a_2, a_3),&& z=z(a_1, a_2, a_3),
+\end{align}
+it follows for the infinitesimal volume element in curvilinear coordinates
+\begin{align}
+dV=\abs{J} da_1 da_2 da_3.
+\end{align}
+Thereby the Jacobian determinant $J$ is defined as
+\begin{align}
+J = \abs{\frac{\partial(x,y,z)}{\partial (a_1, a_2,a_3)}}=
+\begin{vmatrix} \frac{\partial x}{\partial a_1} & 
+					 \frac{\partial x}{\partial a_2} &
+					 \frac{\partial x}{\partial a_3} \\
+					 \frac{\partial y}{\partial a_1} & 
+					 \frac{\partial y}{\partial a_2} &
+					 \frac{\partial y}{\partial a_3} \\
+					 \frac{\partial z}{\partial a_1} & 
+					 \frac{\partial z}{\partial a_2} &
+					 \frac{\partial z}{\partial a_3} 
+\end{vmatrix}=
+\sum_{i,j,k} \epsilon_{ijk} \frac{\partial x}{\partial a_i} 
+					 				 \frac{\partial y}{\partial a_j} 
+					 				 \frac{\partial z}{\partial a_k}.
+\end{align}
+
+\subsubsection{Time derivative of Jacobian determinant}\label{jacdt}
+With $v_i= \frac{dx_i}{dt}$ it follows for the time derivative of $J$
+\begin{align}
+\frac{dJ}{dt}&=\frac{d}{dt} \sum_{i,j,k} \epsilon_{ijk} 
+\frac{\partial x}{\partial a_i} \frac{\partial y}{\partial a_j} 
+\frac{\partial z}{\partial a_k} \\
+&=\sum_{i,j,k} \epsilon_{ijk} \left(
+\frac{\partial v_x}{\partial a_i} 
+\frac{\partial y}{\partial a_j} 
+\frac{\partial z}{\partial a_k}+
+\frac{\partial x}{\partial a_i} 
+\frac{\partial v_y}{\partial a_j} 
+\frac{\partial z}{\partial a_k}+
+\frac{\partial x}{\partial a_i} 
+\frac{\partial y}{\partial a_j} 
+\frac{\partial v_z}{\partial a_k} \right).
+\end{align}
+From $\frac{\partial v_k}{\partial a_i}=\sum_l \frac{\partial v_k}{\partial x_l}
+\frac{\partial x_l}{\partial a_i}$ $(k \in x,y,z)$ we get:
+\begin{align}
+\frac{dJ}{dt}=\sum_{i,j,k,l} \epsilon_{ijk}
+\left(
+\frac{\partial v_x}{\partial x_l}
+\frac{\partial x_l}{\partial a_i} 
+\frac{\partial y}{\partial a_j} 
+\frac{\partial z}{\partial a_k}+
+\frac{\partial x}{\partial a_i}
+\frac{\partial v_y}{\partial x_l}
+\frac{\partial x_l}{\partial a_j} 
+\frac{\partial z}{\partial a_k}+
+\frac{\partial x}{\partial a_i} 
+\frac{\partial y}{\partial a_j} 
+\frac{\partial v_z}{\partial x_l}
+\frac{\partial x_l}{\partial a_k} \right). 
+\end{align}
+Analysis of the first term in the bracket for
+\begin{flalign*}
+l&=1:
+\frac{\partial v_x}{\partial x}
+\frac{\partial x}{\partial a_i} 
+\frac{\partial y}{\partial a_j} 
+\frac{\partial z}{\partial a_k}, \\
+l&=2:
+\frac{\partial v_x}{\partial y}
+\underbrace{\frac{\partial y}{\partial a_i} 
+\frac{\partial y}{\partial a_j}}_{\text{symmetric}} 
+\frac{\partial z}{\partial a_k}
+\text{ is (multiplied with $\epsilon_{ijk}$) 0 when summed up},\\
+l&=3:
+\frac{\partial v_x}{\partial z}
+\overbrace{\frac{\partial z}{\partial a_i}} 
+\frac{\partial y}{\partial a_j} 
+\overbrace{\frac{\partial z}{\partial a_k}}
+\text{ is (multiplied with $\epsilon_{ijk}$) 0 when summed up}.
+\end{flalign*}
+So for symmetry reasons most of the contributions are zero when summed up. In we
+end we see: For the first term there is only a non-vanishing contribution for
+$l=1$, for the second term there is only one for $l=2$ and for the third term
+there is only one for $l=3$. So we get
+\begin{align}
+\frac{dJ}{dt}=\sum_{i,j,k} \epsilon_{ijk} 
+\left(\frac{\partial v_x}{\partial x} + \frac{\partial v_y}{\partial y} +
+\frac{\partial v_z}{\partial z}\right) 
+\frac{\partial x}{\partial a_i} 
+\frac{\partial y}{\partial a_j} 
+\frac{\partial z}{\partial a_k} = 
+(\nabla \cdot \vec{v}) J.
+\end{align}
+
+\section{Fourier transform}
+The continous one dimensional Fourier transform in $k$-space $F(k)$ of some
+function in
+$x$-space $f(x)$is defined like
+\begin{align}
+F(k)&=\ft\iinf f(x) e^{-ikx} dx\ \ \text{(Fourier transform)}
+\end{align}
+Using the Fourier transform on a function twice will produce the 
+the original function again, but mirrored at the origin.
+That's why one conventionally defines an inverse Fourier transform
+\footnote{Nature does not know about the inverse Fourier transform.
+If you have some optical device, which produces the Fourier transform
+of some image and you use it twice on your image you will get a mirrored image!},
+that will generate the not mirrored original function again, when used on the
+Fourier transform of a function
+\begin{align}
+f(x)&=\ft\iinf F(k) e^{ikx} dx\ \ \text{(inverse Fourier transform)}
+\end{align}
+In three dimensions one defines the Fourier transform like
+\begin{align}
+F(\vec{k})=\ffft\iiiinf f(\vec{x}) e^{-i\vec{k}\vec{x}} dV \\
+f(\vec{x})=\ffft\iiiinf F(\vec{k}) e^{i\vec{k}\vec{x}} dK
+\end{align}
+In cartesian coordinates the kernel of the Fourier transform 
+$e^{-i\vec{k}\vec{x}}=e^{-i(k_xx+k_yy+k_zz)}$
+separates and so the three dimensional Fourier transform of a function
+which separates in cartesian coordinates $f(\vec{x})=a(x)b(y)c(z)$ is 
+also separable
+\begin{align*}
+F(\vec{k})=A(k_x)B(k_y)C(k_z)=
+\ffft\iinf a(x) e^{-ik_xx} dx 
+\iinf b(y) e^{-ik_yy} dy
+\iinf c(z) e^{-ik_zz} dz
+\end{align*}
+Thats why we like to use cartesian coordinates when we are using Fourier
+transforms.
+\subsection{Fourier transform of a delta function}
+An important result can be derived by computing the inverse Fourier
+transform of the Fourier transform of a delta function
+\begin{align*}
+\delta(x-x_0) &= \ft\iinf\ft\iinf \delta(x-x_0) e^{-ikx} dx e^{ikx} dk\\
+&=\fft\iinf e^{-ikx_0} e^{ikx} dk = \fft\iinf e^{ik(x-x_0)} dk.
+\end{align*}
+From this we get, that the inverse Fourier transform of a
+constant is the delta function
+\begin{align*}
+\ft\iinf e^{ik(x-x_0)} dk = \sqrt{2\pi} \delta(x-x_0).
+\end{align*}
+Taking the complex conjugate of this equation and making use of the fact
+that $\delta^*(x-x_0) = \delta(x-x_0)$ we get as definition for the delta
+function
+\begin{align}
+\delta(x-x_0)= \fft\iinf e^{\pm ik(x-x_0)} dk
+\end{align}
+Using this we can derive the astonishing result
+\begin{align}
+\iinf f(x) dx = \sqrt{2\pi} F(0)
+\end{align}
+as can be seen from
+\begin{align*}
+\iinf f(x) dx &= \iinf \ft \iinf F(k) e^{ikx} dk dx 
+= \ft \iinf F(k) \underbrace{\iinf e^{ikx}}_{2\pi \delta(k)} dx dk\\
+&= \sqrt{2\pi} \iinf F(k) \delta(k) dk = \sqrt{2\pi} F(0).
+\end{align*}
+
+\subsection{Convolution theorem}
+The Fourier transform of the product of two function in $k$-space is
+\begin{align*}
+&\ft\iinf F(k) G(k) e^{ikx} dk =\\
+&= \ft \iinf \ft \iinf f(x') e^{-ikx'} dx' \ft\iinf g(x'') e^{-ikx''} dx''
+e^{ikx} dk\\
+&=\ffft \iiiinf f(x') e^{-ikx'} g(x'') e^{-ikx''} e^{ikx} dx' dx'' dk\\
+&=\ffft \iiinf f(x') g(x'') 
+\underbrace{\iinf e^{-ik(x'+x''-x)} dk}_{2\pi \delta(x''-(x-x'))} dx' dx'' \\
+&=\ft\iinf f(x') \iinf g(x'') \delta(x''-(x-x')) dx'' dx' \\
+&=\ft \iinf f(x') g(x-x') dx' = h(x).
+\end{align*}
+The integral $h(x)$ is called convolution of the functions $f(x)$ and $g(x)$.
+So the convolution theorem says that
+\begin{align}
+h(x) = \ft \iinf f(x') g(x-x') dx' = \ft\iinf F(k) G(k) e^{ikx} dk.
+\end{align}
+
+\subsection{Autocorrelation and Wiener-Khinchin Theorem}
+The autocorrelation of a function is defined as\footnote{Note that
+with our definition of the fourier transform we cannot define  
+the autocorrelation function as $h_{AC}(x) = \ft \iinf f(x') f^*(x+x') dx'$
+because we could then not derive the Wiener-Khinchin theorem.}
+\begin{align}
+h_{AC}(x) = \ft \iinf f^*(x') f(x+x') dx'
+\end{align}
+The Wiener-Khinchin Theorem states, that 
+\begin{align}
+\ft \iinf f^*(x') f(x+x') dx' = \ft \iinf \abs{F(k)}^2 e^{ikx} dk
+\end{align}
+which can be proved in analogy to the convolution theorem
+\begin{align*}
+&\ft \iinf f^*(x') f(x+x') dx' =\\
+&=\ft \iinf f^*(x') \iinf f(x'') \delta(x''-(x+x')) dx'' dx'\\
+&=\ft \iinf f^*(x') \iinf f(x'') \fft \iinf e^{-ik(x'+x''-x)} dk dx'' dx'\\
+&=\ft \iinf \ft \iinf f^*(x') e^{ikx'} dx' \ft \iinf f(x'') e^{-ikx''} dx''
+e^{ikx} dk\\
+&=\ft \iinf F^*(k) F(k) e^{ikx} dk = \ft \iinf \abs{F(k)}^2 e^{ikx} dk.
+\end{align*}
+A special case of the Wiener-Khichnin theorem is Parseval's theorem
+\begin{align}
+\iinf \abs{f(x)}^2 dx = \iinf \abs{F(k)}^2 dk, 
+\end{align}
+which can be obtained from the Wiener-Khichnin theorem for $x=0$
+\begin{align*}
+h_{AC}(0)&= \ft \iinf f^*(x') f(x') dx' = \ft \iinf \abs{f(x)}^2 dx \\
+&= \ft \iinf \abs{F(k)}^2 e^{ik0} dk = \ft \iinf \abs{F(k)}^2 dk
+\end{align*}
 
 \section{Basic probability theory}
-
 
 \subsection{Definition of probability}
 
