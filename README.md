@@ -9,6 +9,7 @@ You can view the notebooks with nbviewer by clicking on the links above.
 
 Notes converted from LaTeX: http://asmaier.github.io/mostly-harmless/
 
+[see https://ongclement.com/blog/github-pages-indexing-directory-copy]: #
 {% assign doclist = site.pages | sort: 'url'  %}
 <ul>
    {% for doc in doclist %}
