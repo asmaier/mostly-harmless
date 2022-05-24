@@ -1,5 +1,7 @@
 theme: jekyll-theme-cayman
-
+markdown: kramdown
+kramdown:
+  math_engine: katex
 plugins:
   - jekyll-relative-links
 relative_links:
