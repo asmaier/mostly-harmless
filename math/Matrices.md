@@ -70,8 +70,8 @@ $$
 $$
 
 Further simplifying we get two equations
-$$
 
+$$
 \begin{align}
 a^2+bc = -1 && ac + cd = 0
 \end{align}
