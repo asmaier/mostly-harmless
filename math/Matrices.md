@@ -6,7 +6,7 @@ Every square matrix can be split into a symmetric and an antisymmetric (skew-sym
 part
 
 $$
-\newcommand{\lra}[1]{{ \left( #1 \right) }}
+\newcommand{\lra}[1]{ \left( #1 \right) }
 A=\underbrace{\frac{1}{2}\lra{A + A^T}}_{\text{symmetric}}
 +\underbrace{\frac{1}{2}\lra{A - A^T}}_{\text{antisymmetric}}
 $$
