@@ -5,8 +5,6 @@ In the following we want to restrict our discussion to matrices with real entrie
 Every square matrix can be split into a symmetric and an antisymmetric (skew-symmetric)
 part
 
-
-
 $$
 \newcommand{\lra}[1]{{ \left( #1 \right) }}
 A=\underbrace{\frac{1}{2}\lra{A + A^T}}_{\text{symmetric}}
