@@ -14,7 +14,6 @@
   {% if file.path contains pageurl %}
     {% if file.extname == '.md' %}
     <li><a href="{{ file.path }}">{{ file.path }}</a></li>
-    <img src="{{ file.path }}" />
     {% endif %}
   {% endif %}
 {% endfor %}
