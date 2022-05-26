@@ -12,7 +12,7 @@
 <ul>
 {% for file in site.static_files %}  
   {% if file.path contains pageurl %}
-    {% if file.extname == '.md' %}
+    {% if file.extname == '.html' %}
     <li><a href="{{ file.path }}">{{ file.path }}</a></li>
     {% endif %}
   {% endif %}
