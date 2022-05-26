@@ -13,8 +13,6 @@
 {% for file in site.pages %}  
    <li>{{ pageurl }}</li>
    <li><a href="{{ site.baseurl }}{{ file.url }}">{{ file.url }}</a></li>
-    {% endif %}
-  {% endif %}
 {% endfor %}
 </ul>
 
