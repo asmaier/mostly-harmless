@@ -18,3 +18,10 @@
   {% endif %}
 {% endfor %}
 </ul>
+
+{% assign dirs = site.pages | map: 'dir' | uniq %}
+<ul>
+  {% for dir in dirs %}
+    <li><a class="page-link" href="{{ dir | prepend: site.baseurl }}">{{ dir }}</a></li>
+  {% endfor %}
+</ul>
