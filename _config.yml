@@ -1,4 +1,4 @@
 markdown: GFM
-remote_theme: just-the-docs/just-the-docs@v0.3.2
+remote_theme: just-the-docs/just-the-docs
 compress_html:
   blanklines: true
