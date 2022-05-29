@@ -75,8 +75,8 @@ real entries.
 Every square matrix can be split into a symmetric and an antisymmetric
 (skew-symmetric) part
 $$\begin{aligned}
-A=\underbrace{\frac{1}{2}{ \left( A + A^T \right) }}_{\text{symmetric}}
-+\underbrace{\frac{1}{2}{ \left( A - A^T \right) }}_{\text{antisymmetric}}\end{aligned}$$
+A=\underbrace{\frac{1}{2} \left( A + A^T \right) }_{\text{symmetric}}
++\underbrace{\frac{1}{2} \left( A - A^T \right) }_{\text{antisymmetric}}\end{aligned}$$
 
 #### Symmetric matrices
 
@@ -254,18 +254,18 @@ $$\begin{aligned}
 The Levi-Civita-Symbol in 3D is most often used to express components
 of a cross product of vectors in cartesian tensor notation
 $$\begin{aligned}
-{ \left[ \boldsymbol{u} \times \boldsymbol{v} \right] }_i = \epsilon_{ijk} u_j v_k
+ \left[ \boldsymbol{u} \times \boldsymbol{v} \right] _i = \epsilon_{ijk} u_j v_k
 =&\ \epsilon_{i11} u_1 v_1 + \epsilon_{i12} u_1 v_2 +\epsilon_{i13} u_1 v_3\\
 &+\epsilon_{i21} u_2 v_1 + \epsilon_{i22} u_2 v_2 + \epsilon_{i23} u_2 v_3\\
 &+\epsilon_{i31} u_3 v_1 + \epsilon_{i32} u_3 v_2 + \epsilon_{i32} u_3 v_3\\
 =&\ \delta_{i3} u_1 v_2 -\delta_{i2} u_1 v_3 -\delta_{i3} u_2 v_1\\
 &+\delta_{i1} u_2 v_3 + \delta_{i2} u_3 v_1 - \delta_{i1} u_3 v_2\\
-=&\ \delta_{i1}{ \left( u_2 v_3-u_3 v_2 \right) }\\
-&+\delta_{i2}{ \left( u_3 v_1-u_1 v_3 \right) }\\
-&+\delta_{i3}{ \left( u_1 v_2-u_2 v_1 \right) }\end{aligned}$$
+=&\ \delta_{i1} \left( u_2 v_3-u_3 v_2 \right) \\
+&+\delta_{i2} \left( u_3 v_1-u_1 v_3 \right) \\
+&+\delta_{i3} \left( u_1 v_2-u_2 v_1 \right) \end{aligned}$$
 or the components of the curl of a vector field
 $$\begin{aligned}
-{ \left[ \nabla \times \boldsymbol{v} \right] }_i = \epsilon_{ijk} \frac{\partial}{\partial r_j} v_k\end{aligned}$$
+ \left[ \nabla \times \boldsymbol{v} \right] _i = \epsilon_{ijk} \frac{\partial}{\partial r_j} v_k\end{aligned}$$
 To express double cross product other more complicated expressions we need
 the following important relation between the Kronecker Delta and the
 Levi-Civita-Symbol
@@ -322,8 +322,8 @@ $$\begin{aligned}
 A second order tensor can be decomposed into a symmetric and an antisymmetric
 part in the following way[^2]
 $$\begin{aligned}
-T_{ij}=\underbrace{\frac{1}{2}{ \left( T_{ij}+T_{ji} \right) }}_{\text{symmetric}}
-+\underbrace{\frac{1}{2}{ \left( T_{ij}-T_{ji} \right) }}_{\text{antisymmetric}}\end{aligned}$$
+T_{ij}=\underbrace{\frac{1}{2} \left( T_{ij}+T_{ji} \right) }_{\text{symmetric}}
++\underbrace{\frac{1}{2} \left( T_{ij}-T_{ji} \right) }_{\text{antisymmetric}}\end{aligned}$$
 It can also be decomposed into an isotropic and deviatoric part by subtracting
 and adding the trace of the tensor like
 $$\begin{aligned}
@@ -337,14 +337,14 @@ T_{ij}=&
 \overbrace{\frac{1}{n}\delta_{ij} T_{kk}}^{\text{isotropic}}
 +
 \overbrace{
-\underbrace{\frac{1}{2}{ \left( T_{ij}+T_{ji}-\frac{2}{n}\delta_{ij}
-T_{kk} \right) }}_{\text{symmetric, tracefree}}
-+\frac{1}{2}{ \left( T_{ij}-T_{ji} \right) }}^{\text{deviatoric, tracefree}}\\[-1em]
+\underbrace{\frac{1}{2} \left( T_{ij}+T_{ji}-\frac{2}{n}\delta_{ij}
+T_{kk} \right) }_{\text{symmetric, tracefree}}
++\frac{1}{2} \left( T_{ij}-T_{ji} \right) }^{\text{deviatoric, tracefree}}\\[-1em]
 &\underbrace{\hphantom{\frac{1}{n}\delta_{ij}
-T_{kk}+\frac{1}{2}{ \left( T_{ij}+T_{ji}-\frac{2}{n}\delta_{ij}
-T_{kk} \right) }}}_{\text{symmetric}}
+T_{kk}+\frac{1}{2} \left( T_{ij}+T_{ji}-\frac{2}{n}\delta_{ij}
+T_{kk} \right) }}_{\text{symmetric}}
 \hphantom{+}
-\underbrace{\hphantom{\frac{1}{2}{ \left( T_{ij}-T_{ji} \right) }}}_{\text{
+\underbrace{\hphantom{\frac{1}{2} \left( T_{ij}-T_{ji} \right) }}_{\text{
 antisymmetric}}
 \end{split}\end{aligned}$$
 
@@ -355,12 +355,12 @@ $$\begin{aligned}
 U_{ij}V_{ij}
 = \frac{1}{2} U_{ij}V_{ij} + \frac{1}{2} U_{ji}V_{ji} 
 = \frac{1}{2} U_{ij}V_{ij} + \frac{1}{2} U_{ji}V_{ij}
-= \frac{1}{2} { \left( U_{ij}+U_{ji} \right) } V_{ij}
+= \frac{1}{2}  \left( U_{ij}+U_{ji} \right)  V_{ij}
 \label{eq:uscontr}\end{aligned}$$
 In analogy one finds for the contraction of an unsymmetric tensor $U_{ij}$ with an
 antisymmetric tensor $W_{ij}=-W_{ji}$
 $$\begin{aligned}
-U_{ij}W_{ij} = \frac{1}{2} { \left( U_{ij}-U_{ji} \right) } W_{ij}
+U_{ij}W_{ij} = \frac{1}{2}  \left( U_{ij}-U_{ji} \right)  W_{ij}
 \label{eq:uascontr}\end{aligned}$$
 
 ### Vector calculus
@@ -423,10 +423,10 @@ $$\begin{aligned}
 v_j \frac{\partial}{\partial r_i} v_j &= \frac{\partial}{\partial r_i} (v_j v_j) - v_j \frac{\partial}{\partial r_i} v_j\end{aligned}$$
 and therefore
 $$\begin{aligned}
-v_j \frac{\partial}{\partial r_i} v_j = \frac{\partial}{\partial r_i} { \left( \frac{1}{2} v_j v_j \right) }.\end{aligned}$$
+v_j \frac{\partial}{\partial r_i} v_j = \frac{\partial}{\partial r_i}  \left( \frac{1}{2} v_j v_j \right) .\end{aligned}$$
 Using this we get for
 $$\begin{aligned}
-v_j \frac{\partial}{\partial r_j} v_i = \frac{\partial}{\partial r_i} { \left( \frac{1}{2} v_j v_j \right) }
+v_j \frac{\partial}{\partial r_j} v_i = \frac{\partial}{\partial r_i}  \left( \frac{1}{2} v_j v_j \right) 
 - \epsilon_{ijm} v_j \epsilon_{mkl} \frac{\partial}{\partial r_k} v_l\end{aligned}$$
 or in vector notation
 $$\begin{aligned}
@@ -434,11 +434,11 @@ $$\begin{aligned}
 \frac{1}{2} \nabla \boldsymbol{v}^2-\boldsymbol{v} \times (\nabla \times \boldsymbol{v})
 \label{eq:vecid02}\end{aligned}$$
 
-##### $\nabla \times { \left( \boldsymbol{u} \times \boldsymbol{v} \right) }$
+##### $\nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)$
 
 The $i$-th component of the rotation of a cross product of two vectors is
 $$\begin{aligned}
-{ \left[ \nabla \times { \left( \boldsymbol{u} \times \boldsymbol{v} \right) } \right] }_i 
+ \left[ \nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)  \right] _i 
 &= \epsilon_{ijk} \frac{\partial}{\partial r_j} \epsilon_{klm} u_l v_m \\
 &= \epsilon_{kij} \epsilon_{klm} \frac{\partial}{\partial r_j} (u_l v_m) \\
 &= (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \frac{\partial}{\partial r_j} (u_l v_m) \\
@@ -446,7 +446,7 @@ $$\begin{aligned}
 &= u_i \frac{\partial}{\partial r_j} v_j + v_j \frac{\partial}{\partial r_j} u_i - u_j \frac{\partial}{\partial r_j} v_i - v_i \frac{\partial}{\partial r_j} u_j\end{aligned}$$
 It can be written in vector notation like
 $$\begin{aligned}
-\nabla \times { \left( \boldsymbol{u} \times \boldsymbol{v} \right) } 
+\nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)  
 = \boldsymbol{u} (\nabla \cdot \boldsymbol{v}) - \boldsymbol{v} (\nabla \cdot \boldsymbol{u})
 + (\boldsymbol{v} \cdot \nabla) \boldsymbol{u} - (\boldsymbol{u} \cdot \nabla) \boldsymbol{v}\end{aligned}$$
 
@@ -1081,8 +1081,8 @@ with $e_{int}=\frac{dE_{int}}{dm}$.
 If we take the time derivative of the internal energy we get
 $$\begin{aligned}
 \begin{split}
-\frac{d}{d t} \int \rho e_{int} dV &= \frac{d}{d t}{ \left( T \int \rho s dV \right) }-\frac{d}{d t}{ \left( p \int
-dV \right) } \\
+\frac{d}{d t} \int \rho e_{int} dV &= \frac{d}{d t} \left( T \int \rho s dV \right) -\frac{d}{d t} \left( p \int
+dV \right)  \\
 &= T \frac{d}{d t} \int \rho s dV - p \frac{d}{d t} \int dV + \int \rho s dV \frac{d}{d t}T 
 - \int dV \frac{d}{d t} p
 \end{split}\end{aligned}$$
@@ -1091,8 +1091,8 @@ and the last two terms on the right hand side vanish. The other terms can be
 computed by using the Reynolds transport theorem and we get the balance
 equation for the internal energy of a fluid element
 $$\begin{aligned}
-\frac{\partial}{\partial t} \rho e_{int} + \frac{\partial}{\partial r_j} v_j \rho e_{int} = T { \left( \frac{\partial}{\partial t} \rho s +
-\frac{\partial}{\partial r_j} v_j \rho s \right) } -p \frac{\partial}{\partial r_j} v_j \label{eq:eint}\end{aligned}$$
+\frac{\partial}{\partial t} \rho e_{int} + \frac{\partial}{\partial r_j} v_j \rho e_{int} = T  \left( \frac{\partial}{\partial t} \rho s +
+\frac{\partial}{\partial r_j} v_j \rho s \right)  -p \frac{\partial}{\partial r_j} v_j \label{eq:eint}\end{aligned}$$
 
 ##### Global dissipation of kinetic energy
 
@@ -1100,24 +1100,24 @@ For investigating the conservation of the kinetic energy of the
 whole fluid we write using the Reynolds transport theorem [\[eq:RT\]](#eq:RT){reference-type="eqref" reference="eq:RT"}
 $$\begin{aligned}
 \frac{d}{d t} E_{kin} = \frac{d}{d t} \int_V \frac{1}{2}\rho v^2 dV = 
-\int_V \frac{\partial}{\partial t} { \left( \frac{1}{2}\rho v^2 \right) } + 
-\frac{\partial}{\partial r_j} { \left( v_j \frac{1}{2}\rho v^2 \right) } dV\end{aligned}$$
+\int_V \frac{\partial}{\partial t}  \left( \frac{1}{2}\rho v^2 \right)  + 
+\frac{\partial}{\partial r_j}  \left( v_j \frac{1}{2}\rho v^2 \right)  dV\end{aligned}$$
 The second term on the right hand side can be transformed with Gauss's theorem
 to an integral over the surface of the whole fluid
 $$\begin{aligned}
-\int_V \frac{\partial}{\partial r_j} { \left( v_j \frac{1}{2}\rho v^2 \right) } dV = 
+\int_V \frac{\partial}{\partial r_j}  \left( v_j \frac{1}{2}\rho v^2 \right)  dV = 
 \oint_A v_j \frac{1}{2}\rho v^2 dA = 0.\end{aligned}$$
 The surface integral is zero because the velocity on the boundary of the fluid
 $v_j = 0$. Therefore we can write
 $$\begin{aligned}
-\frac{d}{d t} E_{kin}=\frac{\partial}{\partial t} E_{kin}=\int_V \frac{\partial}{\partial t} { \left( \frac{1}{2}\rho v^2 \right) } dV =
+\frac{d}{d t} E_{kin}=\frac{\partial}{\partial t} E_{kin}=\int_V \frac{\partial}{\partial t}  \left( \frac{1}{2}\rho v^2 \right)  dV =
 \int_V \rho v_i \frac{\partial}{\partial t} v_i + \frac{1}{2} v^2 \frac{\partial}{\partial t}\rho dV \end{aligned}$$
 Inserting the Euler equation [\[eq:vel\]](#eq:vel){reference-type="eqref" reference="eq:vel"} and using the continuity equation
 [\[eq:3\]](#eq:3){reference-type="eqref" reference="eq:3"} and $g_i=\frac{\partial}{\partial r_i}\phi$ we can transform this to
 $$\begin{aligned}
 \begin{split}
-\frac{\partial}{\partial t} E_{kin} =& - \int_V \frac{\partial}{\partial r_j}{ \left[ v_j \rho
-{ \left( \frac{1}{2}v^2+\frac{p}{\rho}+\phi \right) } + v_i \sigma'_{ij} \right] } dV\\ 
+\frac{\partial}{\partial t} E_{kin} =& - \int_V \frac{\partial}{\partial r_j} \left[ v_j \rho
+ \left( \frac{1}{2}v^2+\frac{p}{\rho}+\phi \right)  + v_i \sigma'_{ij} \right]  dV\\ 
 &+ \int_V p \frac{\partial}{\partial r_j} v_j dV - \int_V \sigma'_{ij} \frac{\partial}{\partial r_j} v_i dV
 - \int_V \phi \frac{\partial}{\partial t}\rho dV.
 \end{split}\end{aligned}$$
@@ -1187,7 +1187,7 @@ Here we used the abbreviation $\rho_i=\rho(x_i,t)$ and $\rho_j=\rho(x_j,t)$.
 
 So we see that for a selfgravitating system
 $$\begin{aligned}
-\int \rho \frac{\partial}{\partial t} \phi dV = \frac{\partial}{\partial t} { \left( \frac{1}{2}\int \rho\phi dV \right) }.\end{aligned}$$
+\int \rho \frac{\partial}{\partial t} \phi dV = \frac{\partial}{\partial t}  \left( \frac{1}{2}\int \rho\phi dV \right) .\end{aligned}$$
 If we use this expression in [\[eq:glodis\]](#eq:glodis){reference-type="eqref" reference="eq:glodis"} and use $E_{pot}= \frac{1}{2}\int
 \rho \phi dV$ we get
 $$\begin{aligned}
@@ -1208,10 +1208,10 @@ have to make the same calculations as we did to get equation [\[eq:glodis\]](#eq
 but without the assumption of $v=0$ on the boundary. Doing this we arrive at
 $$\begin{aligned}
 \begin{split}
-\frac{d}{d t} E_{kin} =& \int_V \left[ \frac{\partial}{\partial r_j}{ \left( v_i \sigma'_{ij}-v_j p \right) } 
-+ T{ \left( \frac{\partial}{\partial t}\rho s + \frac{\partial}{\partial r_j} v_j \rho s \right) } 
-- { \left( \frac{\partial}{\partial t}\rho e_{int} + \frac{\partial}{\partial r_j} v_j \rho e_{int} \right) } \right. \\
-&\left. -{ \left( \frac{\partial}{\partial t}\rho \phi + \frac{\partial}{\partial r_j} v_j \rho \phi \right) }
+\frac{d}{d t} E_{kin} =& \int_V \left[ \frac{\partial}{\partial r_j} \left( v_i \sigma'_{ij}-v_j p \right)  
++ T \left( \frac{\partial}{\partial t}\rho s + \frac{\partial}{\partial r_j} v_j \rho s \right)  
+-  \left( \frac{\partial}{\partial t}\rho e_{int} + \frac{\partial}{\partial r_j} v_j \rho e_{int} \right)  \right. \\
+&\left. - \left( \frac{\partial}{\partial t}\rho \phi + \frac{\partial}{\partial r_j} v_j \rho \phi \right) 
 + \rho\frac{\partial}{\partial t}\phi -\sigma'_{ij}\frac{\partial}{\partial r_j}v_i \right] dV.
 \end{split}\end{aligned}$$
 If we identify the second, third and fourth term on the right hand side with the
@@ -1219,7 +1219,7 @@ total time derivative of the entropy, the internal energy and the potential
 energy respectively we get
 $$\begin{aligned}
 \frac{d}{d t} E_{kin} + \frac{d}{d t} E_{int} + \frac{d}{d t} E_{pot} = 
-\int_V \frac{\partial}{\partial r_j}{ \left( v_i \sigma'_{ij}-v_j p \right) } + T \frac{d}{d t} S
+\int_V \frac{\partial}{\partial r_j} \left( v_i \sigma'_{ij}-v_j p \right)  + T \frac{d}{d t} S
 + \rho\frac{\partial}{\partial t}\phi -\sigma'_{ij}\frac{\partial}{\partial r_j}v_i dV.\end{aligned}$$
 If we additionally assume that locally the same entropy equation holds as
 globally
@@ -1231,8 +1231,8 @@ $$\begin{aligned}
 we are led to the following balance equation for the total energy
 $e_{tot}=e_k+e_{int}+\phi$ for a local fluid element
 $$\begin{aligned}
-\frac{\partial}{\partial t}\rho e_{tot} + \frac{\partial}{\partial r_j} v_j \rho e_{tot} = -\frac{\partial}{\partial r_j}{ \left( v_j p \right) }
-+\frac{\partial}{\partial r_j}{ \left( v_i \sigma'_{ij} \right) } + \rho \frac{\partial}{\partial t} \phi. \label{eq:etotal}\end{aligned}$$
+\frac{\partial}{\partial t}\rho e_{tot} + \frac{\partial}{\partial r_j} v_j \rho e_{tot} = -\frac{\partial}{\partial r_j} \left( v_j p \right) 
++\frac{\partial}{\partial r_j} \left( v_i \sigma'_{ij} \right)  + \rho \frac{\partial}{\partial t} \phi. \label{eq:etotal}\end{aligned}$$
 which is basically the sum of the three balance equations
 $$\begin{aligned}
 \frac{\partial}{\partial t}\rho \phi + \frac{\partial}{\partial r_j} v_j \rho \phi &=  + \rho \frac{\partial}{\partial t} \phi \\
@@ -1243,8 +1243,8 @@ $$\begin{aligned}
 If we do not include potential energy in the total energy but use instead
 $e = e_k+e_{int}$ we can write
 $$\begin{aligned}
-\frac{\partial}{\partial t}\rho e + \frac{\partial}{\partial r_j} v_j \rho e = -\frac{\partial}{\partial r_j}{ \left( v_j p \right) }
-+\frac{\partial}{\partial r_j}{ \left( v_i \sigma'_{ij} \right) } - v_i \rho \frac{\partial}{\partial r_i} \phi. \label{eq:etotal2}\end{aligned}$$
+\frac{\partial}{\partial t}\rho e + \frac{\partial}{\partial r_j} v_j \rho e = -\frac{\partial}{\partial r_j} \left( v_j p \right) 
++\frac{\partial}{\partial r_j} \left( v_i \sigma'_{ij} \right)  - v_i \rho \frac{\partial}{\partial r_i} \phi. \label{eq:etotal2}\end{aligned}$$
 which can be split into two balance equations
 $$\begin{aligned}
 \frac{\partial}{\partial t}\rho e_{k} + \frac{\partial}{\partial r_j} v_j \rho e_{k} &= -v_j \frac{\partial}{\partial r_j} p
@@ -1261,18 +1261,18 @@ to some external potential generated by the rest of the fluid. This assumption
 is valid in case the local fluid element does not contribute much to the global
 potential $\phi$. This means, that
 $$\begin{aligned}
-\phi_{local}= -G \int_{V_{local}}\frac{\rho{ \left( x_j \right) }}{\left\lvert x_i-x_j\right\rvert}dV_j \ll
-\phi_{global}= -G \int_{V_{global}}\frac{\rho{ \left( x_j \right) }}{\left\lvert x_i-x_j\right\rvert}dV_j\end{aligned}$$
+\phi_{local}= -G \int_{V_{local}}\frac{\rho \left( x_j \right) }{\left\lvert x_i-x_j\right\rvert}dV_j \ll
+\phi_{global}= -G \int_{V_{global}}\frac{\rho \left( x_j \right) }{\left\lvert x_i-x_j\right\rvert}dV_j\end{aligned}$$
 Because we know from the last chapter that the term $- v_i \rho \frac{\partial}{\partial r_i} \phi$
 transforms into $-\frac{1}{2}\frac{\partial}{\partial t}\rho\phi$ in the selfgravity case we could
 implement a correction in [\[eq:etotal2\]](#eq:etotal2){reference-type="eqref" reference="eq:etotal2"}, which accounts for a rising
 \"selfgravitiness\" of a local fluid element like
 $$\begin{aligned}
 \begin{split}
-\frac{\partial}{\partial t}\rho e + \frac{\partial}{\partial r_j} v_j \rho e =& -\frac{\partial}{\partial r_j}{ \left( v_j p \right) }
-+\frac{\partial}{\partial r_j}{ \left( v_i \sigma'_{ij} \right) } - v_i \rho \frac{\partial}{\partial r_i} \phi\\
+\frac{\partial}{\partial t}\rho e + \frac{\partial}{\partial r_j} v_j \rho e =& -\frac{\partial}{\partial r_j} \left( v_j p \right) 
++\frac{\partial}{\partial r_j} \left( v_i \sigma'_{ij} \right)  - v_i \rho \frac{\partial}{\partial r_i} \phi\\
 &+\frac{\phi_{local}}{\phi_{global}}
-{ \left( \frac{1}{2}\frac{\partial}{\partial t}\rho\phi-\frac{\partial}{\partial r_j}v_j\rho\phi-\rho\frac{\partial}{\partial t}\phi \right) }
+ \left( \frac{1}{2}\frac{\partial}{\partial t}\rho\phi-\frac{\partial}{\partial r_j}v_j\rho\phi-\rho\frac{\partial}{\partial t}\phi \right) 
 \end{split}\end{aligned}$$
 Nevertheless a more practical solution for numerical simulations might be to
 refine the grid in such a way that the condition $\phi_{local} \ll
@@ -1290,12 +1290,12 @@ $$\begin{aligned}
 -\frac{1}{\rho}\frac{\partial}{\partial r_i}p + \frac{1}{\rho}\frac{\partial}{\partial r_j}\sigma'_{ij} + g_i.\end{aligned}$$
 Taking the divergence of this equation yields
 $$\begin{aligned}
-\frac{\partial}{\partial t}{ \left( \frac{\partial v_i}{\partial r_i} \right) }&+\frac{\partial^2}{\partial r_i \partial r_j}(v_i
+\frac{\partial}{\partial t} \left( \frac{\partial v_i}{\partial r_i} \right) &+\frac{\partial^2}{\partial r_i \partial r_j}(v_i
 v_j)
--{ \left( \frac{\partial v_i}{\partial r_i} \right) }{ \left( \frac{\partial v_j}{\partial r_j} \right) }-v_i\frac{\partial}{\partial r_i}{ \left( \frac{\partial v_j}{\partial r_j} \right) }=\\
-&\frac{1}{\rho^2}{ \left( \frac{\partial \rho}{\partial r_i} \right) }{ \left( \frac{\partial p}{\partial r_i} \right) }
+- \left( \frac{\partial v_i}{\partial r_i} \right)  \left( \frac{\partial v_j}{\partial r_j} \right) -v_i\frac{\partial}{\partial r_i} \left( \frac{\partial v_j}{\partial r_j} \right) =\\
+&\frac{1}{\rho^2} \left( \frac{\partial \rho}{\partial r_i} \right)  \left( \frac{\partial p}{\partial r_i} \right) 
 -\frac{1}{\rho}\frac{\partial^2}{\partial r_i^2}p
--\frac{1}{\rho^2}{ \left( \frac{\partial \rho}{\partial r_i} \right) }{ \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) }
+-\frac{1}{\rho^2} \left( \frac{\partial \rho}{\partial r_i} \right)  \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) 
 +\frac{1}{\rho}\frac{\partial^2}{\partial r_i \partial r_j}\sigma'_{ij}
 +\frac{\partial}{\partial r_i}g_i\end{aligned}$$
 With the poisson equation [\[eq:maxgrav1\]](#eq:maxgrav1){reference-type="eqref" reference="eq:maxgrav1"} and using the notation from
@@ -1305,20 +1305,20 @@ $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\theta-\theta^2-v_i\frac{\partial}{\partial r_i}\theta
 +\frac{\partial^2}{\partial r_i \partial r_j}(v_i v_j) =&
-\frac{1}{\rho^2}{ \left( \frac{\partial \rho}{\partial r_i} \right) }
-{ \left[ \frac{\partial p}{\partial r_i}-\frac{\partial}{\partial r_j}\sigma'_{ij} \right] }\\
-&-\frac{1}{\rho}{ \left[ \frac{\partial^2}{\partial r_i^2}p
--\frac{\partial^2}{\partial r_i \partial r_j}\sigma'_{ij} \right] }
+\frac{1}{\rho^2} \left( \frac{\partial \rho}{\partial r_i} \right) 
+ \left[ \frac{\partial p}{\partial r_i}-\frac{\partial}{\partial r_j}\sigma'_{ij} \right] \\
+&-\frac{1}{\rho} \left[ \frac{\partial^2}{\partial r_i^2}p
+-\frac{\partial^2}{\partial r_i \partial r_j}\sigma'_{ij} \right] 
 -4\pi G \rho
 \end{split}\end{aligned}$$
 or in vector notation
 $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\theta-\theta^2-(\boldsymbol{v}\cdot \nabla)\theta 
-+\nabla{ \left[ \nabla\cdot(v_i v_j) \right] }=&
-\frac{1}{\rho^2}\nabla \rho \cdot { \left[ \nabla p - \nabla \cdot \sigma'_{ij} \right] }\\
-&-\frac{1}{\rho}{ \left[ \Delta p
--\nabla(\nabla \cdot \sigma'_{ij}) \right] }
++\nabla \left[ \nabla\cdot(v_i v_j) \right] =&
+\frac{1}{\rho^2}\nabla \rho \cdot  \left[ \nabla p - \nabla \cdot \sigma'_{ij} \right] \\
+&-\frac{1}{\rho} \left[ \Delta p
+-\nabla(\nabla \cdot \sigma'_{ij}) \right] 
 -4\pi G \rho
 \end{split}\end{aligned}$$
 
@@ -1327,7 +1327,7 @@ $$\begin{aligned}
 Using the vector identity [\[eq:vecid02\]](#eq:vecid02){reference-type="eqref" reference="eq:vecid02"} we can express the euler
 equation [\[eq:vel\]](#eq:vel){reference-type="eqref" reference="eq:vel"} like
 $$\begin{aligned}
-\frac{\partial}{\partial t}(v_i) + \frac{\partial}{\partial r_i} { \left( \frac{1}{2} v_j v_j \right) }
+\frac{\partial}{\partial t}(v_i) + \frac{\partial}{\partial r_i}  \left( \frac{1}{2} v_j v_j \right) 
 - \epsilon_{ijm} v_j \epsilon_{mkl} \frac{\partial}{\partial r_k} v_l = -\frac{1}{\rho}\frac{\partial}{\partial r_i}p +
 \frac{1}{\rho}\frac{\partial}{\partial r_j}\sigma'_{ij} + g_i.\end{aligned}$$
 We can obtain an equation for the vorticity of the flow field by taking the
@@ -1335,10 +1335,10 @@ curl of this form of the euler equation
 $$\begin{aligned}
 \begin{split}
 \epsilon_{ghi}\frac{\partial}{\partial r_h}\frac{\partial}{\partial t}(v_i) 
-+\epsilon_{ghi}\frac{\partial}{\partial r_h} \frac{\partial}{\partial r_i}{ \left( \frac{1}{2} v_j v_j \right) }
++\epsilon_{ghi}\frac{\partial}{\partial r_h} \frac{\partial}{\partial r_i} \left( \frac{1}{2} v_j v_j \right) 
 -\epsilon_{ghi}\frac{\partial}{\partial r_h} \epsilon_{ijm} v_j \epsilon_{mkl} \frac{\partial}{\partial r_k} v_l =\\
--\epsilon_{ghi}\frac{\partial}{\partial r_h}{ \left( \frac{1}{\rho}\frac{\partial}{\partial r_i}p \right) } 
-+\epsilon_{ghi}\frac{\partial}{\partial r_h}{ \left( \frac{1}{\rho}\frac{\partial}{\partial r_j}\sigma'_{ij} \right) } 
+-\epsilon_{ghi}\frac{\partial}{\partial r_h} \left( \frac{1}{\rho}\frac{\partial}{\partial r_i}p \right)  
++\epsilon_{ghi}\frac{\partial}{\partial r_h} \left( \frac{1}{\rho}\frac{\partial}{\partial r_j}\sigma'_{ij} \right)  
 +\epsilon_{ghi}\frac{\partial}{\partial r_h} g_i.
 \end{split}\end{aligned}$$
 If the time and space derivative of the velocity field commute, if
@@ -1352,10 +1352,10 @@ $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\epsilon_{ghi}\frac{\partial}{\partial r_h}v_i
 -\epsilon_{ghi}\frac{\partial}{\partial r_h} \epsilon_{ijm} v_j \epsilon_{mkl} \frac{\partial}{\partial r_k} v_l =
-&-\epsilon_{ghi}{ \left[ \frac{1}{\rho}\frac{\partial}{\partial r_h}{ \left( \frac{\partial}{\partial r_i}p \right) } 
-+ { \left( \frac{\partial}{\partial r_i}p \right) } { \left( \frac{\partial}{\partial r_h}\frac{1}{\rho} \right) } \right] }\\
-&+\epsilon_{ghi}{ \left[ \frac{1}{\rho}\frac{\partial}{\partial r_h}{ \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) }
-+ { \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) } { \left( \frac{\partial}{\partial r_h}\frac{1}{\rho} \right) } \right] }
+&-\epsilon_{ghi} \left[ \frac{1}{\rho}\frac{\partial}{\partial r_h} \left( \frac{\partial}{\partial r_i}p \right)  
++  \left( \frac{\partial}{\partial r_i}p \right)   \left( \frac{\partial}{\partial r_h}\frac{1}{\rho} \right)  \right] \\
+&+\epsilon_{ghi} \left[ \frac{1}{\rho}\frac{\partial}{\partial r_h} \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) 
++  \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right)   \left( \frac{\partial}{\partial r_h}\frac{1}{\rho} \right)  \right] 
 \end{split}\end{aligned}$$
 The first term on the right hand side is zero again, because it is the curl
 of a gradient field and so we get as the vorticity equation
@@ -1366,17 +1366,17 @@ $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\omega_g
 -\epsilon_{ghi}\frac{\partial}{\partial r_h} \epsilon_{ijm} v_j \omega_m =
-&-\frac{1}{\rho^2}{ \left[ 
-\epsilon_{ghi} { \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial}{\partial r_i}p \right) }
--\epsilon_{ghi} { \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) } \right] }\\
+&-\frac{1}{\rho^2} \left[ 
+\epsilon_{ghi}  \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial}{\partial r_i}p \right) 
+-\epsilon_{ghi}  \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right)  \right] \\
 &+\frac{1}{\rho}\epsilon_{ghi}\frac{\partial}{\partial r_h}\frac{\partial}{\partial r_j}\sigma'_{ij}
 \end{split}\end{aligned}$$
 or in vector notation with $\boldsymbol{\omega}=\nabla \times \boldsymbol{v}$
 $$\begin{aligned}
 \frac{\partial}{\partial t} \boldsymbol{\omega}-\nabla \times (\boldsymbol{v} \times \boldsymbol{\omega}) = 
--\frac{1}{\rho^2}{ \left[ (\nabla \rho) \times(\nabla p)
-- (\nabla \rho) \times (\nabla \cdot \tilde{\sigma}) \right] }
-+\frac{1}{\rho} { \left[ \nabla \times (\nabla \cdot \tilde{\sigma}) \right] }\end{aligned}$$
+-\frac{1}{\rho^2} \left[ (\nabla \rho) \times(\nabla p)
+- (\nabla \rho) \times (\nabla \cdot \tilde{\sigma}) \right] 
++\frac{1}{\rho}  \left[ \nabla \times (\nabla \cdot \tilde{\sigma}) \right] \end{aligned}$$
 
 #### Summary
 
@@ -1411,10 +1411,10 @@ $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\theta-\theta^2-v_i\frac{\partial}{\partial r_i}\theta
 +\frac{\partial^2}{\partial r_i \partial r_j}(v_i v_j) =&
-\frac{1}{\rho^2}{ \left( \frac{\partial \rho}{\partial r_i} \right) }
-{ \left[ \frac{\partial p}{\partial r_i}-\frac{\partial}{\partial r_j}\sigma'_{ij} \right] }\\
-&-\frac{1}{\rho}{ \left[ \frac{\partial^2}{\partial r_i^2}p
--\frac{\partial^2}{\partial r_i \partial r_j}\sigma'_{ij} \right] }
+\frac{1}{\rho^2} \left( \frac{\partial \rho}{\partial r_i} \right) 
+ \left[ \frac{\partial p}{\partial r_i}-\frac{\partial}{\partial r_j}\sigma'_{ij} \right] \\
+&-\frac{1}{\rho} \left[ \frac{\partial^2}{\partial r_i^2}p
+-\frac{\partial^2}{\partial r_i \partial r_j}\sigma'_{ij} \right] 
 -4\pi G \rho
 \end{split}
 \label{eq:div}\end{aligned}$$
@@ -1425,9 +1425,9 @@ $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\omega_g
 -\epsilon_{ghi}\frac{\partial}{\partial r_h} \epsilon_{ijm} v_j \omega_m =
-&-\frac{1}{\rho^2}{ \left[ 
-\epsilon_{ghi} { \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial}{\partial r_i}p \right) }
--\epsilon_{ghi} { \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) } \right] }\\
+&-\frac{1}{\rho^2} \left[ 
+\epsilon_{ghi}  \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial}{\partial r_i}p \right) 
+-\epsilon_{ghi}  \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right)  \right] \\
 &+\frac{1}{\rho}\epsilon_{ghi}\frac{\partial}{\partial r_h}\frac{\partial}{\partial r_j}\sigma'_{ij}
 \end{split}
 \label{eq:vort}\end{aligned}$$
@@ -1442,8 +1442,8 @@ $$\begin{aligned}
 with $S^*_{ij}$ being the symmetric tracefree part of the tensor
 $\frac{\partial v_i}{\partial x_j}$
 $$\begin{aligned}
-S^*_{ij}={ \left[ \frac{1}{2}{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }-\frac{1}{3}\delta_{ij}
-\frac{\partial v_k}{\partial r_k} \right] }\end{aligned}$$
+S^*_{ij}= \left[ \frac{1}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) -\frac{1}{3}\delta_{ij}
+\frac{\partial v_k}{\partial r_k} \right] \end{aligned}$$
 The parameter $\eta'$ is called dynamic viscosity and $\zeta$ is the so called
 second dynamic viscosity. The second term of equation [\[eq:stress\]](#eq:stress){reference-type="eqref" reference="eq:stress"} is
 often considered as small and therefore neglected. This is true in case of a
@@ -1465,20 +1465,20 @@ defined for local thermodynamic equilibrium.
 In the following we will write the stress tensor for a newtonian compressible
 fluid in the form
 $$\begin{aligned}
-\sigma'_{ij}= \eta{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) } 
-+ { \left( \zeta-\frac{2}{3}\eta \right) }\delta_{ij}\frac{\partial v_k}{\partial r_k} 
+\sigma'_{ij}= \eta \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right)  
++  \left( \zeta-\frac{2}{3}\eta \right) \delta_{ij}\frac{\partial v_k}{\partial r_k} 
 \label{eq:stress2}\end{aligned}$$
 Inserting this explicitely into the momentum equation for a compressible fluid
 [\[eq:mom\]](#eq:mom){reference-type="eqref" reference="eq:mom"} one gets for the term
 $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial r_j} \sigma'_{ij} &= 
-\frac{\partial}{\partial r_j}{ \left[ \eta { \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) } \right] }
-+{ \left( \zeta-\frac{2}{3}\eta \right) }\delta_{ij}\frac{\partial}{\partial r_j}{ \left( \frac{\partial v_k}{\partial r_k} \right) }\\
-&= \eta { \left[ \frac{\partial^2}{\partial r_j^2}v_i +\frac{\partial}{\partial r_i}{ \left( \frac{\partial v_j}{\partial r_j} \right) } \right] }
-+{ \left( \zeta-\frac{2}{3}\eta \right) }\frac{\partial}{\partial r_i}{ \left( \frac{\partial v_k}{\partial r_k} \right) }\\
+\frac{\partial}{\partial r_j} \left[ \eta  \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right)  \right] 
++ \left( \zeta-\frac{2}{3}\eta \right) \delta_{ij}\frac{\partial}{\partial r_j} \left( \frac{\partial v_k}{\partial r_k} \right) \\
+&= \eta  \left[ \frac{\partial^2}{\partial r_j^2}v_i +\frac{\partial}{\partial r_i} \left( \frac{\partial v_j}{\partial r_j} \right)  \right] 
++ \left( \zeta-\frac{2}{3}\eta \right) \frac{\partial}{\partial r_i} \left( \frac{\partial v_k}{\partial r_k} \right) \\
 &=\eta \frac{\partial^2}{\partial r_j^2}v_i
-+{ \left( \frac{\eta}{3}+\zeta \right) }\frac{\partial}{\partial r_i}{ \left( \frac{\partial v_k}{\partial r_k} \right) }.
++ \left( \frac{\eta}{3}+\zeta \right) \frac{\partial}{\partial r_i} \left( \frac{\partial v_k}{\partial r_k} \right) .
 \end{split}
 \label{eq:divstress}\end{aligned}$$
 
@@ -1487,10 +1487,10 @@ Inserting the stress tensor into the energy equation for a compressible fluid
 $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial r_j}(v_i \sigma'_{ij}) 
-&=\frac{\partial}{\partial r_j}{ \left[ \eta v_i { \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) } \right] }
-+{ \left( \zeta-\frac{2}{3}\eta \right) }\frac{\partial}{\partial r_j}{ \left( v_j \frac{\partial v_k}{\partial r_k} \right) }\\
-&=\eta \frac{\partial^2}{\partial r_j^2}{ \left( \frac{1}{2}v_i^2 \right) }+\eta \frac{\partial}{\partial r_j}{ \left( v_i\frac{\partial v_j}{\partial r_i} \right) }
-+{ \left( \zeta-\frac{2}{3}\eta \right) }\frac{\partial}{\partial r_j}{ \left( v_j \frac{\partial v_k}{\partial r_k} \right) }
+&=\frac{\partial}{\partial r_j} \left[ \eta v_i  \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right)  \right] 
++ \left( \zeta-\frac{2}{3}\eta \right) \frac{\partial}{\partial r_j} \left( v_j \frac{\partial v_k}{\partial r_k} \right) \\
+&=\eta \frac{\partial^2}{\partial r_j^2} \left( \frac{1}{2}v_i^2 \right) +\eta \frac{\partial}{\partial r_j} \left( v_i\frac{\partial v_j}{\partial r_i} \right) 
++ \left( \zeta-\frac{2}{3}\eta \right) \frac{\partial}{\partial r_j} \left( v_j \frac{\partial v_k}{\partial r_k} \right) 
 \end{split}\end{aligned}$$
 In the end we get the following balance equations for a compressible,
 selfgravitating, newtonian fluid
@@ -1498,11 +1498,11 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}\rho + \frac{\partial}{\partial r_j}(v_j \rho) =&\ 0 \\
 \frac{\partial}{\partial t}(\rho v_i) + \frac{\partial}{\partial r_j}(v_j \rho v_i) =& -\frac{\partial}{\partial r_i}p + +\rho g_i
 +\eta\frac{\partial^2}{\partial r_j^2}v_i
-+{ \left( \frac{\eta}{3}+\zeta \right) }\frac{\partial}{\partial r_i}{ \left( \frac{\partial v_k}{\partial r_k} \right) }\\
++ \left( \frac{\eta}{3}+\zeta \right) \frac{\partial}{\partial r_i} \left( \frac{\partial v_k}{\partial r_k} \right) \\
 \begin{split}
 \frac{\partial}{\partial t}(\rho e) + \frac{\partial}{\partial r_j}(v_j \rho e) =& -\frac{\partial}{\partial r_j}(v_j p) + v_i \rho g_i 
-+\eta \frac{\partial^2}{\partial r_j^2}{ \left( \frac{1}{2}v_i^2 \right) }+ \eta \frac{\partial}{\partial r_j}{ \left( v_i\frac{\partial v_j}{\partial r_i} \right) } \\
-&+{ \left( \zeta-\frac{2}{3}\eta \right) } \frac{\partial}{\partial r_j}{ \left( v_j\frac{\partial r_k}{\partial v_k} \right) }
++\eta \frac{\partial^2}{\partial r_j^2} \left( \frac{1}{2}v_i^2 \right) + \eta \frac{\partial}{\partial r_j} \left( v_i\frac{\partial v_j}{\partial r_i} \right)  \\
+&+ \left( \zeta-\frac{2}{3}\eta \right)  \frac{\partial}{\partial r_j} \left( v_j\frac{\partial r_k}{\partial v_k} \right) 
 \end{split}\end{aligned}$$
 
 #### Global dissipation of kinetic energy $\mathcal{E}$
@@ -1512,10 +1512,10 @@ tensor in the equation [\[eq:diss\]](#eq:diss){reference-type="eqref" reference=
 $$\begin{aligned}
 \begin{split}
 \sigma'_{ij}\frac{\partial v_i}{\partial r_j} 
-&= \eta{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }\frac{\partial v_i}{\partial r_j}
-+ { \left( \zeta-\frac{2}{3}\eta \right) }\delta_{ij}\frac{\partial v_k}{\partial r_k}\frac{\partial v_i}{\partial r_j}\\
-&=\frac{\eta}{2}{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }^2
-+{ \left( \zeta-\frac{2}{3}\eta \right) }{ \left( \frac{\partial v_k}{\partial r_k} \right) }^2
+&= \eta \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) \frac{\partial v_i}{\partial r_j}
++  \left( \zeta-\frac{2}{3}\eta \right) \delta_{ij}\frac{\partial v_k}{\partial r_k}\frac{\partial v_i}{\partial r_j}\\
+&=\frac{\eta}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) ^2
++ \left( \zeta-\frac{2}{3}\eta \right)  \left( \frac{\partial v_k}{\partial r_k} \right) ^2
 \end{split}\end{aligned}$$
 where we also made use of the relation [\[eq:uscontr\]](#eq:uscontr){reference-type="eqref" reference="eq:uscontr"} for the contraction of
 a symmetric with an unsymmetric tensor. With this result the global dissipation
@@ -1525,8 +1525,8 @@ $$\begin{aligned}
 \mathcal{E} =& 
 \frac{1}{V} \int_V p \frac{\partial v_j}{\partial r_j} dV
 -\frac{1}{V} \int_V \phi \frac{\partial}{\partial t}\rho dV
--\frac{1}{V} \int_V \frac{\eta}{2}{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }^2 dV\\
-&-\frac{1}{V} \int_V { \left( \zeta-\frac{2}{3}\eta \right) }{ \left( \frac{\partial v_k}{\partial r_k} \right) }^2 dV
+-\frac{1}{V} \int_V \frac{\eta}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) ^2 dV\\
+&-\frac{1}{V} \int_V  \left( \zeta-\frac{2}{3}\eta \right)  \left( \frac{\partial v_k}{\partial r_k} \right) ^2 dV
 \end{split}\end{aligned}$$
 This equation should be compared to equation (79,1) from @Landau1991
 which additionally includes heat conduction. Nevertheless @Landau1991
@@ -1539,10 +1539,10 @@ Using the equation for the divergence of the stress tensor
 for a newtonian compressible fluid [\[eq:divstress\]](#eq:divstress){reference-type="eqref" reference="eq:divstress"} we get for
 $$\begin{aligned}
 \begin{split}
-\frac{\partial}{\partial r_i}{ \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) }&=
-\eta\frac{\partial}{\partial r_i}\frac{\partial^2}{\partial r_j^2}v_i+{ \left( \frac{\eta}{3}+\zeta \right) }\frac{\partial^2}{\partial r_i^2}\theta\\
-&=\eta\frac{\partial^2}{\partial r_j^2}\theta+{ \left( \frac{\eta}{3}+\zeta \right) }\frac{\partial^2}{\partial r_i^2}\theta\\
-&={ \left( \frac{4}{3}\eta+\zeta \right) }\frac{\partial^2}{\partial r_i^2}\theta
+\frac{\partial}{\partial r_i} \left( \frac{\partial}{\partial r_j}\sigma'_{ij} \right) &=
+\eta\frac{\partial}{\partial r_i}\frac{\partial^2}{\partial r_j^2}v_i+ \left( \frac{\eta}{3}+\zeta \right) \frac{\partial^2}{\partial r_i^2}\theta\\
+&=\eta\frac{\partial^2}{\partial r_j^2}\theta+ \left( \frac{\eta}{3}+\zeta \right) \frac{\partial^2}{\partial r_i^2}\theta\\
+&= \left( \frac{4}{3}\eta+\zeta \right) \frac{\partial^2}{\partial r_i^2}\theta
 \end{split}\end{aligned}$$
 By inserting this and equation [\[eq:divstress\]](#eq:divstress){reference-type="eqref" reference="eq:divstress"} into the equation for the
 divergence [\[eq:div\]](#eq:div){reference-type="eqref" reference="eq:div"} we get the divergence equation for a compressible
@@ -1551,20 +1551,20 @@ $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\theta-\theta^2-v_i\frac{\partial}{\partial r_i}\theta
 +\frac{\partial^2}{\partial r_i \partial r_j}(v_i v_j) =&
-\frac{1}{\rho^2}{ \left( \frac{\partial \rho}{\partial r_i} \right) } \cdot
-{ \left[ \frac{\partial p}{\partial r_i}-\eta\frac{\partial^2}{\partial r_j^2}v_i-{ \left( \frac{\eta}{3}+\zeta \right) }
-\frac{\partial}{\partial r_i}\theta \right] }\\
-&-\frac{1}{\rho}{ \left[ \frac{\partial^2}{\partial r_i^2}p-{ \left( \frac{4}{3}\eta+\zeta \right) }\frac{\partial^2}{\partial r_i^2}\theta \right] } 
+\frac{1}{\rho^2} \left( \frac{\partial \rho}{\partial r_i} \right)  \cdot
+ \left[ \frac{\partial p}{\partial r_i}-\eta\frac{\partial^2}{\partial r_j^2}v_i- \left( \frac{\eta}{3}+\zeta \right) 
+\frac{\partial}{\partial r_i}\theta \right] \\
+&-\frac{1}{\rho} \left[ \frac{\partial^2}{\partial r_i^2}p- \left( \frac{4}{3}\eta+\zeta \right) \frac{\partial^2}{\partial r_i^2}\theta \right]  
 -4\pi G \rho
 \end{split}\end{aligned}$$
 or in vector notation
 $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\theta-\theta^2-(\boldsymbol{v}\cdot \nabla)\theta 
-+\nabla{ \left[ \nabla\cdot(v_i v_j) \right] }=&
-\frac{1}{\rho^2}\nabla \rho \cdot { \left[ \nabla p - \eta \Delta v
--{ \left( \frac{\eta}{3}+\zeta \right) }\nabla \theta \right] }\\
-&-\frac{1}{\rho}{ \left[ \Delta p-{ \left( \frac{4}{3}\eta+\zeta \right) }\Delta\theta \right] }
++\nabla \left[ \nabla\cdot(v_i v_j) \right] =&
+\frac{1}{\rho^2}\nabla \rho \cdot  \left[ \nabla p - \eta \Delta v
+- \left( \frac{\eta}{3}+\zeta \right) \nabla \theta \right] \\
+&-\frac{1}{\rho} \left[ \Delta p- \left( \frac{4}{3}\eta+\zeta \right) \Delta\theta \right] 
 -4\pi G \rho
 \end{split}\end{aligned}$$
 
@@ -1579,13 +1579,13 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}\omega_g
 -\epsilon_{ghi}\frac{\partial}{\partial r_h} \epsilon_{ijm} v_j \omega_m =
 &-\frac{1}{\rho^2}\epsilon_{ghi}\left[
-{ \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial}{\partial r_i}p \right) }
--\eta { \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial^2}{\partial r_j^2}v_i \right) }\right.\\
-&\left.-{ \left( \frac{\eta}{3}+\zeta \right) } { \left( \frac{\partial}{\partial r_h}\rho \right) } 
-{ \left( \frac{\partial}{\partial r_i}\theta \right) } \right]
+ \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial}{\partial r_i}p \right) 
+-\eta  \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial^2}{\partial r_j^2}v_i \right) \right.\\
+&\left.- \left( \frac{\eta}{3}+\zeta \right)   \left( \frac{\partial}{\partial r_h}\rho \right)  
+ \left( \frac{\partial}{\partial r_i}\theta \right)  \right]
 +\frac{\eta}{\rho}\frac{\partial^2}{\partial r_j^2}\omega_g \\
-&+\frac{1}{\rho}{ \left( \frac{\eta}{3}
-+\zeta \right) }\epsilon_{ghi}\frac{\partial}{\partial r_h}\frac{\partial}{\partial r_i}{ \left( \frac{\partial v_k}{\partial r_k} \right) }
+&+\frac{1}{\rho} \left( \frac{\eta}{3}
++\zeta \right) \epsilon_{ghi}\frac{\partial}{\partial r_h}\frac{\partial}{\partial r_i} \left( \frac{\partial v_k}{\partial r_k} \right) 
 \end{split}\end{aligned}$$
 The last term on the right hand side vanishes, because it is the curl
 of a gradient field. Therefore we are left with
@@ -1594,10 +1594,10 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}\omega_g
 -\epsilon_{ghi}\frac{\partial}{\partial r_h} \epsilon_{ijm} v_j \omega_m =
 &-\frac{1}{\rho^2}\epsilon_{ghi}\left[
-{ \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial}{\partial r_i}p \right) }
--\eta { \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial^2}{\partial r_j^2}v_i \right) }\right.\\
-&\left.-{ \left( \frac{\eta}{3}+\zeta \right) } { \left( \frac{\partial}{\partial r_h}\rho \right) } 
-{ \left( \frac{\partial}{\partial r_i}\theta \right) } \right]
+ \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial}{\partial r_i}p \right) 
+-\eta  \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial^2}{\partial r_j^2}v_i \right) \right.\\
+&\left.- \left( \frac{\eta}{3}+\zeta \right)   \left( \frac{\partial}{\partial r_h}\rho \right)  
+ \left( \frac{\partial}{\partial r_i}\theta \right)  \right]
 +\frac{\eta}{\rho}\frac{\partial^2}{\partial r_j^2}\omega_g
 \end{split}\end{aligned}$$
 or in vector notation with
@@ -1607,7 +1607,7 @@ $$\begin{aligned}
 &-\frac{1}{\rho^2}\left[
 (\nabla \rho) \times(\nabla p)
 - \eta (\nabla \rho) \times (\Delta \boldsymbol{v})\right.\\
-&\left.- { \left( \zeta +\frac{\eta}{3} \right) } (\nabla \rho) \times (\nabla
+&\left.-  \left( \zeta +\frac{\eta}{3} \right)  (\nabla \rho) \times (\nabla
 \theta)\right]
 +\frac{\eta}{\rho} \Delta \boldsymbol{\omega}
 \end{split}\end{aligned}$$
@@ -1620,11 +1620,11 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}\rho + \frac{\partial}{\partial r_j}(v_j \rho) =&\ 0 \label{eq:ncmass}\\
 \frac{\partial}{\partial t}(\rho v_i) + \frac{\partial}{\partial r_j}(v_j \rho v_i) =& -\frac{\partial}{\partial r_i}p + +\rho g_i
 +\eta\frac{\partial^2}{\partial r_j^2}v_i
-+{ \left( \frac{\eta}{3}+\zeta \right) }\frac{\partial}{\partial r_i}{ \left( \frac{\partial v_k}{\partial r_k} \right) } \label{eq:ncmom}\\
++ \left( \frac{\eta}{3}+\zeta \right) \frac{\partial}{\partial r_i} \left( \frac{\partial v_k}{\partial r_k} \right)  \label{eq:ncmom}\\
 \begin{split}
 \frac{\partial}{\partial t}(\rho e) + \frac{\partial}{\partial r_j}(v_j \rho e) =& -\frac{\partial}{\partial r_j}(v_j p) + v_i \rho g_i 
-+\eta \frac{\partial^2}{\partial r_j^2}{ \left( \frac{1}{2}v_i^2 \right) }+ \eta \frac{\partial}{\partial r_j}{ \left( v_i\frac{\partial v_j}{\partial r_i} \right) } \\
-&+{ \left( \zeta-\frac{2}{3}\eta \right) } \frac{\partial}{\partial r_j}{ \left( v_j\frac{\partial r_k}{\partial v_k} \right) } \label{eq:ncetot}
++\eta \frac{\partial^2}{\partial r_j^2} \left( \frac{1}{2}v_i^2 \right) + \eta \frac{\partial}{\partial r_j} \left( v_i\frac{\partial v_j}{\partial r_i} \right)  \\
+&+ \left( \zeta-\frac{2}{3}\eta \right)  \frac{\partial}{\partial r_j} \left( v_j\frac{\partial r_k}{\partial v_k} \right)  \label{eq:ncetot}
 \end{split}\end{aligned}$$
 with Newtonian gravity (Poisson Equation):
 $$\begin{aligned}
@@ -1639,8 +1639,8 @@ $$\begin{aligned}
 \mathcal{E} =& 
 \frac{1}{V} \int_V p \frac{\partial v_j}{\partial r_j} dV
 -\frac{1}{V} \int_V \phi \frac{\partial}{\partial t}\rho dV
--\frac{1}{V} \int_V \frac{\eta}{2}{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }^2 dV\\
-&-\frac{1}{V} \int_V { \left( \zeta-\frac{2}{3}\eta \right) }{ \left( \frac{\partial v_k}{\partial r_k} \right) }^2 dV
+-\frac{1}{V} \int_V \frac{\eta}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) ^2 dV\\
+&-\frac{1}{V} \int_V  \left( \zeta-\frac{2}{3}\eta \right)  \left( \frac{\partial v_k}{\partial r_k} \right) ^2 dV
 \end{split}
 \label{eq:ncdiss}\end{aligned}$$
 
@@ -1650,10 +1650,10 @@ $$\begin{aligned}
 \begin{split}
 \frac{\partial}{\partial t}\theta-\theta^2-v_i\frac{\partial}{\partial r_i}\theta
 +\frac{\partial^2}{\partial r_i \partial r_j}(v_i v_j) =&
-\frac{1}{\rho^2}{ \left( \frac{\partial \rho}{\partial r_i} \right) } \cdot
-{ \left[ \frac{\partial p}{\partial r_i}-\eta\frac{\partial^2}{\partial r_j^2}v_i-{ \left( \frac{\eta}{3}+\zeta \right) }
-\frac{\partial}{\partial r_i}\theta \right] }\\
-&-\frac{1}{\rho}{ \left[ \frac{\partial^2}{\partial r_i^2}p-{ \left( \frac{4}{3}\eta+\zeta \right) }\frac{\partial^2}{\partial r_i^2}\theta \right] } 
+\frac{1}{\rho^2} \left( \frac{\partial \rho}{\partial r_i} \right)  \cdot
+ \left[ \frac{\partial p}{\partial r_i}-\eta\frac{\partial^2}{\partial r_j^2}v_i- \left( \frac{\eta}{3}+\zeta \right) 
+\frac{\partial}{\partial r_i}\theta \right] \\
+&-\frac{1}{\rho} \left[ \frac{\partial^2}{\partial r_i^2}p- \left( \frac{4}{3}\eta+\zeta \right) \frac{\partial^2}{\partial r_i^2}\theta \right]  
 -4\pi G \rho
 \end{split}\end{aligned}$$
 
@@ -1664,10 +1664,10 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}\omega_g
 -\epsilon_{ghi}\frac{\partial}{\partial r_h} \epsilon_{ijm} v_j \omega_m =
 &-\frac{1}{\rho^2}\epsilon_{ghi}\left[
-{ \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial}{\partial r_i}p \right) }
--\eta { \left( \frac{\partial}{\partial r_h}\rho \right) } { \left( \frac{\partial^2}{\partial r_j^2}v_i \right) }\right.\\
-&\left.-{ \left( \frac{\eta}{3}+\zeta \right) } { \left( \frac{\partial}{\partial r_h}\rho \right) } 
-{ \left( \frac{\partial}{\partial r_i}\theta \right) } \right]
+ \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial}{\partial r_i}p \right) 
+-\eta  \left( \frac{\partial}{\partial r_h}\rho \right)   \left( \frac{\partial^2}{\partial r_j^2}v_i \right) \right.\\
+&\left.- \left( \frac{\eta}{3}+\zeta \right)   \left( \frac{\partial}{\partial r_h}\rho \right)  
+ \left( \frac{\partial}{\partial r_i}\theta \right)  \right]
 +\frac{\eta}{\rho}\frac{\partial^2}{\partial r_j^2}\omega_g
 \end{split}\end{aligned}$$
 
@@ -1691,9 +1691,9 @@ The momentum equation [\[eq:mom\]](#eq:mom){reference-type="eqref" reference="eq
 [\[eq:etot\]](#eq:etot){reference-type="eqref" reference="eq:etot"}
 become
 $$\begin{aligned}
-\rho { \left[ \frac{\partial v_i}{\partial t} + v_j \frac{\partial v_i}{\partial r_j} + v_i \frac{\partial v_j}{\partial r_j} \right] }  
+\rho  \left[ \frac{\partial v_i}{\partial t} + v_j \frac{\partial v_i}{\partial r_j} + v_i \frac{\partial v_j}{\partial r_j} \right]   
 =& -\frac{\partial}{\partial r_i}p + +\rho g_i+ \frac{\partial}{\partial r_j}\sigma'_{ij} \\
-\rho { \left[ \frac{\partial e}{\partial t} + v_j \frac{\partial e}{\partial r_j} + e \frac{\partial v_j}{\partial r_j} \right] } 
+\rho  \left[ \frac{\partial e}{\partial t} + v_j \frac{\partial e}{\partial r_j} + e \frac{\partial v_j}{\partial r_j} \right]  
 =& -\frac{\partial}{\partial r_j}(v_j p) + v_i \rho g_i +\frac{\partial}{\partial r_j}(v_i \sigma'_{ij})\end{aligned}$$
 If we make use of the relation [\[eq:divzero\]](#eq:divzero){reference-type="eqref" reference="eq:divzero"} in the momentum and energy
 equation we finally get as equations for an incompressible, selfgravitating,
@@ -1725,8 +1725,8 @@ $$\begin{aligned}
 or in vector notation
 $$\begin{aligned}
 \Delta p = 
--\rho \nabla{ \left[ \nabla\cdot(v_i v_j) \right] } 
-+\nabla{ \left[ \nabla\cdot \sigma^*_{ij} \right] }
+-\rho \nabla \left[ \nabla\cdot(v_i v_j) \right]  
++\nabla \left[ \nabla\cdot \sigma^*_{ij} \right] 
 - 4\pi G \rho^2\end{aligned}$$
 which can be interpreted as the equation of state for a general
 incompressible fluid.[^17]
@@ -1742,7 +1742,7 @@ $$\begin{aligned}
 or in vector notation
 $$\begin{aligned}
 \frac{\partial}{\partial t} \boldsymbol{\omega}-\nabla \times (\boldsymbol{v} \times \boldsymbol{\omega}) = 
-\frac{1}{\rho} { \left[ \nabla \times (\nabla \cdot \tilde{\sigma^*}) \right] }\end{aligned}$$
+\frac{1}{\rho}  \left[ \nabla \times (\nabla \cdot \tilde{\sigma^*}) \right] \end{aligned}$$
 
 #### Summary
 
@@ -1789,7 +1789,7 @@ For an incompressible newtonian fluid the terms proportional to the divergence
 vanish in the stress tensor $\sigma'_{ij}$. This leads to the following
 divergence free stress tensor
 $$\begin{aligned}
-\sigma^*_{ij}=\eta { \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) }. 
+\sigma^*_{ij}=\eta  \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) . 
 \label{eq:nicstress}\end{aligned}$$
 
 #### Balance equations
@@ -1801,7 +1801,7 @@ $$\begin{aligned}
 and for
 $$\begin{aligned}
 \frac{\partial}{\partial r_j}(v_i \sigma^*_{ij})
-=\eta \frac{\partial^2}{\partial r_j^2}{ \left( \frac{1}{2}v_i^2 \right) }+\eta\frac{\partial}{\partial r_j}{ \left( v_i\frac{\partial v_j}{\partial r_i} \right) }\end{aligned}$$
+=\eta \frac{\partial^2}{\partial r_j^2} \left( \frac{1}{2}v_i^2 \right) +\eta\frac{\partial}{\partial r_j} \left( v_i\frac{\partial v_j}{\partial r_i} \right) \end{aligned}$$
 Inserting these results into [\[eq:icmass\]](#eq:icmass){reference-type="eqref" reference="eq:icmass"}-[\[eq:icetot\]](#eq:icetot){reference-type="eqref" reference="eq:icetot"} we get
 as balance equations for an incompressible newtonian fluid
 $$\begin{aligned}
@@ -1809,7 +1809,7 @@ $$\begin{aligned}
 \frac{\partial v_i}{\partial t} + v_j \frac{\partial v_i}{\partial r_j} =& -\frac{1}{\rho}\frac{\partial}{\partial r_i}p + g_i
 +\nu\frac{\partial^2}{\partial r_j^2}v_i\\
 \frac{\partial e}{\partial t} + v_j \frac{\partial e}{\partial r_j} =& -\frac{1}{\rho} \frac{\partial}{\partial r_j}(v_j p) + v_i g_i
-+\nu \frac{\partial^2}{\partial r_j^2}{ \left( \frac{1}{2}v_i^2 \right) }+ \nu \frac{\partial}{\partial r_j}{ \left( v_i\frac{\partial v_j}{\partial r_i} \right) }\end{aligned}$$
++\nu \frac{\partial^2}{\partial r_j^2} \left( \frac{1}{2}v_i^2 \right) + \nu \frac{\partial}{\partial r_j} \left( v_i\frac{\partial v_j}{\partial r_i} \right) \end{aligned}$$
 with the so called kinematic viscosity $\nu=\frac{\eta}{\rho}$
 [^18]
 
@@ -1820,29 +1820,29 @@ in the equation for the dissipation of a general incompressible fluid
 [\[eq:icdiss\]](#eq:icdiss){reference-type="ref" reference="eq:icdiss"} yields[^19]
 $$\begin{aligned}
 \mathcal{E} 
-=-\frac{1}{V} \int_V  \eta{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }\frac{\partial v_i}{\partial r_j} dV
-=-\frac{1}{V} \int_V \frac{\eta}{2}{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }^2 dV\end{aligned}$$
+=-\frac{1}{V} \int_V  \eta \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) \frac{\partial v_i}{\partial r_j} dV
+=-\frac{1}{V} \int_V \frac{\eta}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) ^2 dV\end{aligned}$$
 where we used again relation [\[eq:uscontr\]](#eq:uscontr){reference-type="ref" reference="eq:uscontr"}.
 
 We can express this result in terms of vorticity by making use of
 equation [\[eq:rsrcontr\]](#eq:rsrcontr){reference-type="eqref" reference="eq:rsrcontr"} which gives us for
 $$\begin{aligned}
-\frac{\eta}{2}{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }^2
+\frac{\eta}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) ^2
 &= 2 \eta S_{ij} S_{ij}
-= 2 \eta { \left( R_{ij} R_{ij} + \frac{\partial v_i}{\partial r_j}\frac{\partial v_j}{\partial r_i} \right) }\\
-&= 2 \eta { \left( \frac{1}{2} \omega_k \omega_k 
-+ \frac{\partial}{\partial r_j}{ \left( v_i \frac{\partial v_j}{\partial r_i} \right) } 
-- v_j \frac{\partial^2}{\partial r_i \partial r_j} v_i \right) }\\
-&= 2 \eta { \left( \frac{1}{2} \omega_k \omega_k 
-+ \frac{\partial}{\partial r_j}{ \left( v_i \frac{\partial v_j}{\partial r_i} \right) } 
-- v_j \frac{\partial^2}{\partial r_j \partial r_i} v_i \right) }\\ 
- &= \eta \omega_k \omega_k + 2 \eta \frac{\partial}{\partial r_j}{ \left( v_i \frac{\partial v_j}{\partial r_i} \right) }\end{aligned}$$
+= 2 \eta  \left( R_{ij} R_{ij} + \frac{\partial v_i}{\partial r_j}\frac{\partial v_j}{\partial r_i} \right) \\
+&= 2 \eta  \left( \frac{1}{2} \omega_k \omega_k 
++ \frac{\partial}{\partial r_j} \left( v_i \frac{\partial v_j}{\partial r_i} \right)  
+- v_j \frac{\partial^2}{\partial r_i \partial r_j} v_i \right) \\
+&= 2 \eta  \left( \frac{1}{2} \omega_k \omega_k 
++ \frac{\partial}{\partial r_j} \left( v_i \frac{\partial v_j}{\partial r_i} \right)  
+- v_j \frac{\partial^2}{\partial r_j \partial r_i} v_i \right) \\ 
+ &= \eta \omega_k \omega_k + 2 \eta \frac{\partial}{\partial r_j} \left( v_i \frac{\partial v_j}{\partial r_i} \right) \end{aligned}$$
 So we can express the dissipation for an incompressible newtonian fluid as
 $$\begin{aligned}
 \mathcal{E} = 
 -\frac{1}{V} \int_V \eta \omega_k \omega_k dV
 -\frac{1}{V} \int_V 
-2 \eta \frac{\partial}{\partial r_j}{ \left( v_i \frac{\partial v_j}{\partial r_i} \right) } dV \label{eq:nicdissfull}\end{aligned}$$
+2 \eta \frac{\partial}{\partial r_j} \left( v_i \frac{\partial v_j}{\partial r_i} \right)  dV \label{eq:nicdissfull}\end{aligned}$$
 Using Gauss' theorem to transform the second term we can express this like
 $$\begin{aligned}
 \mathcal{E} = 
@@ -1860,10 +1860,10 @@ From looking at the divergence equation (see below) we can derive another
 relation, which tells us, when the second term in equation
 [\[eq:nicdissfull\]](#eq:nicdissfull){reference-type="eqref" reference="eq:nicdissfull"} will vanish
 $$\begin{aligned}
-\frac{1}{V} \int_V 2\eta \frac{\partial}{\partial r_j}{ \left( v_i \frac{\partial v_j}{\partial r_i} \right) } dV 
+\frac{1}{V} \int_V 2\eta \frac{\partial}{\partial r_j} \left( v_i \frac{\partial v_j}{\partial r_i} \right)  dV 
 &=\frac{1}{V} \int_V 2\eta \frac{\partial^2}{\partial r_i \partial r_j}(v_i v_j)dV\\
-&= \frac{1}{V} \int_V \frac {2\eta}{\rho}{ \left( \frac{\partial^2}{\partial r_i^2}p  + 4\pi G \rho^2 \right) } dV
-=  \frac{2 \nu}{V} \int_V { \left( \frac{\partial^2}{\partial r_i^2}p  + \rho \frac{\partial^2}{\partial r_i^2}\phi \right) } dV\\
+&= \frac{1}{V} \int_V \frac {2\eta}{\rho} \left( \frac{\partial^2}{\partial r_i^2}p  + 4\pi G \rho^2 \right)  dV
+=  \frac{2 \nu}{V} \int_V  \left( \frac{\partial^2}{\partial r_i^2}p  + \rho \frac{\partial^2}{\partial r_i^2}\phi \right)  dV\\
 &= \frac{2 \nu}{V} \oint_A \frac{\partial}{\partial r_i}p dA + \frac{2 \eta}{V} \oint_A \frac{\partial}{\partial r_i}\phi dV\end{aligned}$$
 where we made use of the poisson equation for the gravitational potential and
 Gauss' theorem. So only if the pressure gradient and the gravitational force
@@ -1881,8 +1881,8 @@ equivalent.
 From equation [\[eq:nicdivstress\]](#eq:nicdivstress){reference-type="eqref" reference="eq:nicdivstress"} we get for
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_i \partial r_j}\sigma^*_{ij} 
-= \eta \frac{\partial}{\partial r_i} { \left( \frac{\partial^2}{\partial r_j^2}v_i \right) } 
-= \eta \frac{\partial^2}{\partial r_j^2} { \left( \frac{\partial v_i}{\partial r_i} \right) } 
+= \eta \frac{\partial}{\partial r_i}  \left( \frac{\partial^2}{\partial r_j^2}v_i \right)  
+= \eta \frac{\partial^2}{\partial r_j^2}  \left( \frac{\partial v_i}{\partial r_i} \right)  
 = 0\end{aligned}$$
 Using this result in equation [\[eq:icdiv\]](#eq:icdiv){reference-type="eqref" reference="eq:icdiv"} we get as equation of state for
 an incompressible newtonian fluid
@@ -1893,7 +1893,7 @@ $$\begin{aligned}
 or in vector notation
 $$\begin{aligned}
 \Delta p = 
--\rho \nabla{ \left[ \nabla\cdot(v_i v_j) \right] }
+-\rho \nabla \left[ \nabla\cdot(v_i v_j) \right] 
 - 4\pi G \rho^2\end{aligned}$$
 Actually the divergence equation for an incompressible newtonian fluid
 has a very interesting form. It is show in the Appendix [2.18.3](#diveq){reference-type="ref" reference="diveq"} that the
@@ -1922,7 +1922,7 @@ $$\begin{aligned}
 \frac{\partial v_i}{\partial t} + v_j \frac{\partial v_i}{\partial r_j} =& -\frac{1}{\rho}\frac{\partial}{\partial r_i}p + g_i
 +\nu\frac{\partial^2}{\partial r_j^2}v_i\\
 \frac{\partial e}{\partial t} + v_j \frac{\partial e}{\partial r_j} =& -\frac{1}{\rho} \frac{\partial}{\partial r_j}(v_j p) + v_i g_i
-+\nu \frac{\partial^2}{\partial r_j^2}{ \left( \frac{1}{2}v_i^2 \right) }+ \nu \frac{\partial}{\partial r_j}{ \left( v_i\frac{\partial v_j}{\partial r_i} \right) }\end{aligned}$$
++\nu \frac{\partial^2}{\partial r_j^2} \left( \frac{1}{2}v_i^2 \right) + \nu \frac{\partial}{\partial r_j} \left( v_i\frac{\partial v_j}{\partial r_i} \right) \end{aligned}$$
 with Newtonian gravity (Poisson Equation):
 $$\begin{aligned}
 \frac{\partial}{\partial r_j}g_j=4\pi G \rho\end{aligned}$$
@@ -1992,17 +1992,17 @@ v_i&= a \dot{x}_i + \dot{a} x_i = u_i + \dot{a} x_i\\
 \frac{\partial}{\partial r_i}&=\frac{1}{a}\frac{\partial}{\partial x_i}\\
 \frac{\partial}{\partial r_i}v_i&=\frac{1}{a}\frac{\partial}{\partial x_i}u_i+3\frac{\dot{a}}{a}\label{eq:cotrans4}\\
 \frac{\partial}{\partial r_i}v_j&=\frac{1}{a}\frac{\partial}{\partial x_i}u_j + \frac{\dot{a}}{a}\delta_{ij} \label{eq:cotrans5}\\
-{ \left( \frac{\partial A}{\partial t} \right) }_r+v_j \frac{\partial A}{\partial r_j} &= 
-{ \left( \frac{\partial A}{\partial t} \right) }_x+\frac{1}{a}u_j \frac{\partial A}{\partial
+ \left( \frac{\partial A}{\partial t} \right) _r+v_j \frac{\partial A}{\partial r_j} &= 
+ \left( \frac{\partial A}{\partial t} \right) _x+\frac{1}{a}u_j \frac{\partial A}{\partial
 x_j}\\
 A(r_i,v_i,t) &\neq A(x_i,u_i,t)\end{aligned}$$
 The stress tensor for a newtonian fluid in comoving coordinates is[^26]
 $$\begin{aligned}
-\sigma'_{ij}=2\eta T^*_{ij}+\zeta\delta_{ij}\frac{1}{a}{ \left( \frac{\partial}{\partial x_k}u_k+n\dot{a} \right) }\end{aligned}$$
+\sigma'_{ij}=2\eta T^*_{ij}+\zeta\delta_{ij}\frac{1}{a} \left( \frac{\partial}{\partial x_k}u_k+n\dot{a} \right) \end{aligned}$$
 with
 $$\begin{aligned}
-T^*_{ij}=\frac{1}{a}{ \left[ \frac{1}{2}{ \left( \frac{\partial}{\partial x_j}u_i+\frac{\partial}{\partial x_i}u_j \right) }
--\frac{1}{n}\delta_{ij}\frac{\partial}{\partial x_k}u_k \right] }\end{aligned}$$
+T^*_{ij}=\frac{1}{a} \left[ \frac{1}{2} \left( \frac{\partial}{\partial x_j}u_i+\frac{\partial}{\partial x_i}u_j \right) 
+-\frac{1}{n}\delta_{ij}\frac{\partial}{\partial x_k}u_k \right] \end{aligned}$$
 
 ##### Transformed equations
 
@@ -2080,7 +2080,7 @@ where $u$ is the specific internal energy. The specific internal energy can be
 computed from the total energy [^29] via $u=e-\frac{1}{2}v^2$ and so we get for the
 pressure
 $$\begin{aligned}
-p={ \left( \gamma-1 \right) } \rho { \left( e-\frac{1}{2}v^2 \right) }\end{aligned}$$
+p= \left( \gamma-1 \right)  \rho  \left( e-\frac{1}{2}v^2 \right) \end{aligned}$$
 
 #### Van-der-Waals-Gas
 
@@ -2107,14 +2107,14 @@ i.e. with constant entropy. The derivation of the equation of motion for a small
 pertubation in density and pressure then leads us to a wave equation with a
 propagation speed
 $$\begin{aligned}
-c=\sqrt{{ \left( \frac{\partial p_0}{\partial \rho_0} \right) }_S}\end{aligned}$$
+c=\sqrt{ \left( \frac{\partial p_0}{\partial \rho_0} \right) _S}\end{aligned}$$
 which is called the adiabatic speed of sound.
 
 Further on for an adiabatic change of state it applies
 $$\begin{aligned}
 p V^\gamma &= \text{const.} = C \ \ |\ \cdot\frac{1}{M^\gamma}\\
-p { \left( \frac{V}{M} \right) }^\gamma &= \frac{C}{M^\gamma}\\
-p { \left( \frac{1}{\rho} \right) }^\gamma &= C^*\\
+p  \left( \frac{V}{M} \right) ^\gamma &= \frac{C}{M^\gamma}\\
+p  \left( \frac{1}{\rho} \right) ^\gamma &= C^*\\
 \Longrightarrow 
 p &= C^* \rho^\gamma \Longleftrightarrow \frac{p}{\rho} = C^* \rho^{\gamma-1}\end{aligned}$$
 Using this we get
@@ -2143,11 +2143,11 @@ So, the Machnumber $Ma = x \cdot \sqrt{e_{kin}/e_{int}}$ where $x$ for some
 values of $\gamma$ can be found in the following table:
 
 ::: center
-     $\gamma$      $\gamma(\gamma-1)$   $x = { \left[ \gamma(\gamma-1) \right] }^{-1/2}$
-  --------------- -------------------- --------------------------------------------------
-   $\frac{5}{3}$     $\frac{10}{9}$            $\frac{3}{\sqrt{10}}\approx 0.949$
-   $\frac{7}{5}$    $\frac{14}{25}$            $\frac{5}{\sqrt{14}}\approx 1.336$
-   $\frac{4}{3}$     $\frac{4}{9}$                    $\frac{3}{2}$ = 1.5
+     $\gamma$      $\gamma(\gamma-1)$   $x =  \left[ \gamma(\gamma-1) \right] ^{-1/2}$
+  --------------- -------------------- ------------------------------------------------
+   $\frac{5}{3}$     $\frac{10}{9}$           $\frac{3}{\sqrt{10}}\approx 0.949$
+   $\frac{7}{5}$    $\frac{14}{25}$           $\frac{5}{\sqrt{14}}\approx 1.336$
+   $\frac{4}{3}$     $\frac{4}{9}$                   $\frac{3}{2}$ = 1.5
 :::
 
 ### Dimensional analysis
@@ -2292,17 +2292,17 @@ we can write [\[eq:1dmass\]](#eq:1dmass){reference-type="eqref" reference="eq:1d
 $$\begin{aligned}
 &&\frac{d}{d t}\rho + \rho^2 \frac{\partial}{\partial m} v &= 0 \\
 \Leftrightarrow&& -\frac{1}{\rho^2}\frac{d}{d t}\rho - \frac{\partial}{\partial m} v &= 0 \\
-\Leftrightarrow&& \frac{d}{d t}{ \left( \frac{1}{\rho} \right) } &= \frac{\partial}{\partial m} v\end{aligned}$$
+\Leftrightarrow&& \frac{d}{d t} \left( \frac{1}{\rho} \right)  &= \frac{\partial}{\partial m} v\end{aligned}$$
 The momentum equation [\[eq:1dmom\]](#eq:1dmom){reference-type="eqref" reference="eq:1dmom"} is transformed like
 $$\begin{aligned}
 && \frac{d}{d t}(\rho v) + \rho^2 v \frac{\partial}{\partial m} v &= -\rho \frac{\partial}{\partial m}p + \rho \frac{\partial}{\partial m}\sigma'
 -\rho g\\
-\Leftrightarrow&& \frac{1}{\rho}{ \left( \rho \frac{d}{d t}v + v\frac{d}{d t}\rho \right) } 
+\Leftrightarrow&& \frac{1}{\rho} \left( \rho \frac{d}{d t}v + v\frac{d}{d t}\rho \right)  
 + \rho v \frac{\partial}{\partial m}v &= -\frac{\partial}{\partial m}p + \frac{\partial}{\partial m}\sigma' - g \\
-\Leftrightarrow&& \frac{d}{d t}v + v { \left( \frac{1}{\rho}\frac{d}{d t}\rho+\rho \frac{\partial}{\partial m} v \right) } &=
+\Leftrightarrow&& \frac{d}{d t}v + v  \left( \frac{1}{\rho}\frac{d}{d t}\rho+\rho \frac{\partial}{\partial m} v \right)  &=
 -\frac{\partial}{\partial m}p + \frac{\partial}{\partial m}\sigma' - g \\
 \Leftrightarrow&& \frac{d}{d t}v - \rho v
-\underbrace{{ \left( -\frac{1}{\rho^2}\frac{d}{d t}\rho-\frac{\partial}{\partial m} v \right) }}_{0} &=
+\underbrace{ \left( -\frac{1}{\rho^2}\frac{d}{d t}\rho-\frac{\partial}{\partial m} v \right) }_{0} &=
 -\frac{\partial}{\partial m}p + \frac{\partial}{\partial m}\sigma' - g\\
 \Leftrightarrow&& \frac{d}{d t}v &= -\frac{\partial}{\partial m}p + \frac{\partial}{\partial m}\sigma' - g\end{aligned}$$
 With an analogous transformation the energy equation [\[eq:1detot\]](#eq:1detot){reference-type="eqref" reference="eq:1detot"} can be
@@ -2313,7 +2313,7 @@ Summing up the three equations an retransforming them in terms of $dr$ we get
 the balance equations in one-dimensional lagrangian form as they are often used
 in numerical fluid dynamics:
 $$\begin{aligned}
-\frac{d}{d t}{ \left( \frac{1}{\rho} \right) } &= \frac{1}{\rho}\frac{\partial}{\partial r} v \\
+\frac{d}{d t} \left( \frac{1}{\rho} \right)  &= \frac{1}{\rho}\frac{\partial}{\partial r} v \\
 \frac{d}{d t}v &= -\frac{1}{\rho}\frac{\partial}{\partial r}p + \frac{1}{\rho}\frac{\partial}{\partial r}\sigma' - g\\
 \frac{d}{d t}e &= -\frac{1}{\rho}\frac{\partial}{\partial r}(vp) + \frac{1}{\rho}\frac{\partial}{\partial r}(v\sigma') - vg\end{aligned}$$
 
@@ -2323,8 +2323,8 @@ The decomposition of the jacobian of the velocity field into a symmetric and
 an antisymmetric part yields
 $$\begin{aligned}
 \frac{\partial v_i}{\partial r_j}&=
-\underbrace{\frac{1}{2}{ \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) }}_{S_{ij}=S_{ji}}
-+\underbrace{\frac{1}{2}{ \left( \frac{\partial v_i}{\partial r_j}-\frac{\partial v_j}{\partial r_i} \right) }}_{R_{ij}=-R_{ji}}\end{aligned}$$
+\underbrace{\frac{1}{2} \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) }_{S_{ij}=S_{ji}}
++\underbrace{\frac{1}{2} \left( \frac{\partial v_i}{\partial r_j}-\frac{\partial v_j}{\partial r_i} \right) }_{R_{ij}=-R_{ji}}\end{aligned}$$
 The symmetric part $S_{ij}$ is called *rate of strain tensor* and the
 antisymmetric part is called *rotation tensor*. $R_{ij}$ has only three
 independent components and can be expressed in terms of a (pseudo-)
@@ -2333,8 +2333,8 @@ This vector is equivalent to the negative curl of the velocity field
 $\boldsymbol{\omega}=\nabla \times \boldsymbol{v}$ as we can see by multiplying $R_{jk}$ with
 $\epsilon_{ijk}$
 $$\begin{aligned}
-\frac{1}{2}\epsilon_{ijk}R_{jk}&=\frac{1}{2}\epsilon_{ijk}{ \left( \frac{\partial v_j}{\partial r_k}
--\frac{\partial  v_k}{\partial  r_j } \right) }=
+\frac{1}{2}\epsilon_{ijk}R_{jk}&=\frac{1}{2}\epsilon_{ijk} \left( \frac{\partial v_j}{\partial r_k}
+-\frac{\partial  v_k}{\partial  r_j } \right) =
 \frac{1}{2}\epsilon_{ijk}\frac{\partial v_j}{\partial r_k}-\frac{1}{2}\epsilon_{ijk}\frac{\partial v_k}{\partial r_j}
 \\
 &=
@@ -2352,10 +2352,10 @@ $$\begin{aligned}
 -\frac{1}{2}\epsilon_{ijk}\omega_k
 &=-\frac{1}{2}\epsilon_{ijk}\epsilon_{klm}\frac{\partial v_m}{\partial r_l}
 =-\frac{1}{2}\epsilon_{kij}\epsilon_{klm}\frac{\partial v_m}{\partial r_l}\\
-&=-\frac{1}{2}{ \left( \delta_{il}\delta_{jm}-\delta_{im}\delta_{jl} \right) }\frac{\partial v_m}{\partial r_l}
+&=-\frac{1}{2} \left( \delta_{il}\delta_{jm}-\delta_{im}\delta_{jl} \right) \frac{\partial v_m}{\partial r_l}
 \\
-&=-\frac{1}{2}{ \left( \frac{\partial v_j}{\partial r_i}-\frac{\partial v_i}{\partial r_j} \right) }
-=\frac{1}{2}{ \left( \frac{\partial v_i}{\partial r_j}-\frac{\partial v_j}{\partial r_i} \right) }\\
+&=-\frac{1}{2} \left( \frac{\partial v_j}{\partial r_i}-\frac{\partial v_i}{\partial r_j} \right) 
+=\frac{1}{2} \left( \frac{\partial v_i}{\partial r_j}-\frac{\partial v_j}{\partial r_i} \right) \\
 &=R_{ij}\end{aligned}$$
 and
 $$\begin{aligned}
@@ -2370,10 +2370,10 @@ tensor and the contraction of the rotation tensor is useful
 $$\begin{aligned}
 \begin{split}
 4 S_{ij}S_{ij} -  4 R_{ij}R_{ij} &=
-{ \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) }^2 - { \left( \frac{\partial v_i}{\partial r_j}-\frac{\partial v_j}{\partial r_i} \right) }^2\\ 
-&={ \left( \frac{\partial v_i}{\partial r_j} \right) }^2 + { \left( \frac{\partial v_j}{\partial r_i} \right) }^2 +
+ \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) ^2 -  \left( \frac{\partial v_i}{\partial r_j}-\frac{\partial v_j}{\partial r_i} \right) ^2\\ 
+&= \left( \frac{\partial v_i}{\partial r_j} \right) ^2 +  \left( \frac{\partial v_j}{\partial r_i} \right) ^2 +
 2\frac{\partial v_i}{\partial r_j}\frac{\partial v_j}{\partial r_i}
--{ \left( \frac{\partial v_i}{\partial r_j} \right) }^2 - { \left( \frac{\partial v_j}{\partial r_i} \right) }^2 +
+- \left( \frac{\partial v_i}{\partial r_j} \right) ^2 -  \left( \frac{\partial v_j}{\partial r_i} \right) ^2 +
 2\frac{\partial v_i}{\partial r_j}\frac{\partial v_j}{\partial r_i}\\ 
 &= 4 \frac{\partial v_i}{\partial r_j}\frac{\partial v_j}{\partial r_i}
 \end{split}
@@ -2407,7 +2407,7 @@ $$\begin{aligned}
 \frac{\partial v_i}{\partial r_j} = -\frac{\partial v_j}{\partial r_i}\end{aligned}$$
 Using this and equation [\[eq:uascontr\]](#eq:uascontr){reference-type="eqref" reference="eq:uascontr"} in equation [\[eq:nodiss\]](#eq:nodiss){reference-type="eqref" reference="eq:nodiss"} we get
 $$\begin{aligned}
-\int_V \frac{1}{2}{ \left( \sigma'_{ij}-\sigma'_{ji} \right) } \frac{\partial}{\partial r_j} v_i dV = 0\end{aligned}$$
+\int_V \frac{1}{2} \left( \sigma'_{ij}-\sigma'_{ji} \right)  \frac{\partial}{\partial r_j} v_i dV = 0\end{aligned}$$
 This relation can only be fulfilled if the stress tensor $\sigma'_{ij}$
 is symmetric
 $$\begin{aligned}
@@ -2416,17 +2416,17 @@ For a newtonian fluid is it assumed that the stress tensor is proportional only 
 first derivatives of the velocity field. Together with the requirement of symmetry
 the most general for of such a tensor is
 $$\begin{aligned}
-\sigma'_{ij} = a{ \left( \frac{\partial v_j}{\partial r_i}+\frac{\partial v_i}{\partial r_j} \right) }+b \delta_{ij}\frac{\partial v_k}{\partial r_k}\end{aligned}$$
+\sigma'_{ij} = a \left( \frac{\partial v_j}{\partial r_i}+\frac{\partial v_i}{\partial r_j} \right) +b \delta_{ij}\frac{\partial v_k}{\partial r_k}\end{aligned}$$
 Usually the trace is split off the first term and added the second term so
 $$\begin{aligned}
-\sigma'_{ij} = a { \left( \frac{\partial v_j}{\partial r_i}+\frac{\partial v_i}{\partial r_j}
--\frac{2}{3}\delta_{ij}\frac{\partial v_k}{\partial r_k} \right) }+{ \left( \frac{2 a}{3}+b \right) }\delta_{ij}\frac{\partial v_k}{\partial r_k}\end{aligned}$$
+\sigma'_{ij} = a  \left( \frac{\partial v_j}{\partial r_i}+\frac{\partial v_i}{\partial r_j}
+-\frac{2}{3}\delta_{ij}\frac{\partial v_k}{\partial r_k} \right) + \left( \frac{2 a}{3}+b \right) \delta_{ij}\frac{\partial v_k}{\partial r_k}\end{aligned}$$
 Using the definitions $2a = \eta$ and $\frac{2 a}{3}+b=\zeta$ we get the form
 most common in literature
 $$\begin{aligned}
 \sigma'_{ij} =  
-\eta{ \left[ \frac{1}{2}{ \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) }
--\frac{1}{3}\delta_{ij}\frac{\partial v_k}{\partial r_k} \right] }
+\eta \left[ \frac{1}{2} \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) 
+-\frac{1}{3}\delta_{ij}\frac{\partial v_k}{\partial r_k} \right] 
 +\zeta \delta_{ij}\frac{\partial v_k}{\partial r_k}\end{aligned}$$
 
 ### Stress tensor in cartesian coordinates for 1d, 2d and 3d {#stress1d2d3d}
@@ -2440,61 +2440,61 @@ $$\begin{aligned}
 S^*_{ij}=S_{ij}-\frac{1}{n}\delta_{ij}\frac{\partial}{\partial r_k}v_k\end{aligned}$$
 and $S_{ij}$ being the so called rate-of-strain tensor
 $$\begin{aligned}
-\frac{1}{2}{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }\end{aligned}$$
+\frac{1}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) \end{aligned}$$
 In 1d cartesian coordinates the component of the
 symmetric tracefree part of the stress tensor $S^*_{ij}$ is
 $$\begin{aligned}
-S_{xx}=\frac{1}{2}{ \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_x}v_x \right) }-\frac{1}{1}\frac{\partial}{\partial r_x}v_x = 0.\end{aligned}$$
+S_{xx}=\frac{1}{2} \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_x}v_x \right) -\frac{1}{1}\frac{\partial}{\partial r_x}v_x = 0.\end{aligned}$$
 In 2d cartesian coordinates the components of $S^*_{ij}$ are
 $$\begin{aligned}
-S_{xx}&=\frac{1}{2}{ \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_x}v_x \right) }
-		 -\frac{1}{2}{ \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_y}v_y \right) }\\
-		&=\frac{1}{2}{ \left( \frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_y}v_y \right) }, \\
-S_{xy}&=\frac{1}{2}{ \left( \frac{\partial}{\partial r_y}v_x+\frac{\partial}{\partial r_x}v_y \right) }, \\
+S_{xx}&=\frac{1}{2} \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_x}v_x \right) 
+		 -\frac{1}{2} \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_y}v_y \right) \\
+		&=\frac{1}{2} \left( \frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_y}v_y \right) , \\
+S_{xy}&=\frac{1}{2} \left( \frac{\partial}{\partial r_y}v_x+\frac{\partial}{\partial r_x}v_y \right) , \\
 S_{yx}&=S_{xy},\\
-S_{yy}&=\frac{1}{2}{ \left( \frac{\partial}{\partial r_y}v_y-\frac{\partial}{\partial r_x}v_x \right) }.\end{aligned}$$
+S_{yy}&=\frac{1}{2} \left( \frac{\partial}{\partial r_y}v_y-\frac{\partial}{\partial r_x}v_x \right) .\end{aligned}$$
 In 3d cartesian coordinates the components of $S^*_{ij}$ are
 $$\begin{aligned}
-S_{xx}&=\frac{1}{2}{ \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_x}v_x \right) }
-		 -\frac{1}{3}{ \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_y}v_y+\frac{\partial}{\partial r_z}v_z \right) }\\
-		&=\frac{1}{3}{ \left( 2\frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_y}v_y-\frac{\partial}{\partial r_z}v_z \right) },\\
-S_{xy}&=\frac{1}{2}{ \left( \frac{\partial}{\partial r_y}v_x+\frac{\partial}{\partial r_x}v_y \right) },\\
-S_{xz}&=\frac{1}{2}{ \left( \frac{\partial}{\partial r_z}v_x+\frac{\partial}{\partial r_x}v_z \right) },\\
+S_{xx}&=\frac{1}{2} \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_x}v_x \right) 
+		 -\frac{1}{3} \left( \frac{\partial}{\partial r_x}v_x+\frac{\partial}{\partial r_y}v_y+\frac{\partial}{\partial r_z}v_z \right) \\
+		&=\frac{1}{3} \left( 2\frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_y}v_y-\frac{\partial}{\partial r_z}v_z \right) ,\\
+S_{xy}&=\frac{1}{2} \left( \frac{\partial}{\partial r_y}v_x+\frac{\partial}{\partial r_x}v_y \right) ,\\
+S_{xz}&=\frac{1}{2} \left( \frac{\partial}{\partial r_z}v_x+\frac{\partial}{\partial r_x}v_z \right) ,\\
 S_{yx}&=S_{xy},\\
-S_{yy}&=\frac{1}{3}{ \left( 2\frac{\partial}{\partial r_y}v_y-\frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_z}v_z \right) },\\
-S_{yz}&=\frac{1}{2}{ \left( \frac{\partial}{\partial r_z}v_y+\frac{\partial}{\partial r_y}v_z \right) },\\
+S_{yy}&=\frac{1}{3} \left( 2\frac{\partial}{\partial r_y}v_y-\frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_z}v_z \right) ,\\
+S_{yz}&=\frac{1}{2} \left( \frac{\partial}{\partial r_z}v_y+\frac{\partial}{\partial r_y}v_z \right) ,\\
 S_{zx}&=S_{xz},\\
 S_{zy}&=S_{yz},\\
-S_{zz}&=\frac{1}{3}{ \left( 2\frac{\partial}{\partial r_z}v_z-\frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_y}v_y \right) }.\\\end{aligned}$$
+S_{zz}&=\frac{1}{3} \left( 2\frac{\partial}{\partial r_z}v_z-\frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_y}v_y \right) .\\\end{aligned}$$
 
 ### Stress tensor in comoving coordinates {#costress}
 
 With the help of transformation ([\[eq:cotrans4\]](#eq:cotrans4){reference-type="ref" reference="eq:cotrans4"}) and ([\[eq:cotrans5\]](#eq:cotrans5){reference-type="ref" reference="eq:cotrans5"}) we
 can transform the stress tensor for a newtonian fluid in cartesian coordinates
 $$\begin{aligned}
-\sigma'_{ij}= 2\eta{ \left[ \frac{1}{2}{ \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) }
--\frac{1}{n}\delta_{ij}\frac{\partial}{\partial r_k}v_k \right] }+\zeta\delta_{ij}\frac{\partial}{\partial r_k}v_k.\end{aligned}$$
+\sigma'_{ij}= 2\eta \left[ \frac{1}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) 
+-\frac{1}{n}\delta_{ij}\frac{\partial}{\partial r_k}v_k \right] +\zeta\delta_{ij}\frac{\partial}{\partial r_k}v_k.\end{aligned}$$
 into the stress tensor for a newtonian fluid in comoving coordinates
 $$\begin{aligned}
 \sigma'_{ij}=& 
-2\eta{ \left[ \frac{1}{2} 
-{ \left( \frac{1}{a}\frac{\partial}{\partial x_j}u_i+\frac{\dot{a}}{a}\delta_{ij}+\frac{1}{a}\frac{\partial}{\partial x_i}u_j+\frac{\dot{a}}{a}\delta_{ji} \right) } 
--\frac{1}{n}\delta_{ij}{ \left( \frac{1}{a}\frac{\partial}{\partial x_k}u_k+n\frac{\dot{a}}{a} \right) } \right] }\\
-&+\zeta\delta_{ij}{ \left( \frac{1}{a}\frac{\partial}{\partial x_k}u_k+n\frac{\dot{a}}{a} \right) }\\
-=&2\eta{ \left[ \frac{1}{2 a} 
-{ \left( \frac{\partial}{\partial x_j}u_i+\frac{\partial}{\partial x_i}u_j \right) }+\frac{\dot{a}}{a}\delta_{ij}-\frac{n}{n}\frac{\dot{a}}{a}\delta_{ij}
--\frac{1}{n a}\delta_{ij}\frac{\partial}{\partial x_k}u_k \right] }\\
-&+\zeta\delta_{ij}{ \left( \frac{1}{a}\frac{\partial}{\partial x_k}u_k+n\frac{\dot{a}}{a} \right) }\\
-=&\frac{1}{a}{ \left\{ 2\eta{ \left[ \frac{1}{2} 
-{ \left( \frac{\partial}{\partial x_j}u_i+\frac{\partial}{\partial x_i}u_j \right) }-\frac{1}{n}\delta_{ij}\frac{\partial}{\partial x_k}u_k \right] }
-+\zeta\delta_{ij}{ \left( \frac{\partial}{\partial x_k}u_k+n\dot{a} \right) } \right\} }.\end{aligned}$$
+2\eta \left[ \frac{1}{2} 
+ \left( \frac{1}{a}\frac{\partial}{\partial x_j}u_i+\frac{\dot{a}}{a}\delta_{ij}+\frac{1}{a}\frac{\partial}{\partial x_i}u_j+\frac{\dot{a}}{a}\delta_{ji} \right)  
+-\frac{1}{n}\delta_{ij} \left( \frac{1}{a}\frac{\partial}{\partial x_k}u_k+n\frac{\dot{a}}{a} \right)  \right] \\
+&+\zeta\delta_{ij} \left( \frac{1}{a}\frac{\partial}{\partial x_k}u_k+n\frac{\dot{a}}{a} \right) \\
+=&2\eta \left[ \frac{1}{2 a} 
+ \left( \frac{\partial}{\partial x_j}u_i+\frac{\partial}{\partial x_i}u_j \right) +\frac{\dot{a}}{a}\delta_{ij}-\frac{n}{n}\frac{\dot{a}}{a}\delta_{ij}
+-\frac{1}{n a}\delta_{ij}\frac{\partial}{\partial x_k}u_k \right] \\
+&+\zeta\delta_{ij} \left( \frac{1}{a}\frac{\partial}{\partial x_k}u_k+n\frac{\dot{a}}{a} \right) \\
+=&\frac{1}{a} \left\{ 2\eta \left[ \frac{1}{2} 
+ \left( \frac{\partial}{\partial x_j}u_i+\frac{\partial}{\partial x_i}u_j \right) -\frac{1}{n}\delta_{ij}\frac{\partial}{\partial x_k}u_k \right] 
++\zeta\delta_{ij} \left( \frac{\partial}{\partial x_k}u_k+n\dot{a} \right)  \right\} .\end{aligned}$$
 
 ### A contradiction when computing the dissipation {#contradiss}
 
 The dissipation for an newtonian incompressible fluid is
 $$\begin{aligned}
 \mathcal{E}
-=-\frac{1}{V} \int_V \frac{\eta}{2}{ \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) }^2 dV\end{aligned}$$
+=-\frac{1}{V} \int_V \frac{\eta}{2} \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) ^2 dV\end{aligned}$$
 If we assume a flowfield with $\frac{\partial v_x}{\partial r_x} \neq 0$ (which causes
 $\frac{\partial v_y}{\partial r_y}+\frac{\partial v_z}{\partial r_z}=-\frac{\partial v_x}{\partial r_x}$, because the divergence
 of the velocity field must be zero) and vanishing diagonal components of
@@ -2504,8 +2504,8 @@ $\frac{\partial v_y}{\partial r_x}=\frac{\partial v_x}{\partial r_y}=\frac{\part
 dissipation of
 $$\begin{aligned}
 \mathcal{E}
-=-\frac{2 \eta}{V} \int_V { \left( \frac{\partial v_x}{\partial r_x} \right) }^2 +{ \left( \frac{\partial v_y}{\partial r_y} \right) }^2 +
-{ \left( \frac{\partial v_z}{\partial r_z} \right) }^2 dV. \end{aligned}$$
+=-\frac{2 \eta}{V} \int_V  \left( \frac{\partial v_x}{\partial r_x} \right) ^2 + \left( \frac{\partial v_y}{\partial r_y} \right) ^2 +
+ \left( \frac{\partial v_z}{\partial r_z} \right) ^2 dV. \end{aligned}$$
 The absolut value of the dissipation must be greater than zero, because
 all the terms in the integral are quadratic and our assumption was
 $\frac{\partial v_x}{\partial r_x},\frac{\partial v_y}{\partial r_y},\frac{\partial v_z}{\partial r_z}  \neq 0$.
@@ -2524,29 +2524,29 @@ assumed flow field is unphysical.
 
 A structure function of order $p$ is defined as[^34]
 $$\begin{aligned}
-S_p(f(x))=\langle { \left[ f(x+x')-f(x') \right] }^p \rangle = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}{ \left[ f(x+x')-f(x') \right] }^p
+S_p(f(x))=\langle  \left[ f(x+x')-f(x') \right] ^p \rangle = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} \left[ f(x+x')-f(x') \right] ^p
 dx'\end{aligned}$$
 The second order structure function is related to the spectrum
 $\left\lvert F(k)\right\rvert$ of the function $f$ like
 $$\begin{aligned}
-\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}{ \left[ f(x+x')-f(x') \right] }^2 dx' = \frac{2}{\sqrt{2\pi}}\int_{-\infty}^{\infty}(1-e^{ikx})
+\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} \left[ f(x+x')-f(x') \right] ^2 dx' = \frac{2}{\sqrt{2\pi}}\int_{-\infty}^{\infty}(1-e^{ikx})
 \left\lvert F(k)\right\rvert^2 dk \label{eq:structspec}\end{aligned}$$
 which can be proved[^35] by expanding the second order structure function
 $$\begin{aligned}
-&S_2(f(x))=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}{ \left[ f(x+x')-f(x') \right] }^2 dx'\\
-&= \frac{1}{\sqrt{2\pi}}{ \left[ \int_{-\infty}^{\infty}\left\lvert f(x+x')\right\rvert^2 dx' 
+&S_2(f(x))=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} \left[ f(x+x')-f(x') \right] ^2 dx'\\
+&= \frac{1}{\sqrt{2\pi}} \left[ \int_{-\infty}^{\infty}\left\lvert f(x+x')\right\rvert^2 dx' 
 - 2 \int_{-\infty}^{\infty}f^*(x')f(x+x')dx'
-+ \int_{-\infty}^{\infty}\left\lvert f(x')\right\rvert^2 dx' \right] }.\end{aligned}$$
++ \int_{-\infty}^{\infty}\left\lvert f(x')\right\rvert^2 dx' \right] .\end{aligned}$$
 Substituting $x''=x+x'$ in the first term we get
 $$\begin{aligned}
-S_2(f(x)) &= \frac{1}{\sqrt{2\pi}}{ \left[ \int_{-\infty}^{\infty}\left\lvert f(x'')\right\rvert^2 dx'' 
+S_2(f(x)) &= \frac{1}{\sqrt{2\pi}} \left[ \int_{-\infty}^{\infty}\left\lvert f(x'')\right\rvert^2 dx'' 
 - 2\int_{-\infty}^{\infty}f^*(x')f(x+x')dx'
-+\int_{-\infty}^{\infty}\left\lvert f(x')\right\rvert^2 dx' \right] }\\
-&= \frac{2}{\sqrt{2\pi}} { \left[ \int_{-\infty}^{\infty}\left\lvert f(x')\right\rvert^2 dx'-\int_{-\infty}^{\infty}f^*(x')f(x+x')dx' \right] }.\end{aligned}$$
++\int_{-\infty}^{\infty}\left\lvert f(x')\right\rvert^2 dx' \right] \\
+&= \frac{2}{\sqrt{2\pi}}  \left[ \int_{-\infty}^{\infty}\left\lvert f(x')\right\rvert^2 dx'-\int_{-\infty}^{\infty}f^*(x')f(x+x')dx' \right] .\end{aligned}$$
 Using Parseval's and the Wiener-Khichnin theorem we obtain the final result
 $$\begin{aligned}
-&S_2(f(x))=\frac{2}{\sqrt{2\pi}} { \left[ \int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 dk
--\int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 e^{ikx} dk \right] } \\
+&S_2(f(x))=\frac{2}{\sqrt{2\pi}}  \left[ \int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 dk
+-\int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 e^{ikx} dk \right]  \\
 &= \frac{2}{\sqrt{2\pi}}\int_{-\infty}^{\infty}(1-e^{ikx})\left\lvert F(k)\right\rvert^2 dk. \end{aligned}$$
 
 The structure functions used in the theory of Kolmogorov
@@ -2554,9 +2554,9 @@ are the so called longitudinal structure functions of the velocity, which are
 defined like
 $$\begin{aligned}
 S_2(v_{\parallel}(l)) =  
-\langle { \left( { \left[ \boldsymbol{v}(\boldsymbol{x}+\boldsymbol{l})-\boldsymbol{v}(\boldsymbol{x}) \right] }\cdot
-\frac{\boldsymbol{l}}{l} \right) }^p \rangle =
-\langle { \left( v_{\parallel}(\boldsymbol{x}+\boldsymbol{l})-v_{\parallel}(\boldsymbol{x}) \right) }^p \rangle\end{aligned}$$
+\langle  \left(  \left[ \boldsymbol{v}(\boldsymbol{x}+\boldsymbol{l})-\boldsymbol{v}(\boldsymbol{x}) \right] \cdot
+\frac{\boldsymbol{l}}{l} \right) ^p \rangle =
+\langle  \left( v_{\parallel}(\boldsymbol{x}+\boldsymbol{l})-v_{\parallel}(\boldsymbol{x}) \right) ^p \rangle\end{aligned}$$
 They are related to the longitudinal velocity
 spectrum[^36] $\left\lvert V_{\parallel}(k)\right\rvert^2$ via equation
 [\[eq:structspec\]](#eq:structspec){reference-type="eqref" reference="eq:structspec"}.
@@ -2564,8 +2564,8 @@ Sometimes also second order transvers structure functions are measured.
 These are defined as
 $$\begin{aligned}
 S_2(v_{\perp}(l)) =  
-\langle { \left( \frac{\left\lvert{ \left[ \boldsymbol{v}(\boldsymbol{x}+\boldsymbol{l})-\boldsymbol{v}(\boldsymbol{x}) \right] }\times
-\boldsymbol{l}\right\rvert}{l} \right) }^p \rangle.\end{aligned}$$
+\langle  \left( \frac{\left\lvert \left[ \boldsymbol{v}(\boldsymbol{x}+\boldsymbol{l})-\boldsymbol{v}(\boldsymbol{x}) \right] \times
+\boldsymbol{l}\right\rvert}{l} \right) ^p \rangle.\end{aligned}$$
 The behaviour of the second order transvers structure functions for
 homogeneous turbulence is uniquely determined by the longitudinal structure
 function [@Pope2000 p. 192, Eqs. (6.28)]. They also show the
@@ -2577,8 +2577,8 @@ tensors, e.g. the general second order structure function of the velocity can
 be defined as
 $$\begin{aligned}
 S_{ij}(\boldsymbol{x},\boldsymbol{l}) =  
-\langle { \left[ v_i(\boldsymbol{x}+\boldsymbol{l})-v_i(\boldsymbol{x}) \right] }
-{ \left[ v_j(\boldsymbol{x}+\boldsymbol{l})-v_j(\boldsymbol{x}) \right] } \rangle\end{aligned}$$
+\langle  \left[ v_i(\boldsymbol{x}+\boldsymbol{l})-v_i(\boldsymbol{x}) \right] 
+ \left[ v_j(\boldsymbol{x}+\boldsymbol{l})-v_j(\boldsymbol{x}) \right]  \rangle\end{aligned}$$
 But it can be shown, that for local isotropy only the longitudinal
 structure function $S_2(v_{\perp}(l))=S_{11}$ and the transversal structure
 $S_2(v_{\perp}(l))=S_{22}=S_{33}$ are unequal zero [@Pope2000]. Since
@@ -2590,7 +2590,7 @@ function $S_{11} = S_2(v_{\parallel}(l))$ [@Pope2000].
 The third order structure function used in Kolmogorov theory is
 defined as
 $$\begin{aligned}
-S_{111}(\boldsymbol{x},\boldsymbol{l}) = \langle { \left[ v_1(\boldsymbol{x}+\boldsymbol{l})-v_1(\boldsymbol{x}) \right] }^3 \rangle\end{aligned}$$
+S_{111}(\boldsymbol{x},\boldsymbol{l}) = \langle  \left[ v_1(\boldsymbol{x}+\boldsymbol{l})-v_1(\boldsymbol{x}) \right] ^3 \rangle\end{aligned}$$
 which is often simply called $S_3(v(l))$. So the famous four-fifths law of
 Kolmogorov is actually true only for one component of the third order
 structure function tensor, but again for homogeneous and isotropic turbulence
@@ -2641,28 +2641,28 @@ The following is just speculation:
 
 One cannot derive the continuity equation from these equations
 $$\begin{aligned}
-\frac{\partial \rho}{\partial t} + \nabla \cdot { \left( \boldsymbol{v} \rho \right) } &= 0 \\
+\frac{\partial \rho}{\partial t} + \nabla \cdot  \left( \boldsymbol{v} \rho \right)  &= 0 \\
 \Leftrightarrow 
--\frac{1}{4\pi G}\frac{\partial}{\partial t}{ \left( \nabla\cdot\boldsymbol{g} \right) } 
-+ \nabla \cdot { \left( \boldsymbol{v} \rho \right) } &= 0 \\
+-\frac{1}{4\pi G}\frac{\partial}{\partial t} \left( \nabla\cdot\boldsymbol{g} \right)  
++ \nabla \cdot  \left( \boldsymbol{v} \rho \right)  &= 0 \\
 \Leftrightarrow
 -\frac{1}{4\pi G}\nabla\cdot\dot{\boldsymbol{g}}
-+\nabla \cdot { \left( \boldsymbol{v} \rho \right) } &= 0 \\
++\nabla \cdot  \left( \boldsymbol{v} \rho \right)  &= 0 \\
 \Leftrightarrow 
-\nabla \cdot { \left( \boldsymbol{v} \rho - \frac{1}{4\pi G} \dot{\boldsymbol{g}} \right) } &= 0\end{aligned}$$
+\nabla \cdot  \left( \boldsymbol{v} \rho - \frac{1}{4\pi G} \dot{\boldsymbol{g}} \right)  &= 0\end{aligned}$$
 But if we fixed equation [\[eq:maxgrav2\]](#eq:maxgrav2){reference-type="eqref" reference="eq:maxgrav2"} in analogy to Maxwell by writing
 [^38]
 $$\begin{aligned}
 \nabla \times (K \boldsymbol{g}) = \boldsymbol{v} \rho - \frac{1}{4\pi G} \dot{\boldsymbol{g}},\end{aligned}$$
 we could derive the continuity equation from our systems of equations like
 $$\begin{aligned}
-\nabla \cdot { \left( \nabla \times (K \boldsymbol{g}) \right) } &= \nabla \cdot { \left( \boldsymbol{v} \rho 
-- \frac{1}{4\pi G} \dot{\boldsymbol{g}} \right) }\\
+\nabla \cdot  \left( \nabla \times (K \boldsymbol{g}) \right)  &= \nabla \cdot  \left( \boldsymbol{v} \rho 
+- \frac{1}{4\pi G} \dot{\boldsymbol{g}} \right) \\
 \Leftrightarrow 
-0 &= \nabla \cdot { \left( \boldsymbol{v} \rho \right) } 
-+ \frac{\partial}{\partial t}{ \left( -\frac{1}{4\pi G} \nabla \cdot \boldsymbol{g} \right) } \\
+0 &= \nabla \cdot  \left( \boldsymbol{v} \rho \right)  
++ \frac{\partial}{\partial t} \left( -\frac{1}{4\pi G} \nabla \cdot \boldsymbol{g} \right)  \\
 \Leftrightarrow
-0 &= \nabla \cdot { \left( \boldsymbol{v} \rho \right) } + \frac{\partial}{\partial t} \rho\end{aligned}$$
+0 &= \nabla \cdot  \left( \boldsymbol{v} \rho \right)  + \frac{\partial}{\partial t} \rho\end{aligned}$$
 So instead of [\[eq:maxgrav1\]](#eq:maxgrav1){reference-type="eqref" reference="eq:maxgrav1"} and [\[eq:maxgrav2\]](#eq:maxgrav2){reference-type="eqref" reference="eq:maxgrav2"} we could have
 $$\begin{aligned}
 \nabla \cdot \boldsymbol{g} = - 4\pi G\rho, \\
@@ -2674,14 +2674,14 @@ $$\begin{aligned}
 From these vacuum equations we can try to derive a wave equation in analogy
 to the wave equation for the electromagnetic field like
 $$\begin{aligned}
-\nabla \times { \left( \nabla \times (K\boldsymbol{g}) \right) } = 
-- \frac{1}{4\pi G} { \left( \nabla \times \dot{\boldsymbol{g}} \right) }= 
-- \frac{1}{4\pi G} \frac{\partial}{\partial t} { \left( \nabla \times \boldsymbol{g} \right) }=
+\nabla \times  \left( \nabla \times (K\boldsymbol{g}) \right)  = 
+- \frac{1}{4\pi G}  \left( \nabla \times \dot{\boldsymbol{g}} \right) = 
+- \frac{1}{4\pi G} \frac{\partial}{\partial t}  \left( \nabla \times \boldsymbol{g} \right) =
 + \frac{1}{(4\pi G)^2 K} \frac{\partial^2}{\partial t^2} \boldsymbol{g}\end{aligned}$$
 and
 $$\begin{aligned}
-\nabla \times { \left( \nabla \times (K \boldsymbol{g}) \right) } = 
-K \nabla { \left( \nabla \cdot \boldsymbol{g} \right) } - K \Delta \boldsymbol{g}\end{aligned}$$
+\nabla \times  \left( \nabla \times (K \boldsymbol{g}) \right)  = 
+K \nabla  \left( \nabla \cdot \boldsymbol{g} \right)  - K \Delta \boldsymbol{g}\end{aligned}$$
 With $\nabla \cdot \boldsymbol{g} = 0$ it follows that
 $$\begin{aligned}
 \frac{\partial^2}{\partial t^2} \boldsymbol{g}+(4\pi G K)^2 \Delta \boldsymbol{g} = 0\end{aligned}$$
@@ -2705,16 +2705,16 @@ $$\begin{aligned}
 = -\rho \frac{\partial}{\partial r_j} \phi \delta_{ij}\end{aligned}$$
 Taking the divergence of this equation we get
 $$\begin{aligned}
-\frac{\partial}{\partial t}{ \left[ \frac{\partial}{\partial r_i} (\rho v_i) \right] } 
+\frac{\partial}{\partial t} \left[ \frac{\partial}{\partial r_i} (\rho v_i) \right]  
 + \frac{\partial^2}{\partial r_i \partial r_j}(v_j \rho v_i + p \delta_{ij} - \sigma'_{ij}) 
-= -\frac{\partial}{\partial r_i}{ \left( \rho \frac{\partial}{\partial r_j} \phi \delta_{ij} \right) }\end{aligned}$$
+= -\frac{\partial}{\partial r_i} \left( \rho \frac{\partial}{\partial r_j} \phi \delta_{ij} \right) \end{aligned}$$
 where we assumed that $\frac{\partial}{\partial t}$ and $\frac{\partial}{\partial r_i}$ commute. Using the continuity
 equation [\[eq:mass\]](#eq:mass){reference-type="ref" reference="eq:mass"} we get a interesting form of the fluiddynamic
 equations
 $$\begin{aligned}
 \frac{\partial^2}{\partial t^2}\rho 
 - \frac{\partial^2}{\partial r_i \partial r_j}(v_j \rho v_i + p \delta_{ij} - \sigma'_{ij}) 
-= +\frac{\partial}{\partial r_i}{ \left( \rho \frac{\partial}{\partial r_j} \phi \delta_{ij} \right) }\label{eq:divbeauty}\end{aligned}$$
+= +\frac{\partial}{\partial r_i} \left( \rho \frac{\partial}{\partial r_j} \phi \delta_{ij} \right) \label{eq:divbeauty}\end{aligned}$$
 In case of no gravitation, the fluiddynamic equation can be written in a form
 showing some similarity to a wave equation
 $$\begin{aligned}
@@ -2733,18 +2733,18 @@ and sometimes called equation for the instantaneous pressure.
 ##### Incompressible newtonian fluid
 
 If we have a newtonian fluid
-($\sigma'_{ij}=\eta { \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) }$) with $\rho=const$ in
+($\sigma'_{ij}=\eta  \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right)$) with $\rho=const$ in
 time and space (which leads to $\frac{\partial v_i}{\partial r_i}=0$ and also
 $\frac{\partial^2}{\partial r_i \partial r_j}\sigma'_{ij}=0$)
 equation [\[eq:divbeauty\]](#eq:divbeauty){reference-type="eqref" reference="eq:divbeauty"} simplifies to
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_i \partial r_j}\phi = 
-- \frac{1}{\rho} \frac{\partial^2}{\partial r_i \partial r_j} { \left( p \delta_{ij} + \rho v_i v_j \right) }\end{aligned}$$
+- \frac{1}{\rho} \frac{\partial^2}{\partial r_i \partial r_j}  \left( p \delta_{ij} + \rho v_i v_j \right) \end{aligned}$$
 which can be intepreted as an equation for the gravitational potential of a
 fluid with constant(!) density:
 $$\begin{aligned}
 \Delta \phi = - \frac{1}{\rho} \frac{\partial^2}{\partial r_i \partial r_j} 
-{ \left( p \delta_{ij} + \rho v_i v_j \right) }\end{aligned}$$
+ \left( p \delta_{ij} + \rho v_i v_j \right) \end{aligned}$$
 So this equation seems to imply, that pressure and velocity stresses can be a
 source of gravity not only in general relativity, but also in a newtonian
 framework. We can exploit the relation to general relativity further by
@@ -2761,10 +2761,10 @@ If we substitute again $\phi \rightarrow \phi \delta_{ij}$ we can write equation
 [\[eq:gravdiv\]](#eq:gravdiv){reference-type="eqref" reference="eq:gravdiv"} like
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_i \partial r_j} 
-{ \left( \frac{p}{\rho} \delta_{ij} + v_i v_j +  \phi \delta_{ij} \right) }=0\end{aligned}$$
+ \left( \frac{p}{\rho} \delta_{ij} + v_i v_j +  \phi \delta_{ij} \right) =0\end{aligned}$$
 which looks like a tensor version of Bernoullis law:
 $$\begin{aligned}
-\frac{\partial}{\partial r_i}{ \left( \frac{p}{\rho} + \frac{1}{2} v^2 +  \phi \right) } = 0\end{aligned}$$
+\frac{\partial}{\partial r_i} \left( \frac{p}{\rho} + \frac{1}{2} v^2 +  \phi \right)  = 0\end{aligned}$$
 
 #### The limit $\nu \longrightarrow 0$
 
