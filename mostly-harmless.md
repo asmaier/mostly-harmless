@@ -6,18 +6,18 @@ bibliography:
 title: Mostly harmless notes
 ---
 
-# Introduction {#introduction}
+# Introduction
 
 This book holds a collection of mostly harmless notes on mathematics and physics. The topics covered are simply all things I found interesting. I mostly cover topics which
 you won't find easily in Wikipedia or a usual text book. Often I also approach things from a different point of view (namely my point of view). My hope is that these notes grow into an interesting addition to the existing literature.
 
-# Mathematics {#mathematics}
+# Mathematics
 
-### Numbers {#numbers}
+### Numbers
 
-#### Triangle inequality {#triangle-inequality}
+#### Triangle inequality
 
-##### Number inequality {#number-inequality}
+##### Number inequality
 
 We start with the obvious inequality that the absolute value of a number
 $\left|a\right|$ is always greater or equal the number $a$ itself
@@ -34,7 +34,7 @@ $$\begin{aligned}
 The last line is always true if $|a| \geq a$, which completes our
 prove.
 
-#### Cauchy-Schwarz inequality {#cauchy-schwarz-inequality}
+#### Cauchy-Schwarz inequality
 
 Because
 $\sin^2(\phi) + \cos^2(\phi) = 1$ we have
@@ -65,12 +65,12 @@ vectors (also called continuous square integrable functions) like
 $$\begin{aligned}
 \left(\int \left|a(x)\right|^2 dx\right) \cdot \left(\int \left|b(x)\right|^2 dx\right) \geq \left|\int a(x) \cdot b(x)dx\right|^2\end{aligned}$$
 
-### Matrices {#matrices}
+### Matrices
 
 In the following we want to restrict our discussion to matrices with
 real entries.
 
-#### Square matrices {#square-matrices}
+#### Square matrices
 
 Every square matrix can be split into a symmetric and an antisymmetric
 (skew-symmetric) part
@@ -78,7 +78,7 @@ $$\begin{aligned}
 A=\underbrace{\frac{1}{2} \left( A + A^T \right) }_{\text{symmetric}}
 +\underbrace{\frac{1}{2} \left( A - A^T \right) }_{\text{antisymmetric}}\end{aligned}$$
 
-#### Symmetric matrices {#symmetric-matrices}
+#### Symmetric matrices
 
 A symmetric matrix is a square matrix, that is equal to it's transpose.
 $$\begin{aligned}
@@ -93,9 +93,9 @@ Symmetric matrices with real entries have only real eigenvalues. That
 is why in principle, every symmetric matrix is equivalent to a diagonal
 matrix with its eigenvalues being the entries on the diagonal.
 
-#### Applications of Matrices {#applications-of-matrices}
+#### Applications of Matrices
 
-##### Solving unsolvable equations {#solving-unsolvable-equations}
+##### Solving unsolvable equations
 
 We start with a simple equation:
 $$\begin{aligned}
@@ -167,7 +167,7 @@ B = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}  &\ & B^* = \begin{pmatrix} 0 
 So what seemed impossible to solve in 1D with simple numbers turned
 out to have quite simple solutions in 2D in the form of 2x2 matrices.
 
-##### Solving polynomial equations {#solving-polynomial-equations}
+##### Solving polynomial equations
 
 A polynomial equation of order $n$ is an equation that look like
 $$\begin{aligned}
@@ -217,7 +217,7 @@ as being represented by matrices. The number of solutions to a
 polynomial of degree $n$ is the same as the number of eigenvalues of
 the corresponding companion matrix.
 
-### Complex Numbers {#complex-numbers}
+### Complex Numbers
 
 Complex numbers are not numbers. They cannot be ordered according to their size. This basic insight makes clear that trying to work with complex numbers like with usual "real numbers" must fail (e.g. division doesn't work) and in general is also the reason for the big confusion around them.
 
@@ -225,9 +225,9 @@ But complex numbers are also no vectors (in the geometrical sense). The multipli
 
 Instead the modern view is that complex numbers are 2D matrices. They represent the group of (antisymmetric) 2D rotation matrices (<https://en.wikipedia.org/wiki/Complex_number#Matrix_representation_of_complex_numbers>). All the features of complex numbers follow naturally from this representation, e.g. multiplying two matrices yields another matrix. Unfortunately most textbooks don't even mention the matrix representation of complex numbers, although this really makes clear what complex "numbers" are, how they can be extended (e.g. quaternions are 3D rotation matrices) and how they fit into the bigger picture which is <https://en.wikipedia.org/wiki/Group_theory>.
 
-### Tensor calculus {#tensor-calculus}
+### Tensor calculus
 
-#### Levi-Civita-Symbol {#levi-civita-symbol}
+#### Levi-Civita-Symbol
 
 The symbol $\epsilon_{ijkl\ldots}$ is called Levi-Civita symbol and defined as
 follows:
@@ -243,9 +243,9 @@ $$\begin{aligned}
 \epsilon_{ijkl\ldots u \ldots v} = -\epsilon_{ijkl\ldots v \ldots u}.\end{aligned}$$
 The Levi-Civita-Symbol is not a tensor, but a pseudotensor, because it
 transforms like a tensor under rotation, but not under reflection
-`\citep{Pope2000}`{=latex}.[^1]
+[@Pope2000].[^1]
 
-##### Levi-Civita-Symbol in 3D {#levi-civita-symbol-in-3d}
+##### Levi-Civita-Symbol in 3D
 
 In 3D only 6 of the 27 components of the Levi-Civita-Symbolare are unequal zero
 $$\begin{aligned}
@@ -317,7 +317,7 @@ $$\begin{aligned}
 =&\ 6
 \end{split}\end{aligned}$$
 
-#### Properties of second order tensors {#properties-of-second-order-tensors}
+#### Properties of second order tensors
 
 A second order tensor can be decomposed into a symmetric and an antisymmetric
 part in the following way[^2]
@@ -363,9 +363,9 @@ $$\begin{aligned}
 U_{ij}W_{ij} = \frac{1}{2}  \left( U_{ij}-U_{ji} \right)  W_{ij}
 \label{eq:uascontr}\end{aligned}$$
 
-### Vector calculus {#vector-calculus}
+### Vector calculus
 
-#### Longitudinal and transversal projection of vectors {#longitudinal-and-transversal-projection-of-vectors}
+#### Longitudinal and transversal projection of vectors
 
 A vector $\boldsymbol{a}$ can be split into two parts: the longitudinal part $\boldsymbol{a}_{\parallel}$,
 which is parallel to another vector $\boldsymbol{b}$ and the transversal part $\boldsymbol{a}_{\perp}$,
@@ -389,7 +389,7 @@ $$\begin{aligned}
 \left\lvert\boldsymbol{a}\times\boldsymbol{b}\right\rvert^2 = (a b)^2 - (\boldsymbol{a}\cdot\boldsymbol{b})^2.\end{aligned}$$
 This is again Lagrange's identity (see [\[eq:lagrident\]](#eq:lagrident){reference-type="eqref" reference="eq:lagrident"}).
 
-#### Vector identities {#vector-identities}
+#### Vector identities
 
 In this chapter we show the derivation of some vector quantities in cartesian
 tensor notation.
@@ -412,7 +412,7 @@ $$\begin{aligned}
 \boldsymbol{u}\cdot (\nabla \boldsymbol{v})-\boldsymbol{u} \times (\nabla \times \boldsymbol{v})
 \label{eq:vecid01}\end{aligned}$$
 
-##### $(\boldsymbol{v}\cdot\nabla) \boldsymbol{v}$ {#boldsymbolvcdotnabla-boldsymbolv}
+##### $(\boldsymbol{v}\cdot\nabla) \boldsymbol{v}$
 
 Inserting $u_j=v_j$ into equation [\[eq:vecid01\]](#eq:vecid01){reference-type="eqref" reference="eq:vecid01"} yields
 $$\begin{aligned}
@@ -434,7 +434,7 @@ $$\begin{aligned}
 \frac{1}{2} \nabla \boldsymbol{v}^2-\boldsymbol{v} \times (\nabla \times \boldsymbol{v})
 \label{eq:vecid02}\end{aligned}$$
 
-##### $\nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)$ {#nabla-times-left-boldsymbolu-times-boldsymbolv-right}
+##### $\nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)$
 
 The $i$-th component of the rotation of a cross product of two vectors is
 $$\begin{aligned}
@@ -450,7 +450,7 @@ $$\begin{aligned}
 = \boldsymbol{u} (\nabla \cdot \boldsymbol{v}) - \boldsymbol{v} (\nabla \cdot \boldsymbol{u})
 + (\boldsymbol{v} \cdot \nabla) \boldsymbol{u} - (\boldsymbol{u} \cdot \nabla) \boldsymbol{v}\end{aligned}$$
 
-#### Jacobian determinant {#jacobian-determinant}
+#### Jacobian determinant
 
 ##### Definition {#jacobi}
 
@@ -514,12 +514,12 @@ $$\begin{aligned}
 \frac{\partial x_l}{\partial a_k} \right). \end{aligned}$$
 Analysis of the first term in the bracket for
 
-::: {.flalign*}
+::: flalign*
 l&=1:
-,  
+,\
 l&=2:
 \_
-,  
+,\
 l&=3:
 .
 :::
@@ -537,7 +537,7 @@ $$\begin{aligned}
 \frac{\partial z}{\partial a_k} = 
 (\nabla \cdot \boldsymbol{v}) J.\end{aligned}$$
 
-### Fourier transform {#fourier-transform}
+### Fourier transform
 
 The continous one dimensional Fourier transform in $k$-space $F(k)$ of some
 function in
@@ -569,7 +569,7 @@ F(\boldsymbol{k})=A(k_x)B(k_y)C(k_z)=
 Thats why we like to use cartesian coordinates when we are using Fourier
 transforms.
 
-#### Fourier transform of a delta function {#fourier-transform-of-a-delta-function}
+#### Fourier transform of a delta function
 
 An important result can be derived by computing the inverse Fourier
 transform of the Fourier transform of a delta function
@@ -594,7 +594,7 @@ $$\begin{aligned}
 = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}F(k) \underbrace{\int_{-\infty}^{\infty}e^{ikx}}_{2\pi \delta(k)} dx dk\\
 &= \sqrt{2\pi} \int_{-\infty}^{\infty}F(k) \delta(k) dk = \sqrt{2\pi} F(0).\end{aligned}$$
 
-#### Convolution theorem {#convolution-theorem}
+#### Convolution theorem
 
 The Fourier transform of the product of two function in $k$-space is
 $$\begin{aligned}
@@ -611,7 +611,7 @@ So the convolution theorem says that
 $$\begin{aligned}
 h(x) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}f(x') g(x-x') dx' = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}F(k) G(k) e^{ikx} dk.\end{aligned}$$
 
-#### Autocorrelation and Wiener-Khinchin Theorem {#autocorrelation-and-wiener-khinchin-theorem}
+#### Autocorrelation and Wiener-Khinchin Theorem
 
 The autocorrelation of a function is defined as[^4]
 $$\begin{aligned}
@@ -635,9 +635,9 @@ $$\begin{aligned}
 h_{AC}(0)&= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}f^*(x') f(x') dx' = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\left\lvert f(x)\right\rvert^2 dx \\
 &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 e^{ik0} dk = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 dk\end{aligned}$$
 
-### Basic probability theory {#basic-probability-theory}
+### Basic probability theory
 
-#### Definition of probability {#definition-of-probability}
+#### Definition of probability
 
 An experiment can measure if an event $A$ happend or not. If we repeat
 an experiment $n$ times and we measure that the event $A$ happened
@@ -687,7 +687,7 @@ probabilities. But to be able to derive the central limit theorem it is
 necessary that the three axioms of Kolmogorov for classical probability
 hold.
 
-#### Random variables {#random-variables}
+#### Random variables
 
 Examples for random variables are e.g. the number on a thrown dice, the
 lifetime of a instable radioactive nucleus, the amplitude of
@@ -752,7 +752,7 @@ $p(t)$. So the scalar real value taken by a random variable generated
 by a computer depends on the form of a function, making $x[p(t)]$ a
 functional and the random variable $X$ a set of functionals.
 
-#### Multiple random variables {#multiple-random-variables}
+#### Multiple random variables
 
 Assume you throw one red and one blue dice in an experiment. The number
 on the red dice would be random variable $X$, the number of the blue
@@ -776,9 +776,9 @@ integration](https://en.wikipedia.org/wiki/Functional_integration))
 
 Quantum mechanics = asymmetric covariance matrix??
 
-### More topics {#more-topics}
+### More topics
 
-#### Linear algebra {#linear-algebra}
+#### Linear algebra
 
 -   <https://physics.stackexchange.com/questions/35562/is-a-1d-vector-also-a-scalar>
 
@@ -786,7 +786,7 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Eigenvalues_of_geometric_transformations>
 
-##### Functions of matrices {#functions-of-matrices}
+##### Functions of matrices
 
 -   <https://en.wikipedia.org/wiki/Matrix_function>
 
@@ -796,7 +796,7 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <https://math.stackexchange.com/questions/1149598/how-to-solve-a-non-linear-matrix-equation-over-integer-numbers>
 
-#### Transformations and groups {#transformations-and-groups}
+#### Transformations and groups
 
 -   Prove of eulers formula as a solution to 2d wave equation: <http://math.stackexchange.com/a/3512/27609>
 
@@ -814,7 +814,7 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <https://math.stackexchange.com/questions/2083950/relationship-between-levi-civita-symbol-and-complex-quaternionic-numbers>
 
-#### Series {#series}
+#### Series
 
 -   <http://blog.wolfram.com/2014/08/06/the-abcd-of-divergent-series>
 
@@ -822,9 +822,9 @@ Quantum mechanics = asymmetric covariance matrix??
 
     -   <https://www.quora.com/Whats-the-intuition-behind-the-equation-1+2+3+-cdots-tfrac-1-12>
 
-#### Calculus {#calculus}
+#### Calculus
 
-##### Euler-MacLaurin {#euler-maclaurin}
+##### Euler-MacLaurin
 
 -   <https://people.csail.mit.edu/kuat/courses/euler-maclaurin.pdf>
 
@@ -832,13 +832,13 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <https://terrytao.wordpress.com/2010/04/10/the-euler-maclaurin-formula-bernoulli-numbers-the-zeta-function-and-real-variable-analytic-continuation>
 
-##### Watsons Triple Integrals {#watsons-triple-integrals}
+##### Watsons Triple Integrals
 
 -   <http://mathworld.wolfram.com/WatsonsTripleIntegrals.html>
 
 -   <http://www.inp.nsk.su/~silagadz/Watson_Integral.pdf>
 
-##### Generalized Calculus {#generalized-calculus}
+##### Generalized Calculus
 
 -   <https://en.wikipedia.org/wiki/Product_integral>
 
@@ -846,31 +846,31 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <http://www.gauge-institute.org/calculus/PowerMeansCalculus.pdf>
 
-##### Finite calculus {#finite-calculus}
+##### Finite calculus
 
 -   <https://www.cs.purdue.edu/homes/dgleich/publications/Gleich%202005%20-%20finite%20calculus.pdf>
 
 -   <https://en.wikipedia.org/wiki/Concrete_Mathematics>
 
-##### Iterative roots and fractional iteration {#iterative-roots-and-fractional-iteration}
+##### Iterative roots and fractional iteration
 
 -   <http://reglos.de/lars/ffx.html>
 
 -   <https://mathoverflow.net/questions/17605/how-to-solve-ffx-cosx>
 
-#### Geometry {#geometry}
+#### Geometry
 
 -   [Cutting a cube along the diagonal](https://www.friedrich-verlag.de/fileadmin/redaktion/sekundarstufe/Mathematik/Der_Mathematikunterricht/Leseproben/Der_Mathematikunterricht_3_13_Leseprobe_2.pdf)
 
 -   <https://en.wikipedia.org/wiki/Visual_calculus>
 
-#### Weird constants and functions {#weird-constants-and-functions}
+#### Weird constants and functions
 
-##### Euler-Mascheroni constant {#euler-mascheroni-constant}
+##### Euler-Mascheroni constant
 
 -   <https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant#Generalizations>
 
-##### Universal Parabolic constant {#universal-parabolic-constant}
+##### Universal Parabolic constant
 
 -   <https://en.wikipedia.org/wiki/Universal_parabolic_constant>
 
@@ -878,13 +878,13 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <https://mathoverflow.net/questions/37871/is-it-a-coincidence-that-the-universal-parabolic-constant-shows-up-in-the-soluti>
 
-##### Apery's constant {#aperys-constant}
+##### Apery's constant
 
 -   <https://en.wikipedia.org/wiki/Ap%C3%A9ry%27s_constant>
 
 -   <https://math.stackexchange.com/questions/12815/riemann-zeta-function-at-odd-positive-integers/12819#12819>
 
-##### Gauss's constant {#gausss-constant}
+##### Gauss's constant
 
 -   <https://en.wikipedia.org/wiki/Gauss%27s_constant>
 
@@ -892,19 +892,19 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <https://en.wikipedia.org/wiki/Particular_values_of_the_Gamma_function>
 
-##### Riemann Zeta function {#riemann-zeta-function}
+##### Riemann Zeta function
 
 -   <https://math.stackexchange.com/questions/1792755/connection-between-the-area-of-a-n-sphere-and-the-riemann-zeta-function>
 
 -   <https://suryatejag.wordpress.com/2011/11/24/riemann-functional-equation-and-hamburgers-theorem>
 
-#### Probability {#probability}
+#### Probability
 
 -   <https://en.wikipedia.org/wiki/Secretary_problem>
 
 -   <https://en.wikipedia.org/wiki/Kelly_criterion>
 
-##### Sample size {#sample-size}
+##### Sample size
 
 -   <https://stats.stackexchange.com/questions/192199/derivation-of-formula-for-sample-size-of-finite-population/192601#192601>
 
@@ -916,9 +916,9 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <http://research-advisors.com/tools/SampleSize.htm>
 
-# Physics {#physics}
+# Physics
 
-## Classical mechanics {#classical-mechanics}
+## Classical mechanics
 
 In the view of classical mechanics the world consists of point particles with constant mass $m$,
 position $\boldsymbol{x(t)}$ and velocity $\boldsymbol{v(t)}$. The number of particles is countable
@@ -931,9 +931,9 @@ On the other side this short description already hints to the several limitation
 The standard model of physics nowadays based on quantum field theory basically abandons
 all the assumptions made by classical mechanics.
 
-## Fluid dynamics {#fluid-dynamics}
+## Fluid dynamics
 
-### Introduction {#introduction-1}
+### Introduction
 
 Fluids
 [^5]
@@ -947,7 +947,7 @@ contiuous fields (density, velocity, pressure, temperature,\...)
 which defines at every point a certain statistical quantity of a bunch
 of fluid molecules.
 
-#### Substantial derivative {#substantial-derivative}
+#### Substantial derivative
 
 To compute the change with time of a scalar quantity $A(x,y,z,t)$ at a fixed
 point in
@@ -967,7 +967,7 @@ derivative
 $$\begin{aligned}
 \frac{d}{d t}=\frac{\partial}{\partial t} + v_j \frac{\partial}{\partial r_j}. \label{eq:1}\end{aligned}$$
 
-#### Reynolds transport theorem {#reynolds-transport-theorem}
+#### Reynolds transport theorem
 
 If $A=\int_{V(t)} \alpha(\boldsymbol{r},t) dV$ is a scalar quantity which is conserved
 in a local fluid element moving with the fluid (and therefore having a time
@@ -1003,11 +1003,11 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}(\alpha)+ \frac{\partial}{\partial r_j} (v_j \alpha) = 0.
 \label{eq:RTdiff}\end{aligned}$$
 
-### General compressible fluid {#general-compressible-fluid}
+### General compressible fluid
 
-#### Balance equations {#balance-equations}
+#### Balance equations
 
-##### Mass equation {#mass-equation}
+##### Mass equation
 
 The mass inside a local fluid element $M=\int_V \rho(r_i) dV$ is conserved.
 Therefore we get the balance equation for the mass from the generalised
@@ -1015,7 +1015,7 @@ continuity equation setting $\alpha=\rho$ in the form
 $$\begin{aligned}
 \frac{\partial}{\partial t}\rho + \frac{\partial}{\partial r_j}(v_j \rho) = 0. \label{eq:3}\end{aligned}$$
 
-##### Momentum equation {#momentum-equation}
+##### Momentum equation
 
 The momentum $P_i$ inside a local fluid element is $P_i=\int_V \rho(r_i) v_i
 dV$. The change of the momentum with time $\frac{d}{dt} P_i$ is equal to the sum
@@ -1052,7 +1052,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}(v_i) + v_j \frac{\partial}{\partial r_j}( v_i) = -\frac{1}{\rho}\frac{\partial}{\partial r_i}p +
 \frac{1}{\rho}\frac{\partial}{\partial r_j}\sigma'_{ij} + g_i. \label{eq:vel}\end{aligned}$$
 
-##### Kinetic energy equation {#kinetic-energy-equation}
+##### Kinetic energy equation
 
 If we multiply equation [\[eq:vel\]](#eq:vel){reference-type="eqref" reference="eq:vel"} with the velocity $v_i$, use
 $\frac{1}{2}\frac{d x^2}{dt} = x \frac{dx}{dt}$ and the continuity
@@ -1064,7 +1064,7 @@ $$\begin{aligned}
 This equation shows us that locally the kinetic energy is not conserved
 (otherwise the right-hand side of the equation should be zero).
 
-##### Internal energy equation {#internal-energy-equation}
+##### Internal energy equation
 
 If we assume that each fluid element is in thermal equilibrium the first law of
 thermodynamics does hold locally and we can write for the internal
@@ -1094,7 +1094,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial t} \rho e_{int} + \frac{\partial}{\partial r_j} v_j \rho e_{int} = T  \left( \frac{\partial}{\partial t} \rho s +
 \frac{\partial}{\partial r_j} v_j \rho s \right)  -p \frac{\partial}{\partial r_j} v_j \label{eq:eint}\end{aligned}$$
 
-##### Global dissipation of kinetic energy {#global-dissipation-of-kinetic-energy}
+##### Global dissipation of kinetic energy
 
 For investigating the conservation of the kinetic energy of the
 whole fluid we write using the Reynolds transport theorem [\[eq:RT\]](#eq:RT){reference-type="eqref" reference="eq:RT"}
@@ -1128,7 +1128,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial t} E_{kin} = \int_V p \frac{\partial}{\partial r_j} v_j dV - \int_V \sigma'_{ij}
 \frac{\partial}{\partial r_j} v_i dV
 - \int_V \phi \frac{\partial}{\partial t}\rho dV,\end{aligned}$$
-which is the generalization of equation (16.2) from `\citet{Landau1991}`{=latex}
+which is the generalization of equation (16.2) from @Landau1991
 for general compressible fluids. So we see that the total kinetic energy for an
 ideal, compressible fluid is not conserved.
 
@@ -1201,7 +1201,7 @@ $$\begin{aligned}
 So total entropy is conserved for an ideal fluid, even if we take selfgravity
 into account[^11].
 
-##### Local dissipation of kinetic energy {#local-dissipation-of-kinetic-energy}
+##### Local dissipation of kinetic energy
 
 For analyzing the dissipation of kinetic energy in a local fluid element we
 have to make the same calculations as we did to get equation [\[eq:glodis\]](#eq:glodis){reference-type="eqref" reference="eq:glodis"},
@@ -1279,7 +1279,7 @@ refine the grid in such a way that the condition $\phi_{local} \ll
 \phi_{global}$ holds everywhere in the computational domain.
 [^12]
 
-#### Divergence equation {#divergence-equation}
+#### Divergence equation
 
 Using
 $$\begin{aligned}
@@ -1322,7 +1322,7 @@ $$\begin{aligned}
 -4\pi G \rho
 \end{split}\end{aligned}$$
 
-#### Vorticity equation {#vorticity-equation}
+#### Vorticity equation
 
 Using the vector identity [\[eq:vecid02\]](#eq:vecid02){reference-type="eqref" reference="eq:vecid02"} we can express the euler
 equation [\[eq:vel\]](#eq:vel){reference-type="eqref" reference="eq:vel"} like
@@ -1378,7 +1378,7 @@ $$\begin{aligned}
 - (\nabla \rho) \times (\nabla \cdot \tilde{\sigma}) \right] 
 +\frac{1}{\rho}  \left[ \nabla \times (\nabla \cdot \tilde{\sigma}) \right] \end{aligned}$$
 
-#### Summary {#summary}
+#### Summary
 
 ##### Balance equations {#balance-equations-1 .unnumbered}
 
@@ -1432,7 +1432,7 @@ $$\begin{aligned}
 \end{split}
 \label{eq:vort}\end{aligned}$$
 
-### Newtonian compressible fluid {#newtonian-compressible-fluid}
+### Newtonian compressible fluid
 
 For a so called newtonian fluid it can be shown, that the stress tensor
 $\sigma'_{ij}$ is of the form
@@ -1460,7 +1460,7 @@ we locally do not have a local thermodynamic equilibrium anyway, so one should
 expect a change in the nature of the thermodynamic variables, which are
 defined for local thermodynamic equilibrium.
 
-#### Balance equations {#balance-equations-2}
+#### Balance equations
 
 In the following we will write the stress tensor for a newtonian compressible
 fluid in the form
@@ -1505,7 +1505,7 @@ $$\begin{aligned}
 &+ \left( \zeta-\frac{2}{3}\eta \right)  \frac{\partial}{\partial r_j} \left( v_j\frac{\partial r_k}{\partial v_k} \right) 
 \end{split}\end{aligned}$$
 
-#### Global dissipation of kinetic energy $\mathcal{E}$ {#global-dissipation-of-kinetic-energy-mathcale-1}
+#### Global dissipation of kinetic energy $\mathcal{E}$
 
 Using the form [\[eq:stress2\]](#eq:stress2){reference-type="eqref" reference="eq:stress2"} we get for the term involving the stress
 tensor in the equation [\[eq:diss\]](#eq:diss){reference-type="eqref" reference="eq:diss"} for the dissipation $\mathcal{E}$
@@ -1528,12 +1528,12 @@ $$\begin{aligned}
 -\frac{1}{V} \int_V \frac{\eta}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) ^2 dV\\
 &-\frac{1}{V} \int_V  \left( \zeta-\frac{2}{3}\eta \right)  \left( \frac{\partial v_k}{\partial r_k} \right) ^2 dV
 \end{split}\end{aligned}$$
-This equation should be compared to equation (79,1) from `\citet{Landau1991}`{=latex}
-which additionally includes heat conduction. Nevertheless `\citet{Landau1991}`{=latex}
+This equation should be compared to equation (79,1) from @Landau1991
+which additionally includes heat conduction. Nevertheless @Landau1991
 seem to forget the term due to the pressure in the equation for the
 dissipation.
 
-#### Divergence equation {#divergence-equation-2}
+#### Divergence equation
 
 Using the equation for the divergence of the stress tensor
 for a newtonian compressible fluid [\[eq:divstress\]](#eq:divstress){reference-type="eqref" reference="eq:divstress"} we get for
@@ -1568,7 +1568,7 @@ $$\begin{aligned}
 -4\pi G \rho
 \end{split}\end{aligned}$$
 
-#### Vorticity equation {#vorticity-equation-2}
+#### Vorticity equation
 
 If we plugin the equation for the divergence of the
 stress tensor for a newtonian compressible fluid [\[eq:divstress\]](#eq:divstress){reference-type="eqref" reference="eq:divstress"} into
@@ -1612,7 +1612,7 @@ $$\begin{aligned}
 +\frac{\eta}{\rho} \Delta \boldsymbol{\omega}
 \end{split}\end{aligned}$$
 
-#### Summary {#summary-1}
+#### Summary
 
 ##### Balance equations {#balance-equations-3 .unnumbered}
 
@@ -1671,9 +1671,9 @@ $$\begin{aligned}
 +\frac{\eta}{\rho}\frac{\partial^2}{\partial r_j^2}\omega_g
 \end{split}\end{aligned}$$
 
-### General incompressible fluid {#general-incompressible-fluid}
+### General incompressible fluid
 
-#### Balance equations {#balance-equations-4}
+#### Balance equations
 
 When we talk about an incompressible fluid we mean that the density of the fluid
 is constant in time, i.e. $\frac{\partial}{\partial t}\rho=0$. In most cases it is also assumed that
@@ -1706,7 +1706,7 @@ $$\begin{aligned}
 +\frac{1}{\rho}\frac{\partial}{\partial r_j}(v_i \sigma^*_{ij}).\end{aligned}$$
 where $\sigma^*_{ij}$ is a divergence free stress tensor.
 
-#### Divergence equation {#divergence-equation-4}
+#### Divergence equation
 
 In the incompressible case we can set $\theta=0$ and $\frac{\partial}{\partial r_i}\rho=0$ in
 equation [\[eq:div\]](#eq:div){reference-type="eqref" reference="eq:div"} and so we are left with the following equation for an
@@ -1731,7 +1731,7 @@ $$\begin{aligned}
 which can be interpreted as the equation of state for a general
 incompressible fluid.[^17]
 
-#### Vorticity equation {#vorticity-equation-4}
+#### Vorticity equation
 
 For an incompressible fluid $\frac{\partial}{\partial r_h}\rho = 0$ and inserting this into
 the vorticity equation [\[eq:vort\]](#eq:vort){reference-type="eqref" reference="eq:vort"} we get
@@ -1744,7 +1744,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial t} \boldsymbol{\omega}-\nabla \times (\boldsymbol{v} \times \boldsymbol{\omega}) = 
 \frac{1}{\rho}  \left[ \nabla \times (\nabla \cdot \tilde{\sigma^*}) \right] \end{aligned}$$
 
-#### Summary {#summary-2}
+#### Summary
 
 ##### Balance equations {#balance-equations-5 .unnumbered}
 
@@ -1783,7 +1783,7 @@ $$\begin{aligned}
 \frac{1}{\rho}\epsilon_{ghi}\frac{\partial}{\partial r_h}\frac{\partial}{\partial r_j}\sigma^*_{ij}
 \label{eq:icvort}\end{aligned}$$
 
-### Newtonian incompressible fluid {#newtonian-incompressible-fluid}
+### Newtonian incompressible fluid
 
 For an incompressible newtonian fluid the terms proportional to the divergence
 vanish in the stress tensor $\sigma'_{ij}$. This leads to the following
@@ -1792,7 +1792,7 @@ $$\begin{aligned}
 \sigma^*_{ij}=\eta  \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right) . 
 \label{eq:nicstress}\end{aligned}$$
 
-#### Balance equations {#balance-equations-6}
+#### Balance equations
 
 Setting the divergence to zero in equation [\[eq:divstress\]](#eq:divstress){reference-type="ref" reference="eq:divstress"} we get for
 the divergence of the stress tensor for an incompressible fluid
@@ -1871,12 +1871,12 @@ balance at the surface of the fluid we can neglect the second term [^22].
 
 We hope that from this discussion the assumptions behind equation
 [\[eq:nicdissvort\]](#eq:nicdissvort){reference-type="eqref" reference="eq:nicdissvort"}
-become clear compared to the rather obscure arguments by `\citet{Frisch1995}`{=latex}.
+become clear compared to the rather obscure arguments by @Frisch1995.
 Nevertheless it is still unknown weather our reasoning and the reasoning of
-`\citet{Frisch1995}`{=latex} is
+@Frisch1995 is
 equivalent.
 
-#### Divergence equation {#divergence-equation-5}
+#### Divergence equation
 
 From equation [\[eq:nicdivstress\]](#eq:nicdivstress){reference-type="eqref" reference="eq:nicdivstress"} we get for
 $$\begin{aligned}
@@ -1900,7 +1900,7 @@ has a very interesting form. It is show in the Appendix [2.18.3](#diveq){referen
 divergence equation might be related to Bernoulli's law and even to the
 Einstein equation of general relativity.
 
-#### Vorticity equation {#vorticity-equation-6}
+#### Vorticity equation
 
 Inserting equation [\[eq:nicdivstress\]](#eq:nicdivstress){reference-type="eqref" reference="eq:nicdivstress"} into [\[eq:icvort\]](#eq:icvort){reference-type="ref" reference="eq:icvort"}
 we get the vorticity equation for an incompressible newtonian fluid
@@ -1913,7 +1913,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial t} \boldsymbol{\omega}-\nabla \times (\boldsymbol{v} \times \boldsymbol{\omega}) = 
 \frac{\eta}{\rho} \Delta \boldsymbol{\omega}.\end{aligned}$$
 
-#### Summary {#summary-3}
+#### Summary
 
 ##### Balance equations {#balance-equations-7 .unnumbered}
 
@@ -1948,9 +1948,9 @@ $$\begin{aligned}
 -\epsilon_{ghi}\frac{\partial}{\partial r_h} \epsilon_{ijm} v_j \omega_m =
 \frac{\eta}{\rho}\frac{\partial^2}{\partial r_j^2}\omega_g\end{aligned}$$
 
-### Fluid dynamics in comoving coordinates {#fluid-dynamics-in-comoving-coordinates}
+### Fluid dynamics in comoving coordinates
 
-#### Introduction {#introduction-2}
+#### Introduction
 
 On large scales ($>$ 100Mpc) the distribution of matter
 in the universe is isotropic (it looks the same in all directions)
@@ -1979,12 +1979,12 @@ the expanding space ($\dot{x}_i \neq 0$) then we measure the additional
 local (also called proper) velocity $u_i = a \dot{x}_i$ of the particle. This local
 velocity can, according to special relativity, be never greater than the speed of light
 $c$. Nevertheless the global velocity (e.g. the measured escape velocities of galaxies at
-great distances) can be greater than $c$ `\citep{Davis2004}`{=latex}. Generally the physical velocity
+great distances) can be greater than $c$ [@Davis2004]. Generally the physical velocity
 of a particle is the the sum of global and local velocity
 $$\begin{aligned}
 v_i = \dot{a} x_i + u_i (x_i,t)\end{aligned}$$
 
-##### Useful transformations {#useful-transformations}
+##### Useful transformations
 
 $$\begin{aligned}
 r_i&=a(t) x_i\\
@@ -2004,7 +2004,7 @@ $$\begin{aligned}
 T^*_{ij}=\frac{1}{a} \left[ \frac{1}{2} \left( \frac{\partial}{\partial x_j}u_i+\frac{\partial}{\partial x_i}u_j \right) 
 -\frac{1}{n}\delta_{ij}\frac{\partial}{\partial x_k}u_k \right] \end{aligned}$$
 
-##### Transformed equations {#transformed-equations}
+##### Transformed equations
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}\rho + \frac{1}{a}\frac{\partial}{\partial x_j}(u_j \rho) =& -3\frac{\dot{a}}{a}\rho  \\
@@ -2036,7 +2036,7 @@ $$\begin{aligned}
 
 ### Equations of State {#eos}
 
-#### Ideal gas {#ideal-gas}
+#### Ideal gas
 
 The ideal gas law (the thermic equation of state for an ideal gas)
 is
@@ -2082,15 +2082,15 @@ pressure
 $$\begin{aligned}
 p= \left( \gamma-1 \right)  \rho  \left( e-\frac{1}{2}v^2 \right) \end{aligned}$$
 
-#### Van-der-Waals-Gas {#van-der-waals-gas}
+#### Van-der-Waals-Gas
 
 \...to be completed
 
-#### Relativistic Gas {#relativistic-gas}
+#### Relativistic Gas
 
 \...to be completed
 
-### The speed of sound {#the-speed-of-sound}
+### The speed of sound
 
 The speed of sound is defined as the speed of propagation of small pertubations
 in density and pressure in a fluid in a compressible fluid. For the derivation
@@ -2130,7 +2130,7 @@ directly from the internal energy
 $$\begin{aligned}
 c=\sqrt{\gamma (\gamma-1) u_0}\end{aligned}$$
 
-#### Machnumber {#machnumber}
+#### Machnumber
 
 The Machnumber of a flow is defined as
 $$\begin{aligned}
@@ -2142,15 +2142,15 @@ $$\begin{aligned}
 So, the Machnumber $Ma = x \cdot \sqrt{e_{kin}/e_{int}}$ where $x$ for some
 values of $\gamma$ can be found in the following table:
 
-::: {.center}
-|   $\gamma$    | $\gamma(\gamma-1)$ | $x =  \left[ \gamma(\gamma-1) \right] ^{-1/2}$ |
-|:-------------:|:------------------:|:----------------------------------------------:|
-| $\frac{5}{3}$ |   $\frac{10}{9}$   |       $\frac{3}{\sqrt{10}}\approx 0.949$       |
-| $\frac{7}{5}$ |  $\frac{14}{25}$   |       $\frac{5}{\sqrt{14}}\approx 1.336$       |
-| $\frac{4}{3}$ |   $\frac{4}{9}$    |              $\frac{3}{2}$ = 1.5               |
+::: center
+     $\gamma$      $\gamma(\gamma-1)$   $x =  \left[ \gamma(\gamma-1) \right] ^{-1/2}$
+  --------------- -------------------- ------------------------------------------------
+   $\frac{5}{3}$     $\frac{10}{9}$           $\frac{3}{\sqrt{10}}\approx 0.949$
+   $\frac{7}{5}$    $\frac{14}{25}$           $\frac{5}{\sqrt{14}}\approx 1.336$
+   $\frac{4}{3}$     $\frac{4}{9}$                   $\frac{3}{2}$ = 1.5
 :::
 
-### Dimensional analysis {#dimensional-analysis}
+### Dimensional analysis
 
 We want to write down the general equations of fluid dynamics in dimensionless
 form. Therefore we introduce the following dimensionless quantities
@@ -2233,9 +2233,9 @@ gravity
 $$\begin{aligned}
 \underbrace{\frac{g_0}{4\pi G \rho_0 l_0}}_{C_G}\frac{\partial g_i^*}{\partial r_i^*} = \rho^*.\end{aligned}$$
 But this quantity $C_G$ also seems to have no name in the literature
-`\citep[e.g.][]{Durst2007}`{=latex}.
+[e.g. @Durst2007].
 
-### Color fields {#color-fields}
+### Color fields
 
 There are two possibilities to implement a color field $c$ in a fluid code. One
 can treat color like the density, i.e. the color variable obeys a conservation
@@ -2257,9 +2257,9 @@ $$\begin{aligned}
 \Leftrightarrow \frac{d}{d t} c &=0\\
 \Rightarrow c &= const. = c_0\end{aligned}$$
 
-### Fluid dynamics in one dimension {#fluid-dynamics-in-one-dimension}
+### Fluid dynamics in one dimension
 
-#### Balance equations in Eulerian form {#balance-equations-in-eulerian-form}
+#### Balance equations in Eulerian form
 
 In one dimension all vector and tensor quantities from the balance equations
 [\[eq:mass\]](#eq:mass){reference-type="eqref" reference="eq:mass"}-[\[eq:etot\]](#eq:etot){reference-type="eqref" reference="eq:etot"} degenerate to scalar quantities, eg.
@@ -2276,7 +2276,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}(\rho e) + \frac{\partial}{\partial r}(v \rho e) &= -\frac{\partial}{\partial r}(v p) + \frac{\partial}{\partial r}(v \sigma') - v \rho g
 \label{eq:1detot}\end{aligned}$$
 
-#### Balance equations in Lagrangian form {#balance-equations-in-lagrangian-form}
+#### Balance equations in Lagrangian form
 
 By using the Euler derivate we can write [\[eq:1dmass\]](#eq:1dmass){reference-type="eqref" reference="eq:1dmass"}-[\[eq:1detot\]](#eq:1detot){reference-type="eqref" reference="eq:1detot"}
 like
@@ -2379,7 +2379,7 @@ $$\begin{aligned}
 \end{split}
 \label{eq:rsrcontr}\end{aligned}$$
 
-### Derivation of the stress tensor for a newtonian fluid {#derivation-of-the-stress-tensor-for-a-newtonian-fluid}
+### Derivation of the stress tensor for a newtonian fluid
 
 It is generally assumed, that friction between fluid elements is proportional
 to the area of their surfaces. So in general the frictional or vicous force
@@ -2517,10 +2517,10 @@ $$\begin{aligned}
 we get for our flow field $\mathcal{E} = 0$, because the vorticity of
 our velocity field is zero! This seems to be an obvious contradiction,
 and either raises some doubts about the validity of the derivation of equation
-[\[eq:nicdiss\]](#eq:nicdiss){reference-type="eqref" reference="eq:nicdiss"} for example in `\citet{Frisch1995}`{=latex} or implies that our
+[\[eq:nicdiss\]](#eq:nicdiss){reference-type="eqref" reference="eq:nicdiss"} for example in @Frisch1995 or implies that our
 assumed flow field is unphysical.
 
-### Structure functions {#structure-functions}
+### Structure functions
 
 A structure function of order $p$ is defined as[^34]
 $$\begin{aligned}
@@ -2568,9 +2568,9 @@ S_2(v_{\perp}(l)) =
 \boldsymbol{l}\right\rvert}{l} \right) ^p \rangle.\end{aligned}$$
 The behaviour of the second order transvers structure functions for
 homogeneous turbulence is uniquely determined by the longitudinal structure
-function `\citep[p. 192, Eqs. (6.28)]{Pope2000}`{=latex}. They also show the
+function [@Pope2000 p. 192, Eqs. (6.28)]. They also show the
 characteristic $2/3$-slope as predicted for the longitudinal structure functions
-`\citep[p.60]{Frisch1995}`{=latex}.
+[@Frisch1995 p.60].
 
 In general structure functions of vectorial quantities like the velocity are
 tensors, e.g. the general second order structure function of the velocity can
@@ -2581,11 +2581,11 @@ S_{ij}(\boldsymbol{x},\boldsymbol{l}) =
  \left[ v_j(\boldsymbol{x}+\boldsymbol{l})-v_j(\boldsymbol{x}) \right]  \rangle\end{aligned}$$
 But it can be shown, that for local isotropy only the longitudinal
 structure function $S_2(v_{\perp}(l))=S_{11}$ and the transversal structure
-$S_2(v_{\perp}(l))=S_{22}=S_{33}$ are unequal zero `\citep{Pope2000}`{=latex}. Since
+$S_2(v_{\perp}(l))=S_{22}=S_{33}$ are unequal zero [@Pope2000]. Since
 the transvers structure function is determined by the longitudinal structure
 function in case of local homogeneity, for homogeneous and isotropic
 turbulence $S_{ij}$ is determined by the single scalar
-function $S_{11} = S_2(v_{\parallel}(l))$ `\citep{Pope2000}`{=latex}.
+function $S_{11} = S_2(v_{\parallel}(l))$ [@Pope2000].
 
 The third order structure function used in Kolmogorov theory is
 defined as
@@ -2597,7 +2597,7 @@ structure function tensor, but again for homogeneous and isotropic turbulence
 the third order structure function tensor $S_{ijk}$ is uniquely determined by
 the single scalar function $S_{111}=S_3(v(l))$.
 
-### Some speculations about \... {#some-speculations-about-...}
+### Some speculations about \...
 
 #### Entropy {#entro}
 
@@ -2605,10 +2605,10 @@ The second law of thermodynamics states that the total entropy of any isolated
 thermodynamic system tends to increase over time, approaching a maximum value
 (not an infinite value!). But the higher the entropy, the lower the free,
 useable energy of a system. Therefore it is perhabs easier to formulate the
-second law of thermodynamics the other way round `\citep{Feynman1967}`{=latex}: the free,
+second law of thermodynamics the other way round [@Feynman1967]: the free,
 useable energy of any isolated thermodynamic system tends to decrease over time,
 approaching a minimum value (zero?!). In this sense we can also understand
-Penrose `\citep{Penrose1989}`{=latex}. He pointed out, that a closed self-gravitating
+Penrose [@Penrose1989]. He pointed out, that a closed self-gravitating
 system will collapse to a black hole, which is the state with the maximum
 entropy of the system. But this state is not a very unordered state
 as one often imagines states with high entropy. But it is the state where no
@@ -2616,7 +2616,7 @@ free energy is left, the potential energy of the system is zero and so no
 directed kinetic energy can be produced any more. Thats why the \"ordered state\"
 of a black hole has the biggest entropy.
 
-#### Newtonian gravity {#newtonian-gravity}
+#### Newtonian gravity
 
 Newtonan gravity is often expressed in form of the poisson equation
 $$\begin{aligned}
@@ -2690,7 +2690,7 @@ $c=i \cdot 4\pi G K$.
 
 #### The divergence equation {#diveq}
 
-##### General fluid {#general-fluid}
+##### General fluid
 
 We start with the momentum equation [\[eq:mom\]](#eq:mom){reference-type="eqref" reference="eq:mom"}
 $$\begin{aligned}
@@ -2730,7 +2730,7 @@ $$\begin{aligned}
 \frac{\partial^2}{\partial r_i \partial r_j}(\rho v_i v_j)\label{eq:instpres}\end{aligned}$$
 and sometimes called equation for the instantaneous pressure.
 
-##### Incompressible newtonian fluid {#incompressible-newtonian-fluid}
+##### Incompressible newtonian fluid
 
 If we have a newtonian fluid
 ($\sigma'_{ij}=\eta  \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right)$) with $\rho=const$ in
@@ -2766,7 +2766,7 @@ which looks like a tensor version of Bernoullis law:
 $$\begin{aligned}
 \frac{\partial}{\partial r_i} \left( \frac{p}{\rho} + \frac{1}{2} v^2 +  \phi \right)  = 0\end{aligned}$$
 
-#### The limit $\nu \longrightarrow 0$ {#the-limit-nu-longrightarrow-0}
+#### The limit $\nu \longrightarrow 0$
 
 At first we should mention that the limit $\nu \longrightarrow 0$ is not
 equivalent to the limit $Re \longrightarrow \infty$. The definition of the
@@ -2792,7 +2792,7 @@ Otherwise we measure effects that have nothing to with the interesting limit
 $\nu \longrightarrow 0$. Sadly the limit $\nu \longrightarrow 0$ is often mixed
 up with $Re \longrightarrow \infty$ in the literature.
 
-For understanding the limit $\nu \longrightarrow 0$ `\citet{Feynman1964}`{=latex}
+For understanding the limit $\nu \longrightarrow 0$ @Feynman1964
 investigates the vorticity equation for a newtonian incompressible fluid
 $$\begin{aligned}
 \frac{\partial}{\partial t}\omega_g
@@ -2807,7 +2807,7 @@ the problem describing a fluid with high viscosity can be simplified to solving
 the so called Stokes equation[^40]
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_j^2}\omega_g =  0_g\end{aligned}$$
-But what happens for very low viscosity? `\citet{Feynman1964}`{=latex} says decreasing
+But what happens for very low viscosity? @Feynman1964 says decreasing
 the viscosity of a fluid leads to an increase of the velocity fluctuations and
 so the increasing factor $\frac{\partial^2}{\partial r_j^2}\omega_g$ compensates the smallness of
 the viscosity. The product of viscosity and $\frac{\partial^2}{\partial r_j^2}\omega_g$ doesn't go to
@@ -2820,7 +2820,7 @@ So the equations for an ideal fluid do not(!) yield the right limit for
 vanishing viscosity. Can we find other equations that do give the right limit
 for vanishing viscosity?
 
-One idea might be the following: `\citet{Feynman1964}`{=latex} said that the limit
+One idea might be the following: @Feynman1964 said that the limit
 of $\nu \frac{\partial^2}{\partial r_j^2}\omega_g$ is not $0_g$, but what is it then? The
 easiest alternative would be a constant vector $C_g \neq 0$! This leads us to
 the equations
@@ -2919,12 +2919,12 @@ $$\begin{aligned}
     potential the Greenfunction $\frac{1}{\left\lvert x_i-x_j\right\rvert}$
     is not timedependent!
 
-[^11]: Nevertheless Penrose `\citep{Penrose1989}`{=latex} pointed out,
+[^11]: Nevertheless Penrose [@Penrose1989] pointed out,
     that the entropy of a selfgravitating fluid should rise up to the point when
     all matter is collapsed to a black hole, see also Appendix [2.18.1](#entro){reference-type="ref" reference="entro"}.
 
 [^12]: Equivalent to the criterion described in this paragraph might be the
-    so called Truelove criterion `\citep{Truelove1997}`{=latex}.
+    so called Truelove criterion [@Truelove1997].
 
 [^13]: This is true if
     the velocity field is continuously differentiable twice
@@ -3013,10 +3013,10 @@ $$\begin{aligned}
     in the literature, because a rigidly rotating fluid is unphysical.
 
 [^34]: See
-    `\citet{Pope2000}`{=latex}.
+    @Pope2000.
 
 [^35]: A sketch of this prove can also be found in
-    `\citet[Appendix G]{Pope2000}`{=latex}.
+    @Pope2000 [Appendix G].
 
 [^36]: In the literature this is often called
     kinetic energy spectrum, but this is only true for
