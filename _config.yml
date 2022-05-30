@@ -1,5 +1,3 @@
-kramdown:
-  math_engine: null
 remote_theme: just-the-docs/just-the-docs
 compress_html:
   blanklines: true
