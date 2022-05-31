@@ -3,17 +3,17 @@ author:
 - Andreas Maier
 bibliography:
 - promotion.bib
-title: Mostly harmless notes
+title: Vector calculus
 ---
 
 # Vector calculus
 
 ## Longitudinal and transversal projection of vectors
 
-A vector $\boldsymbol{a}$ can be split into two parts: the longitudinal part $\boldsymbol{a}_{\parallel}$,
-which is parallel to another vector $\boldsymbol{b}$ and the transversal part $\boldsymbol{a}_{\perp}$,
-which is perpendicular to $\boldsymbol{b}$. The length of the longitudinal part $a_{\parallel}$
-and the transversal part $a_{\perp}$ can be computed from geometry (see figure [\[fig:projection\]](#fig:projection){reference-type="ref" reference="fig:projection"})
+A vector $$\boldsymbol{a}$$ can be split into two parts: the longitudinal part $$\boldsymbol{a}_{\parallel}$$,
+which is parallel to another vector $$\boldsymbol{b}$$ and the transversal part $$\boldsymbol{a}_{\perp}$$,
+which is perpendicular to $$\boldsymbol{b}$$. The length of the longitudinal part $$a_{\parallel}$$
+and the transversal part $$a_{\perp}$$ can be computed from geometry (see figure [\[fig:projection\]](#fig:projection){reference-type="ref" reference="fig:projection"})
 $$\begin{aligned}
 \frac{a_{\parallel}}{a}=\cos \alpha & \Rightarrow
 a_{\parallel}= a \cos\alpha = \frac{a b \cos \alpha}{b} = \frac{\boldsymbol{a}\cdot\boldsymbol{b}}{b},\\
