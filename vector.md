@@ -58,7 +58,9 @@ u_j \frac{\partial}{\partial r_j} v_i &= \overbrace{u_j \frac{\partial}{\partial
 - (\delta_{ik}\delta_{jl}-\delta_{il}\delta_{jk})u_j \frac{\partial}{\partial r_k} v_l \\
 &= u_j \frac{\partial}{\partial r_i} v_j - \epsilon_{mij} \epsilon_{mkl} u_j \frac{\partial}{\partial r_k} v_l \\
 &= u_j \frac{\partial}{\partial r_i} v_j - \epsilon_{ijm} u_j \epsilon_{mkl} \frac{\partial}{\partial r_k} v_l.\end{aligned}$$
+
 In vector notation this can be expressed like
+
 $$\begin{aligned}
 (\boldsymbol{u}\cdot\nabla) \boldsymbol{v} = 
 \boldsymbol{u}\cdot (\nabla \boldsymbol{v})-\boldsymbol{u} \times (\nabla \times \boldsymbol{v})
