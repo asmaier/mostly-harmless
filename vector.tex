@@ -1,0 +1,221 @@
+\RequirePackage[hyphens]{url}
+\RequirePackage{latexml}
+\iflatexml
+\documentclass[12pt,a4paper,twoside]{book}
+\else
+\documentclass[paper=a4,
+					fontsize=12pt,
+				headsepline,
+				cleardoublepage=plain,
+				numbers=noenddot,
+				bibliography=totoc]{scrbook}
+\fi
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}     						
+\usepackage[T1]{fontenc}								% T1-fonts
+
+%\usepackage{mathptmx}									% Times/Mathe \rmdefault
+%\usepackage[scaled=.90]{helvet}						% scaled Helvetica \sfdefault
+\usepackage{helvet} 										% Helvetica \sfdefault
+\usepackage{courier}       							% Courier \ttdefault
+
+
+% Additional packages 
+\usepackage{natbib}	          
+\usepackage[intlimits]{amsmath}	
+\usepackage{amsthm,amsfonts}		
+\usepackage{graphicx}				
+\usepackage{color}     				
+\usepackage[font=small, format=plain, labelfont=bf]{caption}		
+\usepackage[tight]{subfigure}		% support for subfigures (should be replaced
+											% by the newer "subfig" package
+\usepackage{units}					% support for physical units
+
+
+% the hyperref package for hyperlinks should be included as last package
+
+\usepackage[pdftex,
+				breaklinks=true,  	% some links do not work, if this option is set
+				colorlinks=true,  	% before printout, set to false!!!
+				linkcolor=blue,
+				citecolor=blue,
+				urlcolor=blue,
+				pagebackref=true]{hyperref}
+
+% use normal fontstyle for urls; if not set, a tt-font is used
+\urlstyle{same}
+
+\pagestyle{headings}
+
+% distance of line from head:
+\headsep4mm
+
+\iflatexml
+%% nothing
+\else
+% recompute type area
+\typearea[10mm]{current}		
+\fi
+
+% no indentation at the beginning of a new paragraph
+%\setlength{\parindent}{0pt}
+
+% new commands for math mode
+
+% vector and absolute value
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+
+% vector operators
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Div}{div}    %\div is used by amsmath
+\DeclareMathOperator{\rot}{rot}
+
+% brackets
+\newcommand{\lra}[1]{ \left( #1 \right) }
+\newcommand{\lrb}[1]{ \left[ #1 \right] }
+\newcommand{\lrc}[1]{ \left\{ #1 \right\} }
+
+% fractions
+\newcommand{\td}[1]{\frac{d}{d #1}}
+\newcommand{\ttd}[2]{\frac{d #2}{d #1}}
+\newcommand{\pd}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\ppd}[2]{\frac{\partial #2}{\partial #1}}
+\newcommand{\pdd}[1]{\frac{\partial^2}{\partial #1^2}}
+\newcommand{\fa}{\frac{1}{a}}
+\newcommand{\fh}{\frac{\dot{a}}{a}}
+\newcommand{\ft}{\frac{1}{\sqrt{2\pi}}}
+\newcommand{\fft}{\frac{1}{2\pi}}
+\newcommand{\ffft}{\frac{1}{(2\pi)^{3/2}}}
+
+% integrals
+\newcommand{\iinf}{\int_{-\infty}^{\infty}}
+\newcommand{\iiinf}{\iint_{-\infty}^{\infty}}
+\newcommand{\iiiinf}{\iiint^{\infty}_{-\infty}}
+
+% filtered quantities
+%\newcommand{\fil}[1]{{<} #1 {>}}
+\newcommand{\fil}[1]{\langle #1 \rangle}
+\newcommand{\ffil}[1]{{\ll} #1 {\gg}}
+\newcommand{\cfil}[1]{{\prec}#1{\succ}}
+\newcommand{\chat}[1]{\accentset{\curlywedge}{#1}}
+\newcommand{\ol}[1]{\overline{#1}}
+
+\title{Vector calculus}
+\author{Andreas Maier}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Vector calculus}
+
+\subsection{Longitudinal and transversal projection of vectors}
+
+%\begin{figure}[htp]
+%\centering
+%\resizebox{0.4\textwidth}{!}{
+%\input{projection.pstex_t}}
+%\caption{Projection of a vector $\vec{a}$ on a vector $\vec{b}$.}
+%\label{fig:projection}
+%\end{figure}
+
+A vector $\vec{a}$ can be split into two parts: the longitudinal part $\vec{a}_{\parallel}$, 
+which is parallel to another vector $\vec{b}$ and the transversal part $\vec{a}_{\perp}$, 
+which is perpendicular to $\vec{b}$. The length of the longitudinal part $a_{\parallel}$ 
+and the transversal part $a_{\perp}$ can be computed from geometry (see figure \ref{fig:projection})
+\begin{align}
+\frac{a_{\parallel}}{a}=\cos \alpha & \Rightarrow
+a_{\parallel}= a \cos\alpha = \frac{a b \cos \alpha}{b} = \frac{\vec{a}\cdot\vec{b}}{b},\\
+\frac{a_{\perp}}{a}=\sin \alpha & \Rightarrow 
+a_{\perp}= a \sin\alpha = \frac{a b \sin \alpha}{b} = \frac{\abs{\vec{a}\times\vec{b}}}{b}. \label{eq:protrans}
+\end{align}
+But from the Pythagorean theorem we can get another expression for the length of the transversal
+part
+\begin{align}
+a^2=a_{\parallel}^2+a_{\perp}^2 & \Rightarrow
+a_{\perp}^2 = a^2-a_{\parallel}^2= a^2-\frac{(\vec{a}\cdot\vec{b})^2}{b^2}.\label{eq:protrans2}
+\end{align}
+Substituting equation \eqref{eq:protrans} in equation \eqref{eq:protrans2} we get
+\begin{align*}
+\frac{(\abs{\vec{a}\times\vec{b}})^2}{b^2}=a^2-\frac{(\vec{a}\cdot\vec{b})^2}{b^2},
+\end{align*}
+which leads us to the following expression for the square of the norm of the cross product
+\begin{align}
+\abs{\vec{a}\times\vec{b}}^2 = (a b)^2 - (\vec{a}\cdot\vec{b})^2.
+\end{align}
+This is again Lagrange's identity (see \eqref{eq:lagrident}). 
+
+\subsection{Vector identities}
+In this chapter we show the derivation of some vector quantities in cartesian
+tensor notation.
+\subsubsection{$(\vec{u}\cdot\nabla) \vec{v}$} \label{vecid01}
+For some arbitraty vectors $u_i, v_i$ we can write
+\begin{align*}
+u_j \pd{r_j} v_i &= \overbrace{u_j \pd{r_i} v_j - u_j \pd{r_i} v_j}^0 
++ u_j\pd{r_j} v_i \\
+&= u_j \pd{r_i} v_j - \delta_{ik}\delta_{jl} u_j \pd{r_k} v_l 
++\delta_{il}\delta_{jk} u_j \pd{r_k} v_l \\
+&= u_j \pd{r_i} v_j 
+- (\delta_{ik}\delta_{jl}-\delta_{il}\delta_{jk})u_j \pd{r_k} v_l \\
+&= u_j \pd{r_i} v_j - \epsilon_{mij} \epsilon_{mkl} u_j \pd{r_k} v_l \\
+&= u_j \pd{r_i} v_j - \epsilon_{ijm} u_j \epsilon_{mkl} \pd{r_k} v_l.
+\end{align*}
+In vector notation this can be expressed like
+\begin{align}
+(\vec{u}\cdot\nabla) \vec{v} = 
+\vec{u}\cdot (\nabla \vec{v})-\vec{u} \times (\nabla \times \vec{v})
+\label{eq:vecid01}
+\end{align}
+\subsubsection{$(\vec{v}\cdot\nabla) \vec{v}$}
+Inserting $u_j=v_j$ into equation \eqref{eq:vecid01} yields
+\begin{align*}
+v_j \pd{r_j} v_i = v_j \pd{r_i} v_j 
+- \epsilon_{ijm} v_j \epsilon_{mkl} \pd{r_k} v_l
+\end{align*}
+For $v_j \pd{r_i} v_j$ we can write
+\begin{align*}
+v_j \pd{r_i} v_j &= \pd{r_i} (v_j v_j) - v_j \pd{r_i} v_j
+\end{align*}
+and therefore
+\begin{align*}
+v_j \pd{r_i} v_j = \pd{r_i} \lra{\frac{1}{2} v_j v_j}.
+\end{align*}
+Using this we get for
+\begin{align*}
+v_j \pd{r_j} v_i = \pd{r_i} \lra{\frac{1}{2} v_j v_j}
+- \epsilon_{ijm} v_j \epsilon_{mkl} \pd{r_k} v_l
+\end{align*}
+or in vector notation
+\begin{align}
+(\vec{v}\cdot\nabla) \vec{v} = 
+\frac{1}{2} \nabla \vec{v}^2-\vec{v} \times (\nabla \times \vec{v})
+\label{eq:vecid02}
+\end{align}
+\subsubsection{$\nabla \times \lra{\vec{u} \times \vec{v}}$}
+The $i$-th component of the rotation of a cross product of two vectors is
+\begin{align*}
+\lrb{\nabla \times \lra{\vec{u} \times \vec{v}}}_i 
+&= \epsilon_{ijk} \pd{r_j} \epsilon_{klm} u_l v_m \\
+&= \epsilon_{kij} \epsilon_{klm} \pd{r_j} (u_l v_m) \\
+&= (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \pd{r_j} (u_l v_m) \\
+&= \pd{r_j} (u_i v_j) - \pd{r_j} (u_j v_i) \\
+&= u_i \pd{r_j} v_j + v_j \pd{r_j} u_i - u_j \pd{r_j} v_i - v_i \pd{r_j} u_j
+\end{align*}
+It can be written in vector notation like
+\begin{align}
+\nabla \times \lra{\vec{u} \times \vec{v}} 
+= \vec{u} (\nabla \cdot \vec{v}) - \vec{v} (\nabla \cdot \vec{u})
++ (\vec{v} \cdot \nabla) \vec{u} - (\vec{u} \cdot \nabla) \vec{v}
+\end{align}
+
+\appendix
+%\input{appendix/appendix}
+
+% try plainnat, abbrvnat, unsrtnat, apalike, aa, astroads
+
+\bibliographystyle{apalike}
+\bibliography{promotion}
+
+\end{document}

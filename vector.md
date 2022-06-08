@@ -1,11 +1,3 @@
----
-author:
-- Andreas Maier
-bibliography:
-- promotion.bib
-title: Vector calculus
----
-
 # Vector calculus
 
 ## Longitudinal and transversal projection of vectors
@@ -66,7 +58,7 @@ $$\begin{aligned}
 \boldsymbol{u}\cdot (\nabla \boldsymbol{v})-\boldsymbol{u} \times (\nabla \times \boldsymbol{v})
 \label{eq:vecid01}\end{aligned}$$
 
-### $$(\boldsymbol{v}\cdot\nabla) \boldsymbol{v}$$
+### $$(\boldsymbol{v}\cdot\nabla) \boldsymbol{v}$$ {#boldsymbolvcdotnabla-boldsymbolv}
 
 Inserting $$u_j=v_j$$ into equation [\[eq:vecid01\]](#eq:vecid01){reference-type="eqref" reference="eq:vecid01"} yields
 
@@ -97,7 +89,7 @@ $$\begin{aligned}
 \frac{1}{2} \nabla \boldsymbol{v}^2-\boldsymbol{v} \times (\nabla \times \boldsymbol{v})
 \label{eq:vecid02}\end{aligned}$$
 
-### $$\nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)$$
+### $$\nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)$$ {#nabla-times-left-boldsymbolu-times-boldsymbolv-right}
 
 The $$i$$-th component of the rotation of a cross product of two vectors is
 
