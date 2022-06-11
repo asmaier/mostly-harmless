@@ -6,17 +6,18 @@ function Writer (doc, opts)
 
 		if elem.mathtype == 'DisplayMath' then
 			local delimited = '\n$$' .. elem.text ..'$$\n'
-			math = pandoc.RawInline('markdown', delimited .. '\n')
+			math = pandoc.RawInline('markdown_mmd', delimited .. '\n')
 			-- math = pandoc.RawBlock('markdown', delimited)
 		end
 
 		if elem.mathtype == 'InlineMath' then
 			local delimited = '$$' .. elem.text ..'$$'
-			math = pandoc.RawInline('markdown', delimited)
+			math = pandoc.RawInline('markdown_mmd', delimited)
 		end	
 		
 		return math
 	  end			
 	}
-	return pandoc.write(doc:walk(filter), 'markdown', opts)
+	-- print(opts)
+	return pandoc.write(doc:walk(filter), 'markdown_mmd', opts)
   end

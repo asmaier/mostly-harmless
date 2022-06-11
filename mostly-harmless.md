@@ -1,7 +1,7 @@
 # Introduction
 
 This book holds a collection of mostly harmless notes on mathematics and physics. The topics covered are simply all things I found interesting. I mostly cover topics which
-you won't find easily in Wikipedia or a usual text book. Often I also approach things from a different point of view (namely my point of view). My hope is that these notes grow into an interesting addition to the existing literature.
+you won’t find easily in Wikipedia or a usual text book. Often I also approach things from a different point of view (namely my point of view). My hope is that these notes grow into an interesting addition to the existing literature.
 
 # Mathematics
 
@@ -49,7 +49,7 @@ $$\begin{aligned}
 |a|^2|b|^2 = |a\times b|^2 + |a\cdot b|^2 
 \label{eq:lagrident}\end{aligned}$$
 
-This is called [Lagrange's identity](https://en.wikipedia.org/wiki/Lagrange%27s_identity). Since all terms are squared and
+This is called [Lagrange’s identity](https://en.wikipedia.org/wiki/Lagrange%27s_identity). Since all terms are squared and
 therefor positive we immediatelly can derive the inequalities
 
 $$\begin{aligned}
@@ -57,7 +57,7 @@ $$\begin{aligned}
 |a|^2|b|^2 &\geq |a\times b|^2\end{aligned}$$
 
 The first of these equations is the Cauchy-Schwarz inequality. The
-second equations doesn't seem to have a name in the literature.
+second equations doesn’t seem to have a name in the literature.
 
 The Cauchy-Schwarz inequality comes in many different forms. For example
 for $$n$$-dimensional vectors it can be written in cartesian coordinates
@@ -88,7 +88,7 @@ A=\underbrace{\frac{1}{2} \left( A + A^T \right) }_{\text{symmetric}}
 
 #### Symmetric matrices
 
-A symmetric matrix is a square matrix, that is equal to it's transpose.
+A symmetric matrix is a square matrix, that is equal to it’s transpose.
 
 $$\begin{aligned}
 A = A^T\end{aligned}$$
@@ -126,20 +126,20 @@ of multiplication for real numbers, there seems to be no way to solve
 this equation for $$B$$.
 
 However there is a way out of the dilemma. The reader might have
-noticed, that we didn't call $$A$$ or $$B$$ a number or a variable, but
+noticed, that we didn’t call $$A$$ or $$B$$ a number or a variable, but
 a transformation. We could have also called it also an operator. This
 should be a hint, that maybe simple numbers are not enough to solve such
 an equation.
 
-So let's think a bit. Can this equation maybe interpreted in a
-geometrical way? Let's imagine the line of numbers. What we want is a
+So let’s think a bit. Can this equation maybe interpreted in a
+geometrical way? Let’s imagine the line of numbers. What we want is a
 way, to move or transform the point 1 to the point -1, but doing it with
 two steps (One step would be simple, this could be reflection at the
 zero point). If we draw the line on a sheet of paper and look from far
 away the solution might be become more obvious: The line is embedded on
 the two dimensional surface of the paper! So we might interpret our
 source point 1 in fact as a vector (1,0) and our target point -1 as
-vector (-1,0). Maybe this helps. Let's rewrite our equation in two
+vector (-1,0). Maybe this helps. Let’s rewrite our equation in two
 dimensions
 
 $$\begin{aligned}
@@ -155,9 +155,9 @@ transformation, which rotates a vector by 90 degrees, in short
 $$B = R(90^{\circ})$$ (or a rotation in the other direction by -90
 degrees).
 
-So we found a solution by geometrical intuition, let's try to make it
+So we found a solution by geometrical intuition, let’s try to make it
 precise. From linear algebra we know, that a transformation which turns
-a 2D vector into another 2D vector must be a 2x2 matrix. So let's
+a 2D vector into another 2D vector must be a 2x2 matrix. So let’s
 rewrite the equation as a matrix equation
 
 $$\begin{aligned}
@@ -211,7 +211,7 @@ cubic ($$n=3$$) and quartic ($$n=4$$) equations turned out to be much
 harder. Rafael Bombelli made a crucial step in 1572 when - in a
 desparate move - he invented complex numbers to solve cubic equations,
 which had been unsolvable up to that time. Had he known matrices and
-linear algebra, the invention of "complex numbers" would have been
+linear algebra, the invention of “complex numbers” would have been
 unnecessary.
 
 This is so, because there is a deep connection between polynominal
@@ -232,8 +232,8 @@ transformation.
 
 Knowning this we can nowadays understand, why some polynominal equations
 have no solutions. These are the equations, which correspond to
-matrices, which don't have eigenvalues, meaning the transformation
-doesn't leave any vector unchanged. From linear algebra we know, that
+matrices, which don’t have eigenvalues, meaning the transformation
+doesn’t leave any vector unchanged. From linear algebra we know, that
 these transformations describe rotations. And this is the connection to
 the 2d rotation matrix we found in the previous chapter. The polynominal
 equation
@@ -253,11 +253,11 @@ the corresponding companion matrix.
 
 ### Complex Numbers
 
-Complex numbers are not numbers. They cannot be ordered according to their size. This basic insight makes clear that trying to work with complex numbers like with usual "real numbers" must fail (e.g. division doesn't work) and in general is also the reason for the big confusion around them.
+Complex numbers are not numbers. They cannot be ordered according to their size. This basic insight makes clear that trying to work with complex numbers like with usual “real numbers” must fail (e.g. division doesn’t work) and in general is also the reason for the big confusion around them.
 
 But complex numbers are also no vectors (in the geometrical sense). The multiplication rule for complex numbers is completely different from the usual scalar product of geometrical vectors. Multiplying two complex numbers yields another complex number, whereas the usual scalar multiplication of geometrical vectors yields a scalar. So although a complex number can be represented as a set of two numbers, this set of two numbers should not(!) be visualized as geometrical vector.
 
-Instead the modern view is that complex numbers are 2D matrices. They represent the group of (antisymmetric) 2D rotation matrices (<https://en.wikipedia.org/wiki/Complex_number#Matrix_representation_of_complex_numbers>). All the features of complex numbers follow naturally from this representation, e.g. multiplying two matrices yields another matrix. Unfortunately most textbooks don't even mention the matrix representation of complex numbers, although this really makes clear what complex "numbers" are, how they can be extended (e.g. quaternions are 3D rotation matrices) and how they fit into the bigger picture which is <https://en.wikipedia.org/wiki/Group_theory>.
+Instead the modern view is that complex numbers are 2D matrices. They represent the group of (antisymmetric) 2D rotation matrices (<https://en.wikipedia.org/wiki/Complex_number#Matrix_representation_of_complex_numbers>). All the features of complex numbers follow naturally from this representation, e.g. multiplying two matrices yields another matrix. Unfortunately most textbooks don’t even mention the matrix representation of complex numbers, although this really makes clear what complex “numbers” are, how they can be extended (e.g. quaternions are 3D rotation matrices) and how they fit into the bigger picture which is <https://en.wikipedia.org/wiki/Group_theory>.
 
 ### Tensor calculus
 
@@ -281,7 +281,7 @@ $$\begin{aligned}
 
 The Levi-Civita-Symbol is not a tensor, but a pseudotensor, because it
 transforms like a tensor under rotation, but not under reflection
-[@Pope2000].[^1]
+(Pope 2000).[^1]
 
 ##### Levi-Civita-Symbol in 3D
 
@@ -425,7 +425,7 @@ U_{ij}W_{ij} = \frac{1}{2}  \left( U_{ij}-U_{ji} \right)  W_{ij}
 A vector $$\boldsymbol{a}$$ can be split into two parts: the longitudinal part $$\boldsymbol{a}_{\parallel}$$,
 which is parallel to another vector $$\boldsymbol{b}$$ and the transversal part $$\boldsymbol{a}_{\perp}$$,
 which is perpendicular to $$\boldsymbol{b}$$. The length of the longitudinal part $$a_{\parallel}$$
-and the transversal part $$a_{\perp}$$ can be computed from geometry (see figure [\[fig:projection\]](#fig:projection){reference-type="ref" reference="fig:projection"})
+and the transversal part $$a_{\perp}$$ can be computed from geometry (see figure <a href="#fig:projection" data-reference-type="ref" data-reference="fig:projection">[fig:projection]</a>)
 
 $$\begin{aligned}
 \frac{a_{\parallel}}{a}=\cos \alpha & \Rightarrow
@@ -440,7 +440,7 @@ $$\begin{aligned}
 a^2=a_{\parallel}^2+a_{\perp}^2 & \Rightarrow
 a_{\perp}^2 = a^2-a_{\parallel}^2= a^2-\frac{(\boldsymbol{a}\cdot\boldsymbol{b})^2}{b^2}.\label{eq:protrans2}\end{aligned}$$
 
-Substituting equation [\[eq:protrans\]](#eq:protrans){reference-type="eqref" reference="eq:protrans"} in equation [\[eq:protrans2\]](#eq:protrans2){reference-type="eqref" reference="eq:protrans2"} we get
+Substituting equation <a href="#eq:protrans" data-reference-type="eqref" data-reference="eq:protrans">[eq:protrans]</a> in equation <a href="#eq:protrans2" data-reference-type="eqref" data-reference="eq:protrans2">[eq:protrans2]</a> we get
 
 $$\begin{aligned}
 \frac{(\left\lvert\boldsymbol{a}\times\boldsymbol{b}\right\rvert)^2}{b^2}=a^2-\frac{(\boldsymbol{a}\cdot\boldsymbol{b})^2}{b^2},\end{aligned}$$
@@ -450,14 +450,14 @@ which leads us to the following expression for the square of the norm of the cro
 $$\begin{aligned}
 \left\lvert\boldsymbol{a}\times\boldsymbol{b}\right\rvert^2 = (a b)^2 - (\boldsymbol{a}\cdot\boldsymbol{b})^2.\end{aligned}$$
 
-This is again Lagrange's identity (see [\[eq:lagrident\]](#eq:lagrident){reference-type="eqref" reference="eq:lagrident"}).
+This is again Lagrange’s identity (see <a href="#eq:lagrident" data-reference-type="eqref" data-reference="eq:lagrident">[eq:lagrident]</a>).
 
 #### Vector identities
 
 In this chapter we show the derivation of some vector quantities in cartesian
 tensor notation.
 
-##### $$(\boldsymbol{u}\cdot\nabla) \boldsymbol{v}$$ {#vecid01}
+##### $$(\boldsymbol{u}\cdot\nabla) \boldsymbol{v}$$ [vecid01]
 
 For some arbitraty vectors $$u_i, v_i$$ we can write
 
@@ -478,9 +478,9 @@ $$\begin{aligned}
 \boldsymbol{u}\cdot (\nabla \boldsymbol{v})-\boldsymbol{u} \times (\nabla \times \boldsymbol{v})
 \label{eq:vecid01}\end{aligned}$$
 
-##### $$(\boldsymbol{v}\cdot\nabla) \boldsymbol{v}$$ {#boldsymbolvcdotnabla-boldsymbolv}
+##### $$(\boldsymbol{v}\cdot\nabla) \boldsymbol{v}$$ [boldsymbolvcdotnabla-boldsymbolv]
 
-Inserting $$u_j=v_j$$ into equation [\[eq:vecid01\]](#eq:vecid01){reference-type="eqref" reference="eq:vecid01"} yields
+Inserting $$u_j=v_j$$ into equation <a href="#eq:vecid01" data-reference-type="eqref" data-reference="eq:vecid01">[eq:vecid01]</a> yields
 
 $$\begin{aligned}
 v_j \frac{\partial}{\partial r_j} v_i = v_j \frac{\partial}{\partial r_i} v_j 
@@ -509,7 +509,7 @@ $$\begin{aligned}
 \frac{1}{2} \nabla \boldsymbol{v}^2-\boldsymbol{v} \times (\nabla \times \boldsymbol{v})
 \label{eq:vecid02}\end{aligned}$$
 
-##### $$\nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)$$ {#nabla-times-left-boldsymbolu-times-boldsymbolv-right}
+##### $$\nabla \times  \left( \boldsymbol{u} \times \boldsymbol{v} \right)$$ [nabla-times-left-boldsymbolu-times-boldsymbolv-right]
 
 The $$i$$-th component of the rotation of a cross product of two vectors is
 
@@ -530,7 +530,7 @@ $$\begin{aligned}
 
 #### Jacobian determinant
 
-##### Definition {#jacobi}
+##### Definition [jacobi]
 
 If the cartesian coordinates are given as functions of general curvilinear
 coordinates $$a_1, a_2, a_3$$, i.e.
@@ -561,7 +561,7 @@ J = \left\lvert\frac{\partial(x,y,z)}{\partial (a_1, a_2,a_3)}\right\rvert=
 					 				 \frac{\partial y}{\partial a_j} 
 					 				 \frac{\partial z}{\partial a_k}.\end{aligned}$$
 
-##### Time derivative of Jacobian determinant {#jacdt}
+##### Time derivative of Jacobian determinant [jacdt]
 
 With $$v_i= \frac{dx_i}{dt}$$ it follows for the time derivative of $$J$$
 
@@ -601,15 +601,17 @@ $$\begin{aligned}
 
 Analysis of the first term in the bracket for
 
-::: flalign*
+<div class="flalign*" markdown="1">
+
 l&=1:
-,\
+,  
 l&=2:
 \_
-,\
+,  
 l&=3:
 .
-:::
+
+</div>
 
 So for symmetry reasons most of the contributions are zero when summed up. In we
 end we see: For the first term there is only a non-vanishing contribution for
@@ -636,7 +638,7 @@ F(k)&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}f(x) e^{-ikx} dx\ \ \text{(Fou
 
 Using the Fourier transform on a function twice will produce the
 the original function again, but mirrored at the origin.
-That's why one conventionally defines an inverse Fourier transform
+That’s why one conventionally defines an inverse Fourier transform
 [^3],
 that will generate the not mirrored original function again, when used on the
 Fourier transform of a function
@@ -741,7 +743,7 @@ $$\begin{aligned}
 e^{ikx} dk\\
 &=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}F^*(k) F(k) e^{ikx} dk = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 e^{ikx} dk.\end{aligned}$$
 
-A special case of the Wiener-Khichnin theorem is Parseval's theorem
+A special case of the Wiener-Khichnin theorem is Parseval’s theorem
 
 $$\begin{aligned}
 \int_{-\infty}^{\infty}\left\lvert f(x)\right\rvert^2 dx = \int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 dk, \end{aligned}$$
@@ -796,11 +798,11 @@ interference effects between events and does this by introducing
 [negative
 probabilities](https://en.wikipedia.org/wiki/Negative_probability) (To be more precise, the probability wave function of QM
 is complex, because in the theory one must basically take the square
-root of the negative probabilities). But as Dirac put it: "Negative
+root of the negative probabilities). But as Dirac put it: “Negative
 probabilities should not be considered nonsense. They are well defined
 concepts mathematically, like a negative sum of money. Negative
 probabilities should be considered simply as things which do not appear
-in experimental results."
+in experimental results.”
 
 So it is possible to work with things like negative or complex
 probabilities. But to be able to derive the central limit theorem it is
@@ -1008,13 +1010,13 @@ Quantum mechanics = asymmetric covariance matrix??
 
 -   <https://mathoverflow.net/questions/37871/is-it-a-coincidence-that-the-universal-parabolic-constant-shows-up-in-the-soluti>
 
-##### Apery's constant
+##### Apery’s constant
 
 -   <https://en.wikipedia.org/wiki/Ap%C3%A9ry%27s_constant>
 
 -   <https://math.stackexchange.com/questions/12815/riemann-zeta-function-at-odd-positive-integers/12819#12819>
 
-##### Gauss's constant
+##### Gauss’s constant
 
 -   <https://en.wikipedia.org/wiki/Gauss%27s_constant>
 
@@ -1052,7 +1054,7 @@ Quantum mechanics = asymmetric covariance matrix??
 
 In the view of classical mechanics the world consists of point particles with constant mass $$m$$,
 position $$\boldsymbol{x(t)}$$ and velocity $$\boldsymbol{v(t)}$$. The number of particles is countable
-(not an uncountable infinity) and stays constant. The particles don't split or unite.
+(not an uncountable infinity) and stays constant. The particles don’t split or unite.
 The time is a global parameter which is the same for each particle. This description
 of the world is sometimes also called point mechanics.
 
@@ -1073,7 +1075,7 @@ field represents a fluid element consisting of several point particles.
 The statistical behaviour of these point particles
 defines quantities like density, temperature, pressure and average velocity
 for each fluid element. In this sense an fluid can be represented by a number of
-contiuous fields (density, velocity, pressure, temperature,\...)
+contiuous fields (density, velocity, pressure, temperature,...)
 which defines at every point a certain statistical quantity of a bunch
 of fluid molecules.
 
@@ -1192,7 +1194,7 @@ of forces on each fluid element consists of
     $$\begin{aligned}
     F_{g,i}= \int_V \rho g_i dV.\end{aligned}$$
 
-Using the generalized continuity equation [\[eq:RTdiff\]](#eq:RTdiff){reference-type="eqref" reference="eq:RTdiff"} we can express the
+Using the generalized continuity equation <a href="#eq:RTdiff" data-reference-type="eqref" data-reference="eq:RTdiff">[eq:RTdiff]</a> we can express the
 temporal change of each component of the momentum of a fluid element
 setting $$\alpha=\rho v_i$$ in the form
 
@@ -1200,7 +1202,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}(\rho v_i) + \frac{\partial}{\partial r_j}(v_j \rho v_i) = -\frac{\partial}{\partial r_i}p + \frac{\partial}{\partial r_j}\sigma'_{ij}
 +\rho g_i.\end{aligned}$$
 
-With the help of the continuity equation [\[eq:3\]](#eq:3){reference-type="eqref" reference="eq:3"} we can write the momentum
+With the help of the continuity equation <a href="#eq:3" data-reference-type="eqref" data-reference="eq:3">[eq:3]</a> we can write the momentum
 equation in the often used form called Euler equation
 
 $$\begin{aligned}
@@ -1209,7 +1211,7 @@ $$\begin{aligned}
 
 ##### Kinetic energy equation
 
-If we multiply equation [\[eq:vel\]](#eq:vel){reference-type="eqref" reference="eq:vel"} with the velocity $$v_i$$, use
+If we multiply equation <a href="#eq:vel" data-reference-type="eqref" data-reference="eq:vel">[eq:vel]</a> with the velocity $$v_i$$, use
 $$\frac{1}{2}\frac{d x^2}{dt} = x \frac{dx}{dt}$$ and the continuity
 equation we get an equation for the kinetic energy of a local fluid element in
 conservation form
@@ -1260,14 +1262,14 @@ $$\begin{aligned}
 ##### Global dissipation of kinetic energy
 
 For investigating the conservation of the kinetic energy of the
-whole fluid we write using the Reynolds transport theorem [\[eq:RT\]](#eq:RT){reference-type="eqref" reference="eq:RT"}
+whole fluid we write using the Reynolds transport theorem <a href="#eq:RT" data-reference-type="eqref" data-reference="eq:RT">[eq:RT]</a>
 
 $$\begin{aligned}
 \frac{d}{d t} E_{kin} = \frac{d}{d t} \int_V \frac{1}{2}\rho v^2 dV = 
 \int_V \frac{\partial}{\partial t}  \left( \frac{1}{2}\rho v^2 \right)  + 
 \frac{\partial}{\partial r_j}  \left( v_j \frac{1}{2}\rho v^2 \right)  dV\end{aligned}$$
 
-The second term on the right hand side can be transformed with Gauss's theorem
+The second term on the right hand side can be transformed with Gauss’s theorem
 to an integral over the surface of the whole fluid
 
 $$\begin{aligned}
@@ -1281,8 +1283,8 @@ $$\begin{aligned}
 \frac{d}{d t} E_{kin}=\frac{\partial}{\partial t} E_{kin}=\int_V \frac{\partial}{\partial t}  \left( \frac{1}{2}\rho v^2 \right)  dV =
 \int_V \rho v_i \frac{\partial}{\partial t} v_i + \frac{1}{2} v^2 \frac{\partial}{\partial t}\rho dV \end{aligned}$$
 
-Inserting the Euler equation [\[eq:vel\]](#eq:vel){reference-type="eqref" reference="eq:vel"} and using the continuity equation
-[\[eq:3\]](#eq:3){reference-type="eqref" reference="eq:3"} and $$g_i=\frac{\partial}{\partial r_i}\phi$$ we can transform this to
+Inserting the Euler equation <a href="#eq:vel" data-reference-type="eqref" data-reference="eq:vel">[eq:vel]</a> and using the continuity equation
+<a href="#eq:3" data-reference-type="eqref" data-reference="eq:3">[eq:3]</a> and $$g_i=\frac{\partial}{\partial r_i}\phi$$ we can transform this to
 
 $$\begin{aligned}
 \begin{split}
@@ -1292,7 +1294,7 @@ $$\begin{aligned}
 - \int_V \phi \frac{\partial}{\partial t}\rho dV.
 \end{split}\end{aligned}$$
 
-The first term on the right hand side can be transformed with Gauss's theorem
+The first term on the right hand side can be transformed with Gauss’s theorem
 to a surface integral. Again this surface integral is zero because on the
 surface of the fluid the velocity $$v_i,v_j=0$$. So we are left with
 
@@ -1301,12 +1303,12 @@ $$\begin{aligned}
 \frac{\partial}{\partial r_j} v_i dV
 - \int_V \phi \frac{\partial}{\partial t}\rho dV,\end{aligned}$$
 
-which is the generalization of equation (16.2) from @Landau1991
+which is the generalization of equation (16.2) from Landau and Lifschitz (1991)
 for general compressible fluids. So we see that the total kinetic energy for an
 ideal, compressible fluid is not conserved.
 
 If we substitute the first term on the right hand side with the balance equation
-for internal energy [\[eq:eint\]](#eq:eint){reference-type="eqref" reference="eq:eint"} and again makes use of Gauss's theorem we
+for internal energy <a href="#eq:eint" data-reference-type="eqref" data-reference="eq:eint">[eq:eint]</a> and again makes use of Gauss’s theorem we
 get the following expression
 
 $$\begin{aligned}
@@ -1375,7 +1377,7 @@ So we see that for a selfgravitating system
 $$\begin{aligned}
 \int \rho \frac{\partial}{\partial t} \phi dV = \frac{\partial}{\partial t}  \left( \frac{1}{2}\int \rho\phi dV \right) .\end{aligned}$$
 
-If we use this expression in [\[eq:glodis\]](#eq:glodis){reference-type="eqref" reference="eq:glodis"} and use $$E_{pot}= \frac{1}{2}\int
+If we use this expression in <a href="#eq:glodis" data-reference-type="eqref" data-reference="eq:glodis">[eq:glodis]</a> and use $$E_{pot}= \frac{1}{2}\int
 \rho \phi dV$$ we get
 
 $$\begin{aligned}
@@ -1395,7 +1397,7 @@ into account[^11].
 ##### Local dissipation of kinetic energy
 
 For analyzing the dissipation of kinetic energy in a local fluid element we
-have to make the same calculations as we did to get equation [\[eq:glodis\]](#eq:glodis){reference-type="eqref" reference="eq:glodis"},
+have to make the same calculations as we did to get equation <a href="#eq:glodis" data-reference-type="eqref" data-reference="eq:glodis">[eq:glodis]</a>,
 but without the assumption of $$v=0$$ on the boundary. Doing this we arrive at
 
 $$\begin{aligned}
@@ -1461,8 +1463,8 @@ $$\begin{aligned}
 where gravity is now just treated as a source in the balance equation of the
 kinetic energy.
 
-One might recognize, that we didn't mention selfgravity. In fact for the
-derivation of the energy equation [\[eq:etotal\]](#eq:etotal){reference-type="eqref" reference="eq:etotal"} we assumed, that the
+One might recognize, that we didn’t mention selfgravity. In fact for the
+derivation of the energy equation <a href="#eq:etotal" data-reference-type="eqref" data-reference="eq:etotal">[eq:etotal]</a> we assumed, that the
 potential energy of the local fluid element is not due to selfgravity but due
 to some external potential generated by the rest of the fluid. This assumption
 is valid in case the local fluid element does not contribute much to the global
@@ -1474,8 +1476,8 @@ $$\begin{aligned}
 
 Because we know from the last chapter that the term $$- v_i \rho \frac{\partial}{\partial r_i} \phi$$
 transforms into $$-\frac{1}{2}\frac{\partial}{\partial t}\rho\phi$$ in the selfgravity case we could
-implement a correction in [\[eq:etotal2\]](#eq:etotal2){reference-type="eqref" reference="eq:etotal2"}, which accounts for a rising
-\"selfgravitiness\" of a local fluid element like
+implement a correction in <a href="#eq:etotal2" data-reference-type="eqref" data-reference="eq:etotal2">[eq:etotal2]</a>, which accounts for a rising
+"selfgravitiness" of a local fluid element like
 
 $$\begin{aligned}
 \begin{split}
@@ -1497,7 +1499,7 @@ Using
 $$\begin{aligned}
 v_j \frac{\partial}{\partial r_j}( v_i) = \frac{\partial}{\partial r_j}(v_i v_j) - v_i\frac{\partial}{\partial r_j}v_j\end{aligned}$$
 
-we can express the euler equation [\[eq:vel\]](#eq:vel){reference-type="eqref" reference="eq:vel"} like
+we can express the euler equation <a href="#eq:vel" data-reference-type="eqref" data-reference="eq:vel">[eq:vel]</a> like
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}(v_i) +\frac{\partial}{\partial r_j}(v_i v_j) - v_i\frac{\partial}{\partial r_j}v_j = 
@@ -1515,7 +1517,7 @@ v_j)
 +\frac{1}{\rho}\frac{\partial^2}{\partial r_i \partial r_j}\sigma'_{ij}
 +\frac{\partial}{\partial r_i}g_i\end{aligned}$$
 
-With the poisson equation [\[eq:maxgrav1\]](#eq:maxgrav1){reference-type="eqref" reference="eq:maxgrav1"} and using the notation from
+With the poisson equation <a href="#eq:maxgrav1" data-reference-type="eqref" data-reference="eq:maxgrav1">[eq:maxgrav1]</a> and using the notation from
 Truesdell for the divergence $$\theta=\frac{\partial v_i}{\partial r_i}$$
 we get an equation for the divergence of an arbitrary fluid
 
@@ -1544,8 +1546,8 @@ $$\begin{aligned}
 
 #### Vorticity equation
 
-Using the vector identity [\[eq:vecid02\]](#eq:vecid02){reference-type="eqref" reference="eq:vecid02"} we can express the euler
-equation [\[eq:vel\]](#eq:vel){reference-type="eqref" reference="eq:vel"} like
+Using the vector identity <a href="#eq:vecid02" data-reference-type="eqref" data-reference="eq:vecid02">[eq:vecid02]</a> we can express the euler
+equation <a href="#eq:vel" data-reference-type="eqref" data-reference="eq:vel">[eq:vel]</a> like
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}(v_i) + \frac{\partial}{\partial r_i}  \left( \frac{1}{2} v_j v_j \right) 
@@ -1609,7 +1611,7 @@ $$\begin{aligned}
 
 #### Summary
 
-##### Balance equations {#balance-equations-1 .unnumbered}
+##### Balance equations [balance-equations-1]
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}\rho + \frac{\partial}{\partial r_j}(v_j \rho) &= 0 \label{eq:mass}\\
@@ -1628,7 +1630,7 @@ $$\begin{aligned}
 and an equation of state dependent on the material of the fluid.
 [^15]
 
-##### Global dissipation of kinetic energy $$\mathcal{E}$$ {#global-dissipation-of-kinetic-energy-mathcale .unnumbered}
+##### Global dissipation of kinetic energy $$\mathcal{E}$$ [global-dissipation-of-kinetic-energy-mathcale]
 
 $$\begin{aligned}
 \mathcal{E} = \frac{1}{V} \frac{\partial}{\partial t} E_{kin} = 
@@ -1637,7 +1639,7 @@ $$\begin{aligned}
 -\frac{1}{V} \int_V \phi \frac{\partial}{\partial t}\rho dV
 \label{eq:diss}\end{aligned}$$
 
-##### Divergence equation {#divergence-equation-1 .unnumbered}
+##### Divergence equation [divergence-equation-1]
 
 $$\begin{aligned}
 \begin{split}
@@ -1651,7 +1653,7 @@ $$\begin{aligned}
 \end{split}
 \label{eq:div}\end{aligned}$$
 
-##### Vorticity equation {#vorticity-equation-1 .unnumbered}
+##### Vorticity equation [vorticity-equation-1]
 
 $$\begin{aligned}
 \begin{split}
@@ -1681,7 +1683,7 @@ S^*_{ij}= \left[ \frac{1}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\part
 \frac{\partial v_k}{\partial r_k} \right] \end{aligned}$$
 
 The parameter $$\eta'$$ is called dynamic viscosity and $$\zeta$$ is the so called
-second dynamic viscosity. The second term of equation [\[eq:stress\]](#eq:stress){reference-type="eqref" reference="eq:stress"} is
+second dynamic viscosity. The second term of equation <a href="#eq:stress" data-reference-type="eqref" data-reference="eq:stress">[eq:stress]</a> is
 often considered as small and therefore neglected. This is true in case of a
 monoatomic gases there it can be shown, that $$\zeta=0$$ (Landau/Lifschitz 10).
 In case of a incompressible fluid with constant density the term can also be
@@ -1707,7 +1709,7 @@ $$\begin{aligned}
 \label{eq:stress2}\end{aligned}$$
 
 Inserting this explicitely into the momentum equation for a compressible fluid
-[\[eq:mom\]](#eq:mom){reference-type="eqref" reference="eq:mom"} one gets for the term
+<a href="#eq:mom" data-reference-type="eqref" data-reference="eq:mom">[eq:mom]</a> one gets for the term
 
 $$\begin{aligned}
 \begin{split}
@@ -1722,7 +1724,7 @@ $$\begin{aligned}
 \label{eq:divstress}\end{aligned}$$
 
 Inserting the stress tensor into the energy equation for a compressible fluid
-[\[eq:etot\]](#eq:etot){reference-type="eqref" reference="eq:etot"} one gets for
+<a href="#eq:etot" data-reference-type="eqref" data-reference="eq:etot">[eq:etot]</a> one gets for
 
 $$\begin{aligned}
 \begin{split}
@@ -1747,10 +1749,10 @@ $$\begin{aligned}
 &+ \left( \zeta-\frac{2}{3}\eta \right)  \frac{\partial}{\partial r_j} \left( v_j\frac{\partial r_k}{\partial v_k} \right) 
 \end{split}\end{aligned}$$
 
-#### Global dissipation of kinetic energy $$\mathcal{E}$$ {#global-dissipation-of-kinetic-energy-mathcale-1}
+#### Global dissipation of kinetic energy $$\mathcal{E}$$ [global-dissipation-of-kinetic-energy-mathcale-1]
 
-Using the form [\[eq:stress2\]](#eq:stress2){reference-type="eqref" reference="eq:stress2"} we get for the term involving the stress
-tensor in the equation [\[eq:diss\]](#eq:diss){reference-type="eqref" reference="eq:diss"} for the dissipation $$\mathcal{E}$$
+Using the form <a href="#eq:stress2" data-reference-type="eqref" data-reference="eq:stress2">[eq:stress2]</a> we get for the term involving the stress
+tensor in the equation <a href="#eq:diss" data-reference-type="eqref" data-reference="eq:diss">[eq:diss]</a> for the dissipation $$\mathcal{E}$$
 
 $$\begin{aligned}
 \begin{split}
@@ -1761,7 +1763,7 @@ $$\begin{aligned}
 + \left( \zeta-\frac{2}{3}\eta \right)  \left( \frac{\partial v_k}{\partial r_k} \right) ^2
 \end{split}\end{aligned}$$
 
-where we also made use of the relation [\[eq:uscontr\]](#eq:uscontr){reference-type="eqref" reference="eq:uscontr"} for the contraction of
+where we also made use of the relation <a href="#eq:uscontr" data-reference-type="eqref" data-reference="eq:uscontr">[eq:uscontr]</a> for the contraction of
 a symmetric with an unsymmetric tensor. With this result the global dissipation
 of kinetic energy for a newtonian compressible fluid is
 
@@ -1774,15 +1776,15 @@ $$\begin{aligned}
 &-\frac{1}{V} \int_V  \left( \zeta-\frac{2}{3}\eta \right)  \left( \frac{\partial v_k}{\partial r_k} \right) ^2 dV
 \end{split}\end{aligned}$$
 
-This equation should be compared to equation (79,1) from @Landau1991
-which additionally includes heat conduction. Nevertheless @Landau1991
+This equation should be compared to equation (79,1) from Landau and Lifschitz (1991)
+which additionally includes heat conduction. Nevertheless Landau and Lifschitz (1991)
 seem to forget the term due to the pressure in the equation for the
 dissipation.
 
 #### Divergence equation
 
 Using the equation for the divergence of the stress tensor
-for a newtonian compressible fluid [\[eq:divstress\]](#eq:divstress){reference-type="eqref" reference="eq:divstress"} we get for
+for a newtonian compressible fluid <a href="#eq:divstress" data-reference-type="eqref" data-reference="eq:divstress">[eq:divstress]</a> we get for
 
 $$\begin{aligned}
 \begin{split}
@@ -1792,8 +1794,8 @@ $$\begin{aligned}
 &= \left( \frac{4}{3}\eta+\zeta \right) \frac{\partial^2}{\partial r_i^2}\theta
 \end{split}\end{aligned}$$
 
-By inserting this and equation [\[eq:divstress\]](#eq:divstress){reference-type="eqref" reference="eq:divstress"} into the equation for the
-divergence [\[eq:div\]](#eq:div){reference-type="eqref" reference="eq:div"} we get the divergence equation for a compressible
+By inserting this and equation <a href="#eq:divstress" data-reference-type="eqref" data-reference="eq:divstress">[eq:divstress]</a> into the equation for the
+divergence <a href="#eq:div" data-reference-type="eqref" data-reference="eq:div">[eq:div]</a> we get the divergence equation for a compressible
 newtonian fluid
 
 $$\begin{aligned}
@@ -1822,8 +1824,8 @@ $$\begin{aligned}
 #### Vorticity equation
 
 If we plugin the equation for the divergence of the
-stress tensor for a newtonian compressible fluid [\[eq:divstress\]](#eq:divstress){reference-type="eqref" reference="eq:divstress"} into
-the vorticity equation [\[eq:vort\]](#eq:vort){reference-type="eqref" reference="eq:vort"} we get for a compressible newtonian
+stress tensor for a newtonian compressible fluid <a href="#eq:divstress" data-reference-type="eqref" data-reference="eq:divstress">[eq:divstress]</a> into
+the vorticity equation <a href="#eq:vort" data-reference-type="eqref" data-reference="eq:vort">[eq:vort]</a> we get for a compressible newtonian
 fluid with $$\theta=\frac{\partial v_k}{\partial r_k}$$
 
 $$\begin{aligned}
@@ -1870,7 +1872,7 @@ $$\begin{aligned}
 
 #### Summary
 
-##### Balance equations {#balance-equations-3 .unnumbered}
+##### Balance equations [balance-equations-3]
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}\rho + \frac{\partial}{\partial r_j}(v_j \rho) =&\ 0 \label{eq:ncmass}\\
@@ -1891,7 +1893,7 @@ $$\begin{aligned}
 and an equation of state dependent on the material of the fluid.
 [^16]
 
-##### Global dissipation of kinetic energy $$\mathcal{E}$$ {#global-dissipation-of-kinetic-energy-mathcale-2 .unnumbered}
+##### Global dissipation of kinetic energy $$\mathcal{E}$$ [global-dissipation-of-kinetic-energy-mathcale-2]
 
 $$\begin{aligned}
 \begin{split}
@@ -1903,7 +1905,7 @@ $$\begin{aligned}
 \end{split}
 \label{eq:ncdiss}\end{aligned}$$
 
-##### Divergence equation {#divergence-equation-3 .unnumbered}
+##### Divergence equation [divergence-equation-3]
 
 $$\begin{aligned}
 \begin{split}
@@ -1916,7 +1918,7 @@ $$\begin{aligned}
 -4\pi G \rho
 \end{split}\end{aligned}$$
 
-##### Vorticity equation {#vorticity-equation-3 .unnumbered}
+##### Vorticity equation [vorticity-equation-3]
 
 $$\begin{aligned}
 \begin{split}
@@ -1940,15 +1942,15 @@ the fluid is not stratified, that means the density is also spatially constant,
 i.e. $$\frac{\partial}{\partial r_j}\rho=0$$. Therefore one could call an incompressible fluid also a
 constant density fluid.
 
-With constant density the continuity equation [\[eq:mass\]](#eq:mass){reference-type="eqref" reference="eq:mass"} becomes
+With constant density the continuity equation <a href="#eq:mass" data-reference-type="eqref" data-reference="eq:mass">[eq:mass]</a> becomes
 
 $$\begin{aligned}
 \frac{\partial \rho}{\partial t} + \frac{\partial}{\partial r_j}(v_j \rho) &= 0 \\
 \Leftrightarrow \frac{\partial \rho}{\partial t}+ v_j \frac{\partial \rho}{\partial r_j} + \rho \frac{\partial v_j}{\partial r_j} &= 0\\
 \Rightarrow \frac{\partial v_j}{\partial r_j} &= 0,\ \text{with $\rho\neq 0$} \label{eq:divzero}\end{aligned}$$
 
-The momentum equation [\[eq:mom\]](#eq:mom){reference-type="eqref" reference="eq:mom"} and the energy equation
-[\[eq:etot\]](#eq:etot){reference-type="eqref" reference="eq:etot"}
+The momentum equation <a href="#eq:mom" data-reference-type="eqref" data-reference="eq:mom">[eq:mom]</a> and the energy equation
+<a href="#eq:etot" data-reference-type="eqref" data-reference="eq:etot">[eq:etot]</a>
 become
 
 $$\begin{aligned}
@@ -1957,7 +1959,7 @@ $$\begin{aligned}
 \rho  \left[ \frac{\partial e}{\partial t} + v_j \frac{\partial e}{\partial r_j} + e \frac{\partial v_j}{\partial r_j} \right]  
 =& -\frac{\partial}{\partial r_j}(v_j p) + v_i \rho g_i +\frac{\partial}{\partial r_j}(v_i \sigma'_{ij})\end{aligned}$$
 
-If we make use of the relation [\[eq:divzero\]](#eq:divzero){reference-type="eqref" reference="eq:divzero"} in the momentum and energy
+If we make use of the relation <a href="#eq:divzero" data-reference-type="eqref" data-reference="eq:divzero">[eq:divzero]</a> in the momentum and energy
 equation we finally get as equations for an incompressible, selfgravitating,
 newtonian fluid
 
@@ -1973,7 +1975,7 @@ where $$\sigma^*_{ij}$$ is a divergence free stress tensor.
 #### Divergence equation
 
 In the incompressible case we can set $$\theta=0$$ and $$\frac{\partial}{\partial r_i}\rho=0$$ in
-equation [\[eq:div\]](#eq:div){reference-type="eqref" reference="eq:div"} and so we are left with the following equation for an
+equation <a href="#eq:div" data-reference-type="eqref" data-reference="eq:div">[eq:div]</a> and so we are left with the following equation for an
 general incompressible fluid
 
 $$\begin{aligned}
@@ -2004,7 +2006,7 @@ incompressible fluid.[^17]
 #### Vorticity equation
 
 For an incompressible fluid $$\frac{\partial}{\partial r_h}\rho = 0$$ and inserting this into
-the vorticity equation [\[eq:vort\]](#eq:vort){reference-type="eqref" reference="eq:vort"} we get
+the vorticity equation <a href="#eq:vort" data-reference-type="eqref" data-reference="eq:vort">[eq:vort]</a> we get
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}\omega_g
@@ -2019,7 +2021,7 @@ $$\begin{aligned}
 
 #### Summary
 
-##### Balance equations {#balance-equations-5 .unnumbered}
+##### Balance equations [balance-equations-5]
 
 $$\begin{aligned}
 \frac{\partial v_j}{\partial r_j} =&\ 0 \label{eq:icmass}\\
@@ -2033,16 +2035,16 @@ with Newtonian gravity (Poisson Equation):
 $$\begin{aligned}
 \frac{\partial}{\partial r_j}g_j=4\pi G \rho\end{aligned}$$
 
-and as equation of state the \"divergence equation\".
+and as equation of state the "divergence equation".
 
-##### Global dissipation of kinetic energy $$\mathcal{E}$$ {#global-dissipation-of-kinetic-energy-mathcale-3 .unnumbered}
+##### Global dissipation of kinetic energy $$\mathcal{E}$$ [global-dissipation-of-kinetic-energy-mathcale-3]
 
 $$\begin{aligned}
 \mathcal{E} = 
 -\frac{1}{V} \int_V \sigma^*_{ij}\frac{\partial}{\partial r_j} v_i dV
 \label{eq:icdiss}\end{aligned}$$
 
-##### Divergence equation (Equation of State) {#divergence-equation-equation-of-state .unnumbered}
+##### Divergence equation (Equation of State) [divergence-equation-equation-of-state]
 
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_i^2}p= 
@@ -2051,7 +2053,7 @@ $$\begin{aligned}
 -4\pi G \rho^2
 \label{eq:icdiv}\end{aligned}$$
 
-##### Vorticity equation {#vorticity-equation-5 .unnumbered}
+##### Vorticity equation [vorticity-equation-5]
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}\omega_g
@@ -2071,7 +2073,7 @@ $$\begin{aligned}
 
 #### Balance equations
 
-Setting the divergence to zero in equation [\[eq:divstress\]](#eq:divstress){reference-type="ref" reference="eq:divstress"} we get for
+Setting the divergence to zero in equation <a href="#eq:divstress" data-reference-type="ref" data-reference="eq:divstress">[eq:divstress]</a> we get for
 the divergence of the stress tensor for an incompressible fluid
 
 $$\begin{aligned}
@@ -2083,7 +2085,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial r_j}(v_i \sigma^*_{ij})
 =\eta \frac{\partial^2}{\partial r_j^2} \left( \frac{1}{2}v_i^2 \right) +\eta\frac{\partial}{\partial r_j} \left( v_i\frac{\partial v_j}{\partial r_i} \right) \end{aligned}$$
 
-Inserting these results into [\[eq:icmass\]](#eq:icmass){reference-type="eqref" reference="eq:icmass"}-[\[eq:icetot\]](#eq:icetot){reference-type="eqref" reference="eq:icetot"} we get
+Inserting these results into <a href="#eq:icmass" data-reference-type="eqref" data-reference="eq:icmass">[eq:icmass]</a>-<a href="#eq:icetot" data-reference-type="eqref" data-reference="eq:icetot">[eq:icetot]</a> we get
 as balance equations for an incompressible newtonian fluid
 
 $$\begin{aligned}
@@ -2096,21 +2098,21 @@ $$\begin{aligned}
 with the so called kinematic viscosity $$\nu=\frac{\eta}{\rho}$$
 [^18]
 
-#### Global dissipation of kinetic energy $$\mathcal{E}$$ {#nicdiss}
+#### Global dissipation of kinetic energy $$\mathcal{E}$$ [nicdiss]
 
-Inserting the incompressible newtonian stress tensor [\[eq:nicstress\]](#eq:nicstress){reference-type="eqref" reference="eq:nicstress"}
+Inserting the incompressible newtonian stress tensor <a href="#eq:nicstress" data-reference-type="eqref" data-reference="eq:nicstress">[eq:nicstress]</a>
 in the equation for the dissipation of a general incompressible fluid
-[\[eq:icdiss\]](#eq:icdiss){reference-type="ref" reference="eq:icdiss"} yields[^19]
+<a href="#eq:icdiss" data-reference-type="ref" data-reference="eq:icdiss">[eq:icdiss]</a> yields[^19]
 
 $$\begin{aligned}
 \mathcal{E} 
 =-\frac{1}{V} \int_V  \eta \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) \frac{\partial v_i}{\partial r_j} dV
 =-\frac{1}{V} \int_V \frac{\eta}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) ^2 dV\end{aligned}$$
 
-where we used again relation [\[eq:uscontr\]](#eq:uscontr){reference-type="ref" reference="eq:uscontr"}.
+where we used again relation <a href="#eq:uscontr" data-reference-type="ref" data-reference="eq:uscontr">[eq:uscontr]</a>.
 
 We can express this result in terms of vorticity by making use of
-equation [\[eq:rsrcontr\]](#eq:rsrcontr){reference-type="eqref" reference="eq:rsrcontr"} which gives us for
+equation <a href="#eq:rsrcontr" data-reference-type="eqref" data-reference="eq:rsrcontr">[eq:rsrcontr]</a> which gives us for
 
 $$\begin{aligned}
 \frac{\eta}{2} \left( \frac{\partial}{\partial r_j}v_i+\frac{\partial}{\partial r_i}v_j \right) ^2
@@ -2132,7 +2134,7 @@ $$\begin{aligned}
 -\frac{1}{V} \int_V 
 2 \eta \frac{\partial}{\partial r_j} \left( v_i \frac{\partial v_j}{\partial r_i} \right)  dV \label{eq:nicdissfull}\end{aligned}$$
 
-Using Gauss' theorem to transform the second term we can express this like
+Using Gauss’ theorem to transform the second term we can express this like
 
 $$\begin{aligned}
 \mathcal{E} = 
@@ -2151,7 +2153,7 @@ $$\begin{aligned}
 
 From looking at the divergence equation (see below) we can derive another
 relation, which tells us, when the second term in equation
-[\[eq:nicdissfull\]](#eq:nicdissfull){reference-type="eqref" reference="eq:nicdissfull"} will vanish
+<a href="#eq:nicdissfull" data-reference-type="eqref" data-reference="eq:nicdissfull">[eq:nicdissfull]</a> will vanish
 
 $$\begin{aligned}
 \frac{1}{V} \int_V 2\eta \frac{\partial}{\partial r_j} \left( v_i \frac{\partial v_j}{\partial r_i} \right)  dV 
@@ -2161,19 +2163,19 @@ $$\begin{aligned}
 &= \frac{2 \nu}{V} \oint_A \frac{\partial}{\partial r_i}p dA + \frac{2 \eta}{V} \oint_A \frac{\partial}{\partial r_i}\phi dV\end{aligned}$$
 
 where we made use of the poisson equation for the gravitational potential and
-Gauss' theorem. So only if the pressure gradient and the gravitational force
+Gauss’ theorem. So only if the pressure gradient and the gravitational force
 balance at the surface of the fluid we can neglect the second term [^22].
 
 We hope that from this discussion the assumptions behind equation
-[\[eq:nicdissvort\]](#eq:nicdissvort){reference-type="eqref" reference="eq:nicdissvort"}
-become clear compared to the rather obscure arguments by @Frisch1995.
+<a href="#eq:nicdissvort" data-reference-type="eqref" data-reference="eq:nicdissvort">[eq:nicdissvort]</a>
+become clear compared to the rather obscure arguments by Frisch (1995).
 Nevertheless it is still unknown weather our reasoning and the reasoning of
-@Frisch1995 is
+Frisch (1995) is
 equivalent.
 
 #### Divergence equation
 
-From equation [\[eq:nicdivstress\]](#eq:nicdivstress){reference-type="eqref" reference="eq:nicdivstress"} we get for
+From equation <a href="#eq:nicdivstress" data-reference-type="eqref" data-reference="eq:nicdivstress">[eq:nicdivstress]</a> we get for
 
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_i \partial r_j}\sigma^*_{ij} 
@@ -2181,7 +2183,7 @@ $$\begin{aligned}
 = \eta \frac{\partial^2}{\partial r_j^2}  \left( \frac{\partial v_i}{\partial r_i} \right)  
 = 0\end{aligned}$$
 
-Using this result in equation [\[eq:icdiv\]](#eq:icdiv){reference-type="eqref" reference="eq:icdiv"} we get as equation of state for
+Using this result in equation <a href="#eq:icdiv" data-reference-type="eqref" data-reference="eq:icdiv">[eq:icdiv]</a> we get as equation of state for
 an incompressible newtonian fluid
 
 $$\begin{aligned}
@@ -2197,13 +2199,13 @@ $$\begin{aligned}
 - 4\pi G \rho^2\end{aligned}$$
 
 Actually the divergence equation for an incompressible newtonian fluid
-has a very interesting form. It is show in the Appendix [2.18.3](#diveq){reference-type="ref" reference="diveq"} that the
-divergence equation might be related to Bernoulli's law and even to the
+has a very interesting form. It is show in the Appendix <a href="#diveq" data-reference-type="ref" data-reference="diveq">2.18.3</a> that the
+divergence equation might be related to Bernoulli’s law and even to the
 Einstein equation of general relativity.
 
 #### Vorticity equation
 
-Inserting equation [\[eq:nicdivstress\]](#eq:nicdivstress){reference-type="eqref" reference="eq:nicdivstress"} into [\[eq:icvort\]](#eq:icvort){reference-type="ref" reference="eq:icvort"}
+Inserting equation <a href="#eq:nicdivstress" data-reference-type="eqref" data-reference="eq:nicdivstress">[eq:nicdivstress]</a> into <a href="#eq:icvort" data-reference-type="ref" data-reference="eq:icvort">[eq:icvort]</a>
 we get the vorticity equation for an incompressible newtonian fluid
 
 $$\begin{aligned}
@@ -2219,7 +2221,7 @@ $$\begin{aligned}
 
 #### Summary
 
-##### Balance equations {#balance-equations-7 .unnumbered}
+##### Balance equations [balance-equations-7]
 
 $$\begin{aligned}
 \frac{\partial v_j}{\partial r_j} =&\ 0\\
@@ -2233,22 +2235,22 @@ with Newtonian gravity (Poisson Equation):
 $$\begin{aligned}
 \frac{\partial}{\partial r_j}g_j=4\pi G \rho\end{aligned}$$
 
-and as equation of state the \"divergence equation\".
+and as equation of state the "divergence equation".
 
-##### Global dissipation of kinetic energy $$\mathcal{E}$$ [^23] {#global-dissipation-of-kinetic-energy-mathcale-4 .unnumbered}
+##### Global dissipation of kinetic energy $$\mathcal{E}$$ [^23] [global-dissipation-of-kinetic-energy-mathcale-4]
 
 $$\begin{aligned}
 \mathcal{E} = -\frac{\eta}{V} \int_V  \omega^2 dV
 \label{eq:nicdiss}\end{aligned}$$
 
-##### Divergence equation (Equation of State) {#divergence-equation-equation-of-state-1 .unnumbered}
+##### Divergence equation (Equation of State) [divergence-equation-equation-of-state-1]
 
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_i^2}p= 
 -\rho \frac{\partial^2}{\partial r_i \partial r_j}(v_i v_j)
 -4\pi G \rho^2\end{aligned}$$
 
-##### Vorticity equation {#vorticity-equation-7 .unnumbered}
+##### Vorticity equation [vorticity-equation-7]
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}\omega_g
@@ -2292,7 +2294,7 @@ the expanding space ($$\dot{x}_i \neq 0$$) then we measure the additional
 local (also called proper) velocity $$u_i = a \dot{x}_i$$ of the particle. This local
 velocity can, according to special relativity, be never greater than the speed of light
 $$c$$. Nevertheless the global velocity (e.g. the measured escape velocities of galaxies at
-great distances) can be greater than $$c$$ [@Davis2004]. Generally the physical velocity
+great distances) can be greater than $$c$$ (Davis and Lineweaver 2004). Generally the physical velocity
 of a particle is the the sum of global and local velocity
 
 $$\begin{aligned}
@@ -2354,7 +2356,7 @@ $$\begin{aligned}
 \frac{\partial}{\partial t}(\rho e_{int})+\frac{1}{a}\frac{\partial}{\partial x_j}(u_j \rho e_{int})&=
 -\frac{1}{a}p \frac{\partial}{\partial x_j}u_j -\frac{1}{a}\sigma'_{ij}\frac{\partial}{\partial x_j}u_i- 3\frac{\dot{a}}{a}(\rho e_{int} +p)\end{aligned}$$
 
-### Equations of State {#eos}
+### Equations of State [eos]
 
 #### Ideal gas
 
@@ -2400,7 +2402,7 @@ where $$\frac{c_p}{c_v}$$ is the ratio of the specific
 heat capacity at constant pressure $$c_p$$ to the specific heat capacity at
 constant volume $$c_v$$ of an ideal gas.[^28]
 
-Inserting [\[eq:igl\]](#eq:igl){reference-type="eqref" reference="eq:igl"} and [\[eq:gam\]](#eq:gam){reference-type="eqref" reference="eq:gam"} into [\[eq:caleos\]](#eq:caleos){reference-type="eqref" reference="eq:caleos"} we get for
+Inserting <a href="#eq:igl" data-reference-type="eqref" data-reference="eq:igl">[eq:igl]</a> and <a href="#eq:gam" data-reference-type="eqref" data-reference="eq:gam">[eq:gam]</a> into <a href="#eq:caleos" data-reference-type="eqref" data-reference="eq:caleos">[eq:caleos]</a> we get for
 the pressure of an ideal gas
 
 $$\begin{aligned}
@@ -2415,11 +2417,11 @@ p= \left( \gamma-1 \right)  \rho  \left( e-\frac{1}{2}v^2 \right) \end{aligned}$
 
 #### Van-der-Waals-Gas
 
-\...to be completed
+...to be completed
 
 #### Relativistic Gas
 
-\...to be completed
+...to be completed
 
 ### The speed of sound
 
@@ -2466,7 +2468,7 @@ homogeneous fluid yields
 $$\begin{aligned}
 c=\sqrt{\gamma \frac{p_0}{\rho_0}}\end{aligned}$$
 
-Using equation [\[eq:igpress\]](#eq:igpress){reference-type="eqref" reference="eq:igpress"} we can compute the sound speed for an ideal gas
+Using equation <a href="#eq:igpress" data-reference-type="eqref" data-reference="eq:igpress">[eq:igpress]</a> we can compute the sound speed for an ideal gas
 directly from the internal energy
 
 $$\begin{aligned}
@@ -2488,13 +2490,15 @@ $$\begin{aligned}
 So, the Machnumber $$Ma = x \cdot \sqrt{e_{kin}/e_{int}}$$ where $$x$$ for some
 values of $$\gamma$$ can be found in the following table:
 
-::: center
-     $$\gamma$$      $$\gamma(\gamma-1)$$   $$x =  \left[ \gamma(\gamma-1) \right] ^{-1/2}$$
-  ----------------- ---------------------- --------------------------------------------------
-   $$\frac{5}{3}$$     $$\frac{10}{9}$$           $$\frac{3}{\sqrt{10}}\approx 0.949$$
-   $$\frac{7}{5}$$    $$\frac{14}{25}$$           $$\frac{5}{\sqrt{14}}\approx 1.336$$
-   $$\frac{4}{3}$$     $$\frac{4}{9}$$                   $$\frac{3}{2}$$ = 1.5
-:::
+<div class="center" markdown="1">
+
+|   $$\gamma$$    | $$\gamma(\gamma-1)$$ | $$x =  \left[ \gamma(\gamma-1) \right] ^{-1/2}$$ |
+|:---------------:|:--------------------:|:------------------------------------------------:|
+| $$\frac{5}{3}$$ |   $$\frac{10}{9}$$   |       $$\frac{3}{\sqrt{10}}\approx 0.949$$       |
+| $$\frac{7}{5}$$ |  $$\frac{14}{25}$$   |       $$\frac{5}{\sqrt{14}}\approx 1.336$$       |
+| $$\frac{4}{3}$$ |   $$\frac{4}{9}$$    |              $$\frac{3}{2}$$ = 1.5               |
+
+</div>
 
 ### Dimensional analysis
 
@@ -2509,7 +2513,7 @@ t^*=\frac{t}{l_0} &\Rightarrow
 \frac{\partial}{\partial t}=\frac{\partial}{\partial t^*}\frac{\partial t^*}{\partial t}=\frac{1}{t_0}\frac{\partial}{\partial t^*}\\
 \rho^*=\frac{\rho}{\rho_0}\end{aligned}$$
 
-Inserting these into the continuity equation [\[eq:mass\]](#eq:mass){reference-type="eqref" reference="eq:mass"} we get
+Inserting these into the continuity equation <a href="#eq:mass" data-reference-type="eqref" data-reference="eq:mass">[eq:mass]</a> we get
 
 $$\begin{aligned}
 \frac{\rho_0}{t_0}\frac{\partial}{\partial t^*}\rho^* 
@@ -2526,7 +2530,7 @@ $$v_o=\frac{l_0}{t_0}$$.
 Using the additional dimensionless quantities
 $$p^*=\frac{p}{p_0},\sigma_{ij}^*=\frac{\sigma_{ij}}{\sigma_0},
 g^*=\frac{g}{g_0 }$$
-in the momentum equation [\[eq:mom\]](#eq:mom){reference-type="eqref" reference="eq:mom"} yields
+in the momentum equation <a href="#eq:mom" data-reference-type="eqref" data-reference="eq:mom">[eq:mom]</a> yields
 
 $$\begin{aligned}
 \frac{\rho_0 v_0}{t_0}\frac{\partial}{\partial t^*}(\rho^* v_i^*) 
@@ -2563,7 +2567,7 @@ Reynolds number[^30] like
 $$\begin{aligned}
 Re=\frac{l_0 \rho_0 v_0^2 }{\eta_0 v_0} = \frac{\rho_0 l_0 v_0 }{\eta_0}\end{aligned}$$
 
-Playing the same game with the equation for the internal energy [\[eq:eint\]](#eq:eint){reference-type="ref" reference="eq:eint"}
+Playing the same game with the equation for the internal energy <a href="#eq:eint" data-reference-type="ref" data-reference="eq:eint">[eq:eint]</a>
 using $$e_{int}^*=\frac{e_{int}}{u_0}$$ we get
 
 $$\begin{aligned}
@@ -2573,7 +2577,7 @@ $$\begin{aligned}
 +\underbrace{\frac{\sigma_0}{\rho_0 u_0}}_{Ga_2} \sigma_{ij}^* \frac{\partial}{\partial r_j^*}v_i^*\end{aligned}$$
 
 The new dimensionles quantities that occur in the energy equation seem to have
-no name in the literature, but we will call them \"Gamma1\" (Ga1) and \"Gamma2\"
+no name in the literature, but we will call them "Gamma1" (Ga1) and "Gamma2"
 (Ga2) for now, since they are related to the adiabatic coefficient.
 This can be seen by replacing $$p_0 p^*$$ according to equation
 
@@ -2597,7 +2601,7 @@ $$\begin{aligned}
 \underbrace{\frac{g_0}{4\pi G \rho_0 l_0}}_{C_G}\frac{\partial g_i^*}{\partial r_i^*} = \rho^*.\end{aligned}$$
 
 But this quantity $$C_G$$ also seems to have no name in the literature
-[e.g. @Durst2007].
+(e.g. Durst 2007).
 
 ### Color fields
 
@@ -2631,7 +2635,7 @@ $$\begin{aligned}
 #### Balance equations in Eulerian form
 
 In one dimension all vector and tensor quantities from the balance equations
-[\[eq:mass\]](#eq:mass){reference-type="eqref" reference="eq:mass"}-[\[eq:etot\]](#eq:etot){reference-type="eqref" reference="eq:etot"} degenerate to scalar quantities, eg.
+<a href="#eq:mass" data-reference-type="eqref" data-reference="eq:mass">[eq:mass]</a>-<a href="#eq:etot" data-reference-type="eqref" data-reference="eq:etot">[eq:etot]</a> degenerate to scalar quantities, eg.
 
 $$\begin{aligned}
 v_i,v_j &\longrightarrow v_1=v\\
@@ -2650,7 +2654,7 @@ $$\begin{aligned}
 
 #### Balance equations in Lagrangian form
 
-By using the Euler derivate we can write [\[eq:1dmass\]](#eq:1dmass){reference-type="eqref" reference="eq:1dmass"}-[\[eq:1detot\]](#eq:1detot){reference-type="eqref" reference="eq:1detot"}
+By using the Euler derivate we can write <a href="#eq:1dmass" data-reference-type="eqref" data-reference="eq:1dmass">[eq:1dmass]</a>-<a href="#eq:1detot" data-reference-type="eqref" data-reference="eq:1detot">[eq:1detot]</a>
 like
 
 $$\begin{aligned}
@@ -2664,14 +2668,14 @@ $$\begin{aligned}
 \partial m = \rho\cdot\partial r \Rightarrow \partial r = \frac{\partial
 m}{\rho}\end{aligned}$$
 
-we can write [\[eq:1dmass\]](#eq:1dmass){reference-type="eqref" reference="eq:1dmass"} like
+we can write <a href="#eq:1dmass" data-reference-type="eqref" data-reference="eq:1dmass">[eq:1dmass]</a> like
 
 $$\begin{aligned}
 &&\frac{d}{d t}\rho + \rho^2 \frac{\partial}{\partial m} v &= 0 \\
 \Leftrightarrow&& -\frac{1}{\rho^2}\frac{d}{d t}\rho - \frac{\partial}{\partial m} v &= 0 \\
 \Leftrightarrow&& \frac{d}{d t} \left( \frac{1}{\rho} \right)  &= \frac{\partial}{\partial m} v\end{aligned}$$
 
-The momentum equation [\[eq:1dmom\]](#eq:1dmom){reference-type="eqref" reference="eq:1dmom"} is transformed like
+The momentum equation <a href="#eq:1dmom" data-reference-type="eqref" data-reference="eq:1dmom">[eq:1dmom]</a> is transformed like
 
 $$\begin{aligned}
 && \frac{d}{d t}(\rho v) + \rho^2 v \frac{\partial}{\partial m} v &= -\rho \frac{\partial}{\partial m}p + \rho \frac{\partial}{\partial m}\sigma'
@@ -2685,7 +2689,7 @@ $$\begin{aligned}
 -\frac{\partial}{\partial m}p + \frac{\partial}{\partial m}\sigma' - g\\
 \Leftrightarrow&& \frac{d}{d t}v &= -\frac{\partial}{\partial m}p + \frac{\partial}{\partial m}\sigma' - g\end{aligned}$$
 
-With an analogous transformation the energy equation [\[eq:1detot\]](#eq:1detot){reference-type="eqref" reference="eq:1detot"} can be
+With an analogous transformation the energy equation <a href="#eq:1detot" data-reference-type="eqref" data-reference="eq:1detot">[eq:1detot]</a> can be
 written like
 
 $$\begin{aligned}
@@ -2700,7 +2704,7 @@ $$\begin{aligned}
 \frac{d}{d t}v &= -\frac{1}{\rho}\frac{\partial}{\partial r}p + \frac{1}{\rho}\frac{\partial}{\partial r}\sigma' - g\\
 \frac{d}{d t}e &= -\frac{1}{\rho}\frac{\partial}{\partial r}(vp) + \frac{1}{\rho}\frac{\partial}{\partial r}(v\sigma') - vg\end{aligned}$$
 
-### Rate of strain tensor, rotation tensor {#rotstraintensor}
+### Rate of strain tensor, rotation tensor [rotstraintensor]
 
 The decomposition of the jacobian of the velocity field into a symmetric and
 an antisymmetric part yields
@@ -2807,7 +2811,7 @@ means
 $$\begin{aligned}
 \frac{\partial v_i}{\partial r_j} = -\frac{\partial v_j}{\partial r_i}\end{aligned}$$
 
-Using this and equation [\[eq:uascontr\]](#eq:uascontr){reference-type="eqref" reference="eq:uascontr"} in equation [\[eq:nodiss\]](#eq:nodiss){reference-type="eqref" reference="eq:nodiss"} we get
+Using this and equation <a href="#eq:uascontr" data-reference-type="eqref" data-reference="eq:uascontr">[eq:uascontr]</a> in equation <a href="#eq:nodiss" data-reference-type="eqref" data-reference="eq:nodiss">[eq:nodiss]</a> we get
 
 $$\begin{aligned}
 \int_V \frac{1}{2} \left( \sigma'_{ij}-\sigma'_{ji} \right)  \frac{\partial}{\partial r_j} v_i dV = 0\end{aligned}$$
@@ -2840,7 +2844,7 @@ $$\begin{aligned}
 -\frac{1}{3}\delta_{ij}\frac{\partial v_k}{\partial r_k} \right] 
 +\zeta \delta_{ij}\frac{\partial v_k}{\partial r_k}\end{aligned}$$
 
-### Stress tensor in cartesian coordinates for 1d, 2d and 3d {#stress1d2d3d}
+### Stress tensor in cartesian coordinates for 1d, 2d and 3d [stress1d2d3d]
 
 For a so called newtonian fluid it can be shown, that the stress tensor
 $$\sigma'_{ij}$$ in cartesian coordinates in $$n$$ dimensions is of the form
@@ -2889,9 +2893,9 @@ S_{zx}&=S_{xz},\\
 S_{zy}&=S_{yz},\\
 S_{zz}&=\frac{1}{3} \left( 2\frac{\partial}{\partial r_z}v_z-\frac{\partial}{\partial r_x}v_x-\frac{\partial}{\partial r_y}v_y \right) .\\\end{aligned}$$
 
-### Stress tensor in comoving coordinates {#costress}
+### Stress tensor in comoving coordinates [costress]
 
-With the help of transformation ([\[eq:cotrans4\]](#eq:cotrans4){reference-type="ref" reference="eq:cotrans4"}) and ([\[eq:cotrans5\]](#eq:cotrans5){reference-type="ref" reference="eq:cotrans5"}) we
+With the help of transformation (<a href="#eq:cotrans4" data-reference-type="ref" data-reference="eq:cotrans4">[eq:cotrans4]</a>) and (<a href="#eq:cotrans5" data-reference-type="ref" data-reference="eq:cotrans5">[eq:cotrans5]</a>) we
 can transform the stress tensor for a newtonian fluid in cartesian coordinates
 
 $$\begin{aligned}
@@ -2914,7 +2918,7 @@ $$\begin{aligned}
  \left( \frac{\partial}{\partial x_j}u_i+\frac{\partial}{\partial x_i}u_j \right) -\frac{1}{n}\delta_{ij}\frac{\partial}{\partial x_k}u_k \right] 
 +\zeta\delta_{ij} \left( \frac{\partial}{\partial x_k}u_k+n\dot{a} \right)  \right\} .\end{aligned}$$
 
-### A contradiction when computing the dissipation {#contradiss}
+### A contradiction when computing the dissipation [contradiss]
 
 The dissipation for an newtonian incompressible fluid is
 
@@ -2939,7 +2943,7 @@ The absolut value of the dissipation must be greater than zero, because
 all the terms in the integral are quadratic and our assumption was
 $$\frac{\partial v_x}{\partial r_x},\frac{\partial v_y}{\partial r_y},\frac{\partial v_z}{\partial r_z}  \neq 0$$.
 
-But if we compute the dissipation according to equation [\[eq:nicdiss\]](#eq:nicdiss){reference-type="eqref" reference="eq:nicdiss"}
+But if we compute the dissipation according to equation <a href="#eq:nicdiss" data-reference-type="eqref" data-reference="eq:nicdiss">[eq:nicdiss]</a>
 like
 
 $$\begin{aligned}
@@ -2948,7 +2952,7 @@ $$\begin{aligned}
 we get for our flow field $$\mathcal{E} = 0$$, because the vorticity of
 our velocity field is zero! This seems to be an obvious contradiction,
 and either raises some doubts about the validity of the derivation of equation
-[\[eq:nicdiss\]](#eq:nicdiss){reference-type="eqref" reference="eq:nicdiss"} for example in @Frisch1995 or implies that our
+<a href="#eq:nicdiss" data-reference-type="eqref" data-reference="eq:nicdiss">[eq:nicdiss]</a> for example in Frisch (1995) or implies that our
 assumed flow field is unphysical.
 
 ### Structure functions
@@ -2982,7 +2986,7 @@ S_2(f(x)) &= \frac{1}{\sqrt{2\pi}} \left[ \int_{-\infty}^{\infty}\left\lvert f(x
 +\int_{-\infty}^{\infty}\left\lvert f(x')\right\rvert^2 dx' \right] \\
 &= \frac{2}{\sqrt{2\pi}}  \left[ \int_{-\infty}^{\infty}\left\lvert f(x')\right\rvert^2 dx'-\int_{-\infty}^{\infty}f^*(x')f(x+x')dx' \right] .\end{aligned}$$
 
-Using Parseval's and the Wiener-Khichnin theorem we obtain the final result
+Using Parseval’s and the Wiener-Khichnin theorem we obtain the final result
 
 $$\begin{aligned}
 &S_2(f(x))=\frac{2}{\sqrt{2\pi}}  \left[ \int_{-\infty}^{\infty}\left\lvert F(k)\right\rvert^2 dk
@@ -3001,7 +3005,7 @@ S_2(v_{\parallel}(l)) =
 
 They are related to the longitudinal velocity
 spectrum[^36] $$\left\lvert V_{\parallel}(k)\right\rvert^2$$ via equation
-[\[eq:structspec\]](#eq:structspec){reference-type="eqref" reference="eq:structspec"}.
+<a href="#eq:structspec" data-reference-type="eqref" data-reference="eq:structspec">[eq:structspec]</a>.
 Sometimes also second order transvers structure functions are measured.
 These are defined as
 
@@ -3012,9 +3016,9 @@ S_2(v_{\perp}(l)) =
 
 The behaviour of the second order transvers structure functions for
 homogeneous turbulence is uniquely determined by the longitudinal structure
-function [@Pope2000 p. 192, Eqs. (6.28)]. They also show the
+function (Pope 2000, 192, Eqs. (6.28)). They also show the
 characteristic $$2/3$$-slope as predicted for the longitudinal structure functions
-[@Frisch1995 p.60].
+(Frisch 1995, 60).
 
 In general structure functions of vectorial quantities like the velocity are
 tensors, e.g. the general second order structure function of the velocity can
@@ -3027,11 +3031,11 @@ S_{ij}(\boldsymbol{x},\boldsymbol{l}) =
 
 But it can be shown, that for local isotropy only the longitudinal
 structure function $$S_2(v_{\perp}(l))=S_{11}$$ and the transversal structure
-$$S_2(v_{\perp}(l))=S_{22}=S_{33}$$ are unequal zero [@Pope2000]. Since
+$$S_2(v_{\perp}(l))=S_{22}=S_{33}$$ are unequal zero (Pope 2000). Since
 the transvers structure function is determined by the longitudinal structure
 function in case of local homogeneity, for homogeneous and isotropic
 turbulence $$S_{ij}$$ is determined by the single scalar
-function $$S_{11} = S_2(v_{\parallel}(l))$$ [@Pope2000].
+function $$S_{11} = S_2(v_{\parallel}(l))$$ (Pope 2000).
 
 The third order structure function used in Kolmogorov theory is
 defined as
@@ -3045,23 +3049,23 @@ structure function tensor, but again for homogeneous and isotropic turbulence
 the third order structure function tensor $$S_{ijk}$$ is uniquely determined by
 the single scalar function $$S_{111}=S_3(v(l))$$.
 
-### Some speculations about \...
+### Some speculations about ...
 
-#### Entropy {#entro}
+#### Entropy [entro]
 
 The second law of thermodynamics states that the total entropy of any isolated
 thermodynamic system tends to increase over time, approaching a maximum value
 (not an infinite value!). But the higher the entropy, the lower the free,
 useable energy of a system. Therefore it is perhabs easier to formulate the
-second law of thermodynamics the other way round [@Feynman1967]: the free,
+second law of thermodynamics the other way round (Feynman 1967): the free,
 useable energy of any isolated thermodynamic system tends to decrease over time,
 approaching a minimum value (zero?!). In this sense we can also understand
-Penrose [@Penrose1989]. He pointed out, that a closed self-gravitating
+Penrose (Penrose 1989). He pointed out, that a closed self-gravitating
 system will collapse to a black hole, which is the state with the maximum
 entropy of the system. But this state is not a very unordered state
 as one often imagines states with high entropy. But it is the state where no
 free energy is left, the potential energy of the system is zero and so no
-directed kinetic energy can be produced any more. Thats why the \"ordered state\"
+directed kinetic energy can be produced any more. Thats why the "ordered state"
 of a black hole has the biggest entropy.
 
 #### Newtonian gravity
@@ -3088,8 +3092,8 @@ $$\begin{aligned}
 \nabla \cdot (\epsilon \boldsymbol{E}) = - \frac{1}{\epsilon_0} \rho \\
 \nabla \times \boldsymbol{E} = \boldsymbol{0}\end{aligned}$$
 
-and therefore we might call the equations [\[eq:maxgrav1\]](#eq:maxgrav1){reference-type="eqref" reference="eq:maxgrav1"} and
-[\[eq:maxgrav2\]](#eq:maxgrav2){reference-type="eqref" reference="eq:maxgrav2"} Maxwells equations of gravity.
+and therefore we might call the equations <a href="#eq:maxgrav1" data-reference-type="eqref" data-reference="eq:maxgrav1">[eq:maxgrav1]</a> and
+<a href="#eq:maxgrav2" data-reference-type="eqref" data-reference="eq:maxgrav2">[eq:maxgrav2]</a> Maxwells equations of gravity.
 
 The following is just speculation:
 
@@ -3106,7 +3110,7 @@ $$\begin{aligned}
 \Leftrightarrow 
 \nabla \cdot  \left( \boldsymbol{v} \rho - \frac{1}{4\pi G} \dot{\boldsymbol{g}} \right)  &= 0\end{aligned}$$
 
-But if we fixed equation [\[eq:maxgrav2\]](#eq:maxgrav2){reference-type="eqref" reference="eq:maxgrav2"} in analogy to Maxwell by writing
+But if we fixed equation <a href="#eq:maxgrav2" data-reference-type="eqref" data-reference="eq:maxgrav2">[eq:maxgrav2]</a> in analogy to Maxwell by writing
 [^38]
 
 $$\begin{aligned}
@@ -3123,7 +3127,7 @@ $$\begin{aligned}
 \Leftrightarrow
 0 &= \nabla \cdot  \left( \boldsymbol{v} \rho \right)  + \frac{\partial}{\partial t} \rho\end{aligned}$$
 
-So instead of [\[eq:maxgrav1\]](#eq:maxgrav1){reference-type="eqref" reference="eq:maxgrav1"} and [\[eq:maxgrav2\]](#eq:maxgrav2){reference-type="eqref" reference="eq:maxgrav2"} we could have
+So instead of <a href="#eq:maxgrav1" data-reference-type="eqref" data-reference="eq:maxgrav1">[eq:maxgrav1]</a> and <a href="#eq:maxgrav2" data-reference-type="eqref" data-reference="eq:maxgrav2">[eq:maxgrav2]</a> we could have
 
 $$\begin{aligned}
 \nabla \cdot \boldsymbol{g} = - 4\pi G\rho, \\
@@ -3158,11 +3162,11 @@ $$\begin{aligned}
 This could be interpreted as a wave equation with complex velocity
 $$c=i \cdot 4\pi G K$$.
 
-#### The divergence equation {#diveq}
+#### The divergence equation [diveq]
 
 ##### General fluid
 
-We start with the momentum equation [\[eq:mom\]](#eq:mom){reference-type="eqref" reference="eq:mom"}
+We start with the momentum equation <a href="#eq:mom" data-reference-type="eqref" data-reference="eq:mom">[eq:mom]</a>
 
 $$\begin{aligned}
 \frac{\partial}{\partial t}(\rho v_i) + \frac{\partial}{\partial r_j}(v_j \rho v_i) &= -\frac{\partial}{\partial r_i}p + \frac{\partial}{\partial r_j}\sigma'_{ij}
@@ -3185,7 +3189,7 @@ $$\begin{aligned}
 = -\frac{\partial}{\partial r_i} \left( \rho \frac{\partial}{\partial r_j} \phi \delta_{ij} \right) \end{aligned}$$
 
 where we assumed that $$\frac{\partial}{\partial t}$$ and $$\frac{\partial}{\partial r_i}$$ commute. Using the continuity
-equation [\[eq:mass\]](#eq:mass){reference-type="ref" reference="eq:mass"} we get a interesting form of the fluiddynamic
+equation <a href="#eq:mass" data-reference-type="ref" data-reference="eq:mass">[eq:mass]</a> we get a interesting form of the fluiddynamic
 equations
 
 $$\begin{aligned}
@@ -3218,7 +3222,7 @@ If we have a newtonian fluid
 ($$\sigma'_{ij}=\eta  \left( \frac{\partial v_i}{\partial r_j}+\frac{\partial v_j}{\partial r_i} \right)$$) with $$\rho=const$$ in
 time and space (which leads to $$\frac{\partial v_i}{\partial r_i}=0$$ and also
 $$\frac{\partial^2}{\partial r_i \partial r_j}\sigma'_{ij}=0$$)
-equation [\[eq:divbeauty\]](#eq:divbeauty){reference-type="eqref" reference="eq:divbeauty"} simplifies to
+equation <a href="#eq:divbeauty" data-reference-type="eqref" data-reference="eq:divbeauty">[eq:divbeauty]</a> simplifies to
 
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_i \partial r_j}\phi = 
@@ -3248,7 +3252,7 @@ except that we have higher derivatives of the stress energy tensor on the
 right hand side.
 
 If we substitute again $$\phi \rightarrow \phi \delta_{ij}$$ we can write equation
-[\[eq:gravdiv\]](#eq:gravdiv){reference-type="eqref" reference="eq:gravdiv"} like
+<a href="#eq:gravdiv" data-reference-type="eqref" data-reference="eq:gravdiv">[eq:gravdiv]</a> like
 
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_i \partial r_j} 
@@ -3259,7 +3263,7 @@ which looks like a tensor version of Bernoullis law:
 $$\begin{aligned}
 \frac{\partial}{\partial r_i} \left( \frac{p}{\rho} + \frac{1}{2} v^2 +  \phi \right)  = 0\end{aligned}$$
 
-#### The limit $$\nu \longrightarrow 0$$ {#the-limit-nu-longrightarrow-0}
+#### The limit $$\nu \longrightarrow 0$$ [the-limit-nu-longrightarrow-0]
 
 At first we should mention that the limit $$\nu \longrightarrow 0$$ is not
 equivalent to the limit $$Re \longrightarrow \infty$$. The definition of the
@@ -3282,12 +3286,12 @@ the increasing compressibility of our fluid. Therefore when doing an
 experiment, that should give insights into the regime of vanishing viscosity
 we cannot simply increase the Reynoldsnumber by increasing the
 characteristic velocity. We have to take care that all the other
-characteristic numbers (Mach-Number, Froude-Number \...) stay the same.
+characteristic numbers (Mach-Number, Froude-Number ...) stay the same.
 Otherwise we measure effects that have nothing to with the interesting limit
 $$\nu \longrightarrow 0$$. Sadly the limit $$\nu \longrightarrow 0$$ is often mixed
 up with $$Re \longrightarrow \infty$$ in the literature.
 
-For understanding the limit $$\nu \longrightarrow 0$$ @Feynman1964
+For understanding the limit $$\nu \longrightarrow 0$$ Feynman (1964)
 investigates the vorticity equation for a newtonian incompressible fluid
 
 $$\begin{aligned}
@@ -3308,10 +3312,10 @@ the so called Stokes equation[^40]
 $$\begin{aligned}
 \frac{\partial^2}{\partial r_j^2}\omega_g =  0_g\end{aligned}$$
 
-But what happens for very low viscosity? @Feynman1964 says decreasing
+But what happens for very low viscosity? Feynman (1964) says decreasing
 the viscosity of a fluid leads to an increase of the velocity fluctuations and
 so the increasing factor $$\frac{\partial^2}{\partial r_j^2}\omega_g$$ compensates the smallness of
-the viscosity. The product of viscosity and $$\frac{\partial^2}{\partial r_j^2}\omega_g$$ doesn't go to
+the viscosity. The product of viscosity and $$\frac{\partial^2}{\partial r_j^2}\omega_g$$ doesn’t go to
 the limit $$0_g$$, which we would expect from the equation of vorticity we get
 for an ideal fluid
 
@@ -3323,7 +3327,7 @@ So the equations for an ideal fluid do not(!) yield the right limit for
 vanishing viscosity. Can we find other equations that do give the right limit
 for vanishing viscosity?
 
-One idea might be the following: @Feynman1964 said that the limit
+One idea might be the following: Feynman (1964) said that the limit
 of $$\nu \frac{\partial^2}{\partial r_j^2}\omega_g$$ is not $$0_g$$, but what is it then? The
 easiest alternative would be a constant vector $$C_g \neq 0$$! This leads us to
 the equations
@@ -3340,22 +3344,22 @@ $$\begin{aligned}
 \label{eq:lowvisvort2} \end{aligned}$$
 
 If we ignore the second term on the left hand side of equation
-[\[eq:lowvisvort\]](#eq:lowvisvort){reference-type="eqref" reference="eq:lowvisvort"} for a moment, we see that $$C_g$$ stand for
+<a href="#eq:lowvisvort" data-reference-type="eqref" data-reference="eq:lowvisvort">[eq:lowvisvort]</a> for a moment, we see that $$C_g$$ stand for
 a dissipation of vorticity independent of $$\nu$$. Something we might expect
-for a fluid with low viscosity. The second equation [\[eq:lowvisvort2\]](#eq:lowvisvort2){reference-type="eqref" reference="eq:lowvisvort2"} is
+for a fluid with low viscosity. The second equation <a href="#eq:lowvisvort2" data-reference-type="eqref" data-reference="eq:lowvisvort2">[eq:lowvisvort2]</a> is
 more confusing, since it is a second order partial differential equation,
 dependent on viscosity and shows no dependency on time
 [^41].
 Maybe we can intepret the existence of the two equations in the sense that
-equation [\[eq:lowvisvort\]](#eq:lowvisvort){reference-type="eqref" reference="eq:lowvisvort"} gives the vorticity for $$\nu=0$$ and therefore
-must be independent of $$\nu$$ and equation [\[eq:lowvisvort2\]](#eq:lowvisvort2){reference-type="eqref" reference="eq:lowvisvort2"} gives the
+equation <a href="#eq:lowvisvort" data-reference-type="eqref" data-reference="eq:lowvisvort">[eq:lowvisvort]</a> gives the vorticity for $$\nu=0$$ and therefore
+must be independent of $$\nu$$ and equation <a href="#eq:lowvisvort2" data-reference-type="eqref" data-reference="eq:lowvisvort2">[eq:lowvisvort2]</a> gives the
 vorticity for a very small but not zero viscosity and therefore is still
 dependent on the viscosity.
 
 Nevertheless it is interesting that we can solve equation
-[\[eq:lowvisvort2\]](#eq:lowvisvort2){reference-type="eqref" reference="eq:lowvisvort2"} if we know $$\boldsymbol{C}(\boldsymbol{x})$$, because it is a
+<a href="#eq:lowvisvort2" data-reference-type="eqref" data-reference="eq:lowvisvort2">[eq:lowvisvort2]</a> if we know $$\boldsymbol{C}(\boldsymbol{x})$$, because it is a
 vector-poisson equation well know from electrodynamics.
-Written in vector notation equation [\[eq:lowvisvort2\]](#eq:lowvisvort2){reference-type="eqref" reference="eq:lowvisvort2"} is
+Written in vector notation equation <a href="#eq:lowvisvort2" data-reference-type="eqref" data-reference="eq:lowvisvort2">[eq:lowvisvort2]</a> is
 
 $$\begin{aligned}
 \Delta \boldsymbol{\omega} = \frac{1}{\nu} \boldsymbol{C}(\boldsymbol{x})\end{aligned}$$
@@ -3386,7 +3390,7 @@ $$\begin{aligned}
 \Rightarrow \Delta \boldsymbol{A} &= -\boldsymbol{\omega}\end{aligned}$$
 
 So again this leads to a vector-poisson equation for our vectorfield $$\boldsymbol{A}$$.
-The complete solution for equation [\[eq:lowvisvort2\]](#eq:lowvisvort2){reference-type="eqref" reference="eq:lowvisvort2"} is then
+The complete solution for equation <a href="#eq:lowvisvort2" data-reference-type="eqref" data-reference="eq:lowvisvort2">[eq:lowvisvort2]</a> is then
 
 $$\begin{aligned}
 \boldsymbol{v}= \nabla \times \boldsymbol{A} \end{aligned}$$
@@ -3402,6 +3406,64 @@ $$\begin{aligned}
 {\left\lvert\boldsymbol{x}-\boldsymbol{x}'\right\rvert} dV'\\
 &= -\frac{1}{16 \pi^2 \nu} \int \frac{1}{\left\lvert\boldsymbol{x}-\boldsymbol{x}'\right\rvert}
 \int \frac{\boldsymbol{C}(\boldsymbol{x}'')}{\left\lvert\boldsymbol{x'}-\boldsymbol{x}''\right\rvert} dV'' dV'\end{aligned}$$
+
+<div id="refs" class="references csl-bib-body hanging-indent" markdown="1">
+
+<div id="ref-Davis2004" class="csl-entry" markdown="1">
+
+Davis, T. M., and C. H. Lineweaver. 2004. “<span class="nocase">Expanding Confusion: Common Misconceptions of Cosmological Horizons and the Superluminal Expansion of the Universe</span>.” *Publications of the Astronomical Society of Australia* 21: 97–109. <https://doi.org/10.1071/AS03040>.
+
+</div>
+
+<div id="ref-Durst2007" class="csl-entry" markdown="1">
+
+Durst, Franz. 2007. *<span class="nocase">Fluid Mechanics. An Introduction to the Theory of Fluid Flows</span>*. Springer, Berlin.
+
+</div>
+
+<div id="ref-Feynman1964" class="csl-entry" markdown="1">
+
+Feynman, R. P. 1964. *<span class="nocase">Feynman lectures on physics. Volume 2: Mainly electromagnetism and matter</span>*. Reading, Ma.: Addison-Wesley, 1964, edited by Feynman, Richard P.; Leighton, Robert B.; Sands, Matthew. [http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1964flp..book.....F&db\_ key=AST](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1964flp..book.....F&db_ key=AST).
+
+</div>
+
+<div id="ref-Feynman1967" class="csl-entry" markdown="1">
+
+———. 1967. *<span class="nocase">The Character of Physical Law</span>*. The Character of Physical Law, The M.I.T. Press, Cambridge/Massachusetts, London 1967. [http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1999pfto.book.....F&db\_ key=AST](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1999pfto.book.....F&db_ key=AST).
+
+</div>
+
+<div id="ref-Frisch1995" class="csl-entry" markdown="1">
+
+Frisch, U. 1995. *<span class="nocase">Turbulence. The legacy of A.N. Kolmogorov</span>*. Cambridge: Cambridge University Press, \|c1995. [http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1995tlnk.book.....F&db\_ key=AST](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1995tlnk.book.....F&db_ key=AST).
+
+</div>
+
+<div id="ref-Landau1991" class="csl-entry" markdown="1">
+
+Landau, L. D., and E. M. Lifschitz. 1991. *Hydrodynamik*. Vol. 6. Lehrbuch Der Theoretischen Physik. Akademie Verlag, Berlin.
+
+</div>
+
+<div id="ref-Penrose1989" class="csl-entry" markdown="1">
+
+Penrose, R. 1989. *<span class="nocase">The emperor’s new mind. Concerning computers, minds and laws of physics</span>*. Oxford: University Press, 1989. [http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1989esnm.book.....P&db\_ key=AST](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1989esnm.book.....P&db_ key=AST).
+
+</div>
+
+<div id="ref-Pope2000" class="csl-entry" markdown="1">
+
+Pope, S. B. 2000. *Turbulent Flows*. Cambridge University Press. [http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2000tufl.book.....P&db\_ key=PHY](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2000tufl.book.....P&db_ key=PHY).
+
+</div>
+
+<div id="ref-Truelove1997" class="csl-entry" markdown="1">
+
+Truelove, J. K., R. I. Klein, C. F. McKee, J. H. Holliman II, L. H. Howell, and J. A. Greenough. 1997. “<span class="nocase">The Jeans Condition: A New Constraint on Spatial Resolution in Simulations of Isothermal Self-gravitational Hydrodynamics</span>.” *ApJ* 489 (November): L179+. <https://doi.org/10.1086/316779>.
+
+</div>
+
+</div>
 
 [^1]: Is it possible to fix up the Levi-Civita-Symbol so
     it becomes a real tensor?
@@ -3426,9 +3488,9 @@ $$\begin{aligned}
     of point particles at one point.
 
 [^7]: Also see Appendix
-    [5.3.1](#jacobi){reference-type="ref" reference="jacobi"}.
+    <a href="#jacobi" data-reference-type="ref" data-reference="jacobi">5.3.1</a>.
 
-[^8]: For a derivation see Appendix [5.3.2](#jacdt){reference-type="ref" reference="jacdt"}.
+[^8]: For a derivation see Appendix <a href="#jacdt" data-reference-type="ref" data-reference="jacdt">5.3.2</a>.
 
 [^9]: Why is there no gravitational effect on the
     internal energy? Can self-gravity be understood similar to
@@ -3439,28 +3501,28 @@ $$\begin{aligned}
     potential the Greenfunction $$\frac{1}{\left\lvert x_i-x_j\right\rvert}$$
     is not timedependent!
 
-[^11]: Nevertheless Penrose [@Penrose1989] pointed out,
+[^11]: Nevertheless Penrose (Penrose 1989) pointed out,
     that the entropy of a selfgravitating fluid should rise up to the point when
-    all matter is collapsed to a black hole, see also Appendix [2.18.1](#entro){reference-type="ref" reference="entro"}.
+    all matter is collapsed to a black hole, see also Appendix <a href="#entro" data-reference-type="ref" data-reference="entro">2.18.1</a>.
 
 [^12]: Equivalent to the criterion described in this paragraph might be the
-    so called Truelove criterion [@Truelove1997].
+    so called Truelove criterion (Truelove et al. 1997).
 
 [^13]: This is true if
     the velocity field is continuously differentiable twice
 
 [^14]: An equivalent equation would be
     an equation for the rotation tensor, because the rotation tensor is
-    dual to the vorticity vector (also see appendix [2.12](#rotstraintensor){reference-type="ref" reference="rotstraintensor"}).
+    dual to the vorticity vector (also see appendix <a href="#rotstraintensor" data-reference-type="ref" data-reference="rotstraintensor">2.12</a>).
     The advantage of formulating an equation for the rotation tensor would be,
     that the rotation tensor can be consistently defined in other dimensions
     than three and also in curved space.
 
-[^15]: See Appendix [2.7](#eos){reference-type="ref" reference="eos"}.
+[^15]: See Appendix <a href="#eos" data-reference-type="ref" data-reference="eos">2.7</a>.
 
-[^16]: See Appendix [2.7](#eos){reference-type="ref" reference="eos"}.
+[^16]: See Appendix <a href="#eos" data-reference-type="ref" data-reference="eos">2.7</a>.
 
-[^17]: Why can't we use $$p=R_s \rho T$$ as equation of
+[^17]: Why can’t we use $$p=R_s \rho T$$ as equation of
     state for an incompressible fluid?
 
 [^18]: Be aware that $$\nu$$ is a spatially independent quantity only
@@ -3470,11 +3532,11 @@ $$\begin{aligned}
 
 [^19]: The same result can be
     obtained by setting $$\frac{\partial v_j}{\partial r_j}=0$$ and $$\frac{\partial}{\partial t}\rho=0$$ in the equation for
-    the dissipation of a compressible newtonian fluid [\[eq:ncdiss\]](#eq:ncdiss){reference-type="eqref" reference="eq:ncdiss"}.
+    the dissipation of a compressible newtonian fluid <a href="#eq:ncdiss" data-reference-type="eqref" data-reference="eq:ncdiss">[eq:ncdiss]</a>.
 
 [^20]: Have a look at the Appendix
-    [2.16](#contradiss){reference-type="ref" reference="contradiss"} for an simple example of a flow field, where the second term
-    doesn't
+    <a href="#contradiss" data-reference-type="ref" data-reference="contradiss">2.16</a> for an simple example of a flow field, where the second term
+    doesn’t
     vanish!
 
 [^21]: Very often $$\rho$$ is moved to the other side of the equation (which is
@@ -3484,7 +3546,7 @@ $$\begin{aligned}
 [^22]: In
     case of no gravity the pressure gradient has to be zero at the surface.
 
-[^23]: Have a look at section [2.5.2](#nicdiss){reference-type="ref" reference="nicdiss"} to understand the assumptions made when deriving this equation.
+[^23]: Have a look at section <a href="#nicdiss" data-reference-type="ref" data-reference="nicdiss">2.5.2</a> to understand the assumptions made when deriving this equation.
 
 [^24]: The
     universe is not a maximally symmetric 4-dimensional manifold, but can be
@@ -3494,14 +3556,14 @@ $$\begin{aligned}
 
 [^25]: This is a very important
     point. If the space would also
-    expand on small scales we couldn't measure the expansion, because everything
+    expand on small scales we couldn’t measure the expansion, because everything
     including our distance measurement device would expand. But on small scales
     the universe is not homogenous. On small scales the metric of the universe is
     not a Robertson-Walker metric, but more like a Schwarzschild metric, which
     is isotropic, but not homogenous.
 
 [^26]: See
-    Appendix [2.15](#costress){reference-type="ref" reference="costress"}.
+    Appendix <a href="#costress" data-reference-type="ref" data-reference="costress">2.15</a>.
 
 [^27]: These values are for a three dimensional world! If we would be
     in a two-dimensional world we would have 2 for a
@@ -3533,10 +3595,10 @@ $$\begin{aligned}
     in the literature, because a rigidly rotating fluid is unphysical.
 
 [^34]: See
-    @Pope2000.
+    Pope (2000).
 
 [^35]: A sketch of this prove can also be found in
-    @Pope2000 [Appendix G].
+    Pope (2000, Appendix G).
 
 [^36]: In the literature this is often called
     kinetic energy spectrum, but this is only true for
